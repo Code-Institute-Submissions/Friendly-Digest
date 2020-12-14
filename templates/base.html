@@ -25,11 +25,17 @@
 <body>
     
   <!-- Main Content -->
-  <div class="container-fluid p-0">
+  <div class="container-fluid">
 
     {% block content %} {% endblock %}
 
   </div>
+
+    <!--Import jQuery & Materialize Javascript Libraries-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
 
