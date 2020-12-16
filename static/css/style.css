@@ -62,3 +62,8 @@ nav ul a {
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
+
+/* Retains black text color when mouse is hovered over nav tabs */
+.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+  color: #0F0901;
+}
