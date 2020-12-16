@@ -115,3 +115,7 @@ nav ul a {
 .btn-large i {
   color:#0F0901;
 }
+
+.btn-large:hover {
+  background-color:#AEE6A9;
+}
