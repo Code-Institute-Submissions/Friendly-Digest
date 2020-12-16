@@ -111,3 +111,7 @@ nav ul a {
 .btn-large {
   background-color:#92D68C;
 }
+
+.btn-large i {
+  color:#0F0901;
+}
