@@ -8,9 +8,14 @@ body, html {
   background-color: #FAFAF2;
   font-family: 'Cinzel', serif;
   color: #0F0901;
-  /* Code to keep footer at bottom */
+  /* Code to keep footer fixed at bottom */
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   height: 100%;
+}
+
+  /* Code to keep footer fixed at bottom */
+main {
+  flex: 1 0 auto;
 }
