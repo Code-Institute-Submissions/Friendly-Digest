@@ -93,6 +93,12 @@ nav ul a {
   background-color: #92D68C;
 }
 
+/* Hamburger menu icon color change and shadow */
+.button-collapse i {
+  color: #0F0901;
+  text-shadow: 0.125rem 0.125rem 0.125rem rgba(15, 9, 1, 0.5);
+}
+
 /* Logo image sizing and positioning */
 .chef-hat {
     width: 6rem;
