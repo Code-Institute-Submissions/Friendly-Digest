@@ -72,3 +72,10 @@ nav ul a {
 .dropdown-content li {
   min-height: 0;
 }
+
+/* Set colors of dropdown menu  */
+.dropdown-content li a {
+  background-color: #A0DB9B;
+  color: #0F0901;
+}
+
