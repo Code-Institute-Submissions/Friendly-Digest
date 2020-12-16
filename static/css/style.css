@@ -79,3 +79,7 @@ nav ul a {
   color: #0F0901;
 }
 
+/* Color change of dropdown menu items when hover */
+.dropdown-content li a:hover {
+  background-color: #AEE6A9;
+}
