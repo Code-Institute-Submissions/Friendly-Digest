@@ -5,3 +5,6 @@ $('.dropdown-button').dropdown({
   hover: true,
   }
 );
+
+// Side nav for mobile view
+$(".button-collapse").sideNav();
