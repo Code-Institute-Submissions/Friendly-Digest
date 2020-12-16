@@ -4,7 +4,6 @@
 /*** UNIVERSAL STYLES THAT EFFECT WHOLE WEBSITE ***/
 
 body, html {
-  /* Website font and colors */
   background-color: #FAFAF2;
   font-family: 'Cinzel', serif;
   color: #0F0901;
@@ -103,4 +102,12 @@ nav ul a {
 .chef-hat {
     width: 6rem;
     margin-top: 2rem;
+}
+
+/*** FOOTER STYLES ***/
+
+/** Fixed Action Button **/
+
+.btn-large {
+  background-color:#92D68C;
 }
