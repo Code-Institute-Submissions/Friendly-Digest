@@ -26,3 +26,8 @@ main {
     padding: 0;
     border: 0;
 }
+
+  /* Joins logo image and navbar seamlessly */
+.container-fluid {
+  line-height: 0;
+}
