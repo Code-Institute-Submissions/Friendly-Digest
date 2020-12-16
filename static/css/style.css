@@ -19,3 +19,10 @@ body, html {
 main {
   flex: 1 0 auto;
 }
+
+  /* All margins, padding and borders removed from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
