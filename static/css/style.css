@@ -55,3 +55,10 @@ nav ul a {
   color: #0F0901;
   padding: 0 4rem;
 }
+
+/* Hover.css animation color change and transition speed change for nav tabs */
+.hvr-bounce-to-bottom:before {
+  background-image: linear-gradient(to top, rgba(174, 230, 169, 1), rgba(146, 214, 140, 1));
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
