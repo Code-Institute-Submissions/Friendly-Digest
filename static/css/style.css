@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 
-/*** Universal styles that effect whole website ***/
+/*** Universal Styles That Effect Whole Website ***/
 
 body, html {
   /* Website font and colors */
@@ -30,4 +30,11 @@ main {
   /* Joins logo image and navbar seamlessly */
 .container-fluid {
   line-height: 0;
+}
+
+/*** Navigation Bar Styles ***/
+
+    /* Removes shadow from bottom of navbar */
+.nav-extended {
+  box-shadow: none;
 }
