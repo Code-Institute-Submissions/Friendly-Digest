@@ -119,3 +119,12 @@ nav ul a {
 .btn-large:hover {
   background-color:#AEE6A9;
 }
+
+/** Social Links **/
+
+.social-btn {
+  background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(146, 214, 140, 1));
+  color: #0F0901;
+  width: 9rem;
+  margin-bottom: 20px;
+}
