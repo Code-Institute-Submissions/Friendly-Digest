@@ -7,19 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:title" content="Friendly Digest" />
-    <meta property="og:image" content="https://res.cloudinary.com/web-slinger/image/upload/v1608119278/Milestone%203/friendly-digest-favicon_n8ncda.png" />
-    <meta property="og:description" content="Friendly Digest offers dietary advice and food recipes for those with dietary requirements." />
+    <meta property="og:image"
+        content="https://res.cloudinary.com/web-slinger/image/upload/v1608119278/Milestone%203/friendly-digest-favicon_n8ncda.png" />
+    <meta property="og:description"
+        content="Friendly Digest offers dietary advice and food recipes for those with dietary requirements." />
     <meta property="og:url" href="https://friendly-digest.herokuapp.com/" />
 
     <!--Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    
-	<!--Materialize CSS-->
+
+    <!--Materialize CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
 
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" type="text/css" />
 
     <!--Hover CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
@@ -28,20 +31,30 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
 
     <!--Favicon-->
-    <link href="https://res.cloudinary.com/web-slinger/image/upload/v1608119278/Milestone%203/friendly-digest-favicon_n8ncda.png" rel="shortcut icon" type="image/png">
+    <link
+        href="https://res.cloudinary.com/web-slinger/image/upload/v1608119278/Milestone%203/friendly-digest-favicon_n8ncda.png"
+        rel="shortcut icon" type="image/png">
 
     <title>Friendly Digest</title>
 
 </head>
 
 <body>
-    
-  <!-- Main Content -->
-  <div class="container-fluid">
 
-    {% block content %} {% endblock %}
+    <header>
+        <div class="container-fluid">
+            <img class="responsive-img"
+                src="https://res.cloudinary.com/web-slinger/image/upload/v1606846955/Milestone%203/friendly-digest-logo_aus1ob.png"
+                alt="logo" />
+        </div>
+    </header>
 
-  </div>
+    <!-- Main Content -->
+    <div class="container-fluid">
+
+        {% block content %} {% endblock %}
+
+    </div>
 
     <!--Import jQuery & Materialize Javascript Libraries-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
