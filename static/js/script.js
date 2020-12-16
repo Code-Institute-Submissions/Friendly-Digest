@@ -8,3 +8,8 @@ $('.dropdown-button').dropdown({
 
 // Side nav for mobile view
 $(".button-collapse").sideNav();
+
+// Clickable recipes dropdown menu for mobile side-nav
+$(document).ready(function(){
+  $('.dropdown-trigger').dropdown();
+});
