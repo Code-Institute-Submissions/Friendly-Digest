@@ -67,3 +67,8 @@ nav ul a {
 .hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
   color: #0F0901;
 }
+
+/* Removed white lines between list items for seamlessness */
+.dropdown-content li {
+  min-height: 0;
+}
