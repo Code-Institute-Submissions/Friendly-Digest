@@ -49,3 +49,9 @@ main {
   display: flex;
   justify-content: center;
 }
+
+/* Changes nav tab font color and pushes tabs further apart */
+nav ul a {
+  color: #0F0901;
+  padding: 0 4rem;
+}
