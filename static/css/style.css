@@ -92,3 +92,9 @@ nav ul a {
 .side-nav {
   background-color: #92D68C;
 }
+
+/* Logo image sizing and positioning */
+.chef-hat {
+    width: 6rem;
+    margin-top: 2rem;
+}
