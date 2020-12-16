@@ -55,12 +55,13 @@
 
                 <!--Desktop Nav Bar Links-->
                 <ul class="hide-on-med-and-down" id="nav-tabs">
-                    <li><a href="index.html" class="flow-text hvr-bounce-to-bottom">About</a></li>
+                    <li><a href="{{ url_for('index') }}" class="flow-text hvr-bounce-to-bottom">About</a></li>
                     <li><a class="dropdown-button flow-text hvr-bounce-to-bottom" href="#!"
-                            data-activates="dropdown-desktop">Recipes<i class="material-icons right">arrow_drop_down</i></a>
+                            data-activates="dropdown-desktop">Recipes<i
+                                class="material-icons right">arrow_drop_down</i></a>
                     </li>
-                    <li><a href="login.html" class="flow-text hvr-bounce-to-bottom">Login</a></li>
-                    <li><a href="register.html" class="flow-text hvr-bounce-to-bottom">Register</a></li>
+                    <li><a href="{{ url_for('login') }}" class="flow-text hvr-bounce-to-bottom">Login</a></li>
+                    <li><a href="{{ url_for('register') }}" class="flow-text hvr-bounce-to-bottom">Register</a></li>
                 </ul>
 
                 <!--Dropdown Links for Desktop-->
@@ -70,6 +71,36 @@
                     <li><a href="#!">Veg</a></li>
                     <li><a href="#!">Dessert</a></li>
                 </ul>
+                
+                <!--Hamburger Icon for Mobile Dropdown Menu-->
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fas fa-bars"></i></a>
+
+                <!--Mobile Dropdown Menu (Side Navigation Bar)-->
+                <ul class="side-nav" id="mobile-demo">
+
+                    <!--Friendly Digest Hat Image-->
+                    <div class="hat-box center-align">
+                        <img class="chef-hat"
+                            src="https://res.cloudinary.com/web-slinger/image/upload/v1606251385/Milestone%203/chef-hat_qxyvpg.png"
+                            alt="hat" />
+                    </div>
+
+                    <!--Mobile Nav Bar Links-->
+                    <li><a href="{{ url_for('index') }}" class="flow-text">About</a></li>
+                    <li><a class="dropdown-trigger flow-text" href="#!" data-activates="dropdown-mobile">Recipes<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="{{ url_for('login') }}" class="flow-text">Login</a></li>
+                    <li><a href="{{ url_for('register') }}" class="flow-text">Register</a></li>
+                </ul>
+
+                <!--Dropdown Links for Mobile-->
+                <ul id="dropdown-mobile" class="dropdown-content">
+                    <li><a href="#!">Meat</a></li>
+                    <li><a href="#!">Fish</a></li>
+                    <li><a href="#!">Veg</a></li>
+                    <li><a href="#!">Dessert</a></li>
+                </ul>
+
             </div>
         </nav>
     </header>
