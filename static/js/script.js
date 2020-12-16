@@ -13,3 +13,6 @@ $(".button-collapse").sideNav();
 $(document).ready(function(){
   $('.dropdown-trigger').dropdown();
 });
+
+// Copyright date updated every year
+$("#copyright").text(new Date().getFullYear());
