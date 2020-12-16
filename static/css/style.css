@@ -128,3 +128,7 @@ nav ul a {
   width: 9rem;
   margin-bottom: 20px;
 }
+
+.social-btn:hover {
+  background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(146, 214, 140, 1));
+}
