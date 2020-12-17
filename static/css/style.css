@@ -167,3 +167,8 @@ nav ul a {
 .register-icon {
   color: #92D68C;
 }
+
+/* Text within register button changed to black */
+.register-text {
+  color: #0F0901;
+}
