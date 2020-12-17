@@ -42,6 +42,11 @@ def register():
         # Check if username already exists in DB
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
+
+        # Redirect back if username exists
+        if existing_user:
+            flash("Username already exists")
+            return redirect(url_for("register"))
     return render_template("register.html")
 
 
