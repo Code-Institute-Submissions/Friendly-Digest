@@ -162,3 +162,8 @@ nav ul a {
 .register-card{
   background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(250,250,242,1), rgba(160, 219, 155, 1));
 }
+
+/* Font Awesome icons changed to green color */
+.register-icon {
+  color: #92D68C;
+}
