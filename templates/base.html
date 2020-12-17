@@ -60,8 +60,14 @@
                             data-activates="dropdown-desktop">Recipes<i
                                 class="material-icons right">arrow_drop_down</i></a>
                     </li>
+                    {% if session.user %}
+                    <li><a href="{{ url_for('myRecipes') }}" class="flow-text hvr-bounce-to-bottom">My Recipes</a></li>
+                    <li><a href="{{ url_for('addRecipe') }}" class="flow-text hvr-bounce-to-bottom">Add Recipe</a></li>
+                    <li><a href="{{ url_for('logout') }}" class="flow-text hvr-bounce-to-bottom">Log Out</a></li>
+                    {% else %}
                     <li><a href="{{ url_for('login') }}" class="flow-text hvr-bounce-to-bottom">Login</a></li>
                     <li><a href="{{ url_for('register') }}" class="flow-text hvr-bounce-to-bottom">Register</a></li>
+                    {% endif %}
                 </ul>
 
                 <!--Dropdown Links for Desktop-->
