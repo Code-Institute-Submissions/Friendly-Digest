@@ -21,4 +21,19 @@
     </div>
 </div>
 
+<div class="row">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+        <div class="card-panel register-card z-depth-0">
+            <!-- username -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-user-plus prefix register-icon"></i>
+                    <input id="username" name="username" type="text" class="validate">
+                    <label for="username">Username</label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
 {% endblock %}
