@@ -59,7 +59,7 @@ nav ul a {
 
 /* Hover.css animation color change and transition speed change for nav tabs */
 .hvr-bounce-to-bottom:before {
-  background-image: linear-gradient(to top, rgba(174, 230, 169, 1), rgba(146, 214, 140, 1));
+  background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
