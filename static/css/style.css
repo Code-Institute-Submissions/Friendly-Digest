@@ -31,6 +31,12 @@ main {
   line-height: 0;
 }
 
+h1 {
+  margin-bottom: -1rem;
+  font-family: 'Calligraffitti', cursive;
+  font-size: 4.5vh;
+}
+
 .text {
     text-align: center;
     font-size: 2.2vh;
