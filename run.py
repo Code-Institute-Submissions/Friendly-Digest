@@ -33,6 +33,11 @@ def recipes():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    if request.method == "POST":
+        # Check if username exists in DB
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
     return render_template("login.html")
 
 
@@ -59,6 +64,7 @@ def register():
         # Put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
+
     return render_template("register.html")
 
 
