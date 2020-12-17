@@ -42,6 +42,10 @@ h1 {
     font-size: 2.2vh;
 }
 
+.mt-3 {
+    margin-top: 3rem;
+}
+
 /*** NAVIGATION BAR STYLES ***/
 
 /** Desktop Nav Bar **/
