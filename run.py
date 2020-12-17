@@ -47,6 +47,14 @@ def register():
         if existing_user:
             flash("Username already exists")
             return redirect(url_for("register"))
+
+        # Store username and password into DB as items in disctionary
+        register = {
+            "username": request.form.get("username").lower(),
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        # Calls and inserts 'users' collection in Mongo DB
+        mongo.db.users.insert_one(register)
     return render_template("register.html")
 
 
