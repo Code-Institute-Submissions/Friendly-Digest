@@ -85,9 +85,12 @@ def register():
     return render_template("register.html")
 
 
-@app.route("/myRecipes")
-def myRecipes():
-    return render_template("myRecipes.html")
+@app.route("/myRecipes/<username>", methods=["GET", "POST"])
+def myRecipes(username):
+    # Grab the session user's username from DB
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    return render_template("myRecipes.html", username=username)
 
 
 if __name__ == "__main__":
