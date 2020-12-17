@@ -172,3 +172,8 @@ nav ul a {
 .register-text {
   color: #0F0901;
 }
+
+/* Font Awesome icons retain their green color when active */
+.input-field .prefix.active {
+  color: #92D68C
+}
