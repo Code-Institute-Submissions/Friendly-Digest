@@ -55,6 +55,10 @@ def register():
         }
         # Calls and inserts 'users' collection in Mongo DB
         mongo.db.users.insert_one(register)
+
+        # Put the new user into 'session' cookie
+        session["user"] = request.form.get("username").lower()
+        flash("Registration Successful!")
     return render_template("register.html")
 
 
