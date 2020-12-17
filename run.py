@@ -85,6 +85,11 @@ def register():
     return render_template("register.html")
 
 
+@app.route("/myRecipes")
+def myRecipes():
+    return render_template("myRecipes.html")
+
+
 if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP", "0.0.0.0"),
