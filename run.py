@@ -45,6 +45,11 @@ def login():
                     session["user"] = request.form.get("username").lower()
                     flash("Welcome, {}".format(request.form.get("username")))
 
+            else:
+                # Invalid password match
+                flash("Incorrect Username and/or Password. Please try again.")
+                return redirect(url_for("login"))
+
     return render_template("login.html")
 
 
