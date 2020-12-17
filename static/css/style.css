@@ -177,3 +177,7 @@ nav ul a {
 .input-field .prefix.active {
   color: #92D68C
 }
+
+.flash-card {
+    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(160, 219, 155, 1));
+}
