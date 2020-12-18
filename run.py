@@ -56,7 +56,7 @@ def login():
             flash("Incorrect Username and/or Password. Please try again.")
             return redirect(url_for("login"))
 
-    return render_template("login.html")
+    return render_template("login.html", page_title="Log In")
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -84,7 +84,7 @@ def register():
         flash("Registration Successful!")
         return redirect(url_for("myRecipes", username=session["user"]))
 
-    return render_template("register.html")
+    return render_template("register.html", page_title="Register")
 
 
 @app.route("/myRecipes/<username>", methods=["GET", "POST"])
@@ -96,7 +96,7 @@ def myRecipes(username):
     if session["user"]:
         return render_template("myRecipes.html", username=username)
 
-    return redirect(url_for("login"))
+    return redirect(url_for("login", page_title="My Recipes"))
 
 
 @app.route("/logout")
