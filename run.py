@@ -41,7 +41,8 @@ def login():
         if existing_user:
             # Ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
+                existing_user["password"], request.form.get(
+                    "password")):
                 session["user"] = request.form.get("username").lower()
                 return redirect(url_for(
                     "myRecipes", username=session["user"]))
@@ -94,9 +95,10 @@ def myRecipes(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("myRecipes.html", username=username)
+        return render_template(
+            "myRecipes.html", username=username, page_title="My Recipes")
 
-    return redirect(url_for("login", page_title="My Recipes"))
+    return redirect(url_for("login"))
 
 
 @app.route("/logout")
