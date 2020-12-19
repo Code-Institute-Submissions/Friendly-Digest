@@ -163,7 +163,7 @@ nav ul a {
   background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(146, 214, 140, 1));
 }
 
-/*** REGISTER STYLES ***/
+/*** REGISTER PAGE STYLES ***/
 
 .register-card{
   background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(250,250,242,1), rgba(160, 219, 155, 1));
@@ -186,4 +186,18 @@ nav ul a {
 
 .flash-card {
     background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(160, 219, 155, 1));
+}
+
+/*** ABOUT PAGE STYLES ***/
+
+/* Carousel size */
+.carousel {
+  height: 25rem;
+}
+
+/* Carousel positioning */
+.carousel .carousel-item>img {
+  width: 200% !important;
+  margin-left: -50%;
+  margin-top: -3rem;
 }
