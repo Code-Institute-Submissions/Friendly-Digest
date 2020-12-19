@@ -261,3 +261,9 @@ nav ul a {
 .backdrop {
     background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
 }
+
+/* Tooltip font color and positioning */
+.material-tooltip {
+  color: #0F0901;
+  margin-left: 0.25rem;
+}
