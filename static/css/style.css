@@ -201,3 +201,9 @@ nav ul a {
   margin-left: -50%;
   margin-top: -3rem;
 }
+
+.ribbon {
+  width: 40%;
+  display: block;
+  margin: auto;
+}
