@@ -226,3 +226,14 @@ nav ul a {
   display: block;
   margin: auto;
 }
+
+/** Success stories **/
+
+/* Size & positioning */
+.success-img {
+  border-radius: 50%;
+  width: 75%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
