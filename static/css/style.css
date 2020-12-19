@@ -272,3 +272,8 @@ nav ul a {
 .modal-content {
   background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(146, 214, 140, 1));
 }
+
+/* Modal footer background color */
+.modal .modal-footer {
+  background-color: #92D68C;
+}
