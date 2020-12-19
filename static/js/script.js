@@ -34,3 +34,8 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.modal').modal();
 });
+
+// Tooltip messages for Success Stories
+$(document).ready(function(){
+  $('.tooltipped').tooltip({delay: 50});
+});
