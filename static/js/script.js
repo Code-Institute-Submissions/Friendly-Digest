@@ -29,3 +29,8 @@ $(document).ready(function () {
 $(document).ready(function(){
   $('.materialboxed').materialbox();
 });
+
+// Modal to appear when success story images are clicked
+$(document).ready(function(){
+  $('.modal').modal();
+});
