@@ -24,3 +24,8 @@ $(document).ready(function () {
     $('.carousel').carousel('next');
   }, 3000)
 });
+
+// Clickable images to make full screen with message
+$(document).ready(function(){
+  $('.materialboxed').materialbox();
+});
