@@ -267,3 +267,8 @@ nav ul a {
   color: #0F0901;
   margin-left: 0.25rem;
 }
+
+/* Modal background color */
+.modal-content {
+  background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(146, 214, 140, 1));
+}
