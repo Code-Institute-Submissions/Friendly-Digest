@@ -214,3 +214,8 @@ nav ul a {
   background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(160, 219, 155, 1));
   font-size: 1.8vh;
 }
+
+.tabs .tab a {
+  color:#0F0901;
+  font-size: 1.5vh;
+}
