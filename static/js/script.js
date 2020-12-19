@@ -16,3 +16,11 @@ $(document).ready(function(){
 
 // Copyright date updated every year
 $("#copyright").text(new Date().getFullYear());
+
+// Carousel: Image animation that scrolls through different images
+$(document).ready(function () {
+  $('.carousel').carousel();
+  setInterval(function () {
+    $('.carousel').carousel('next');
+  }, 3000)
+});
