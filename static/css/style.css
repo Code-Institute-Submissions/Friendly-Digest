@@ -244,3 +244,11 @@ nav ul a {
     margin-bottom: 5rem;
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+    /* Adds bottom margin to two top images in mobile view */
+  #success-stories > div:nth-child(1), div:nth-child(3) {
+    margin-bottom: 2rem;
+  }
+}
