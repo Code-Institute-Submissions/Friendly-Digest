@@ -219,3 +219,10 @@ nav ul a {
   color:#0F0901;
   font-size: 1.5vh;
 }
+
+/* Tuna image size & positioning */
+.tuna {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
