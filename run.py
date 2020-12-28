@@ -25,7 +25,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/get_meat")
+@app.route("/meat")
 def meat():
     recipes = mongo.db.recipes.find()
     return render_template("meat.html", recipes=recipes)
