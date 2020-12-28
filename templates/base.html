@@ -64,7 +64,7 @@
                     {% if session.user %}
                     <li><a href="{{ url_for('myRecipes', username=session['user']) }}"
                             class="flow-text hvr-bounce-to-bottom">My Recipes</a></li>
-                    <li><a href="#" class="flow-text hvr-bounce-to-bottom">Add Recipe</a></li>
+                    <li><a href="{{ url_for('addRecipe') }}" class="flow-text hvr-bounce-to-bottom">Add Recipe</a></li>
                     <li><a href="{{ url_for('logout') }}" class="flow-text hvr-bounce-to-bottom">Log Out</a></li>
                     
                     {% else %}
@@ -102,7 +102,7 @@
                     {% if session.user %}
                     <li><a href="{{ url_for('myRecipes', username=session['user']) }}" class="flow-text">My Recipes</a>
                     </li>
-                    <li><a href="#" class="flow-text">Add Recipe</a></li>
+                    <li><a href="{{ url_for('addRecipe') }}" class="flow-text">Add Recipe</a></li>
                     <li><a href="{{ url_for('logout') }}" class="flow-text">Log Out</a></li>
 
                     {% else %}
