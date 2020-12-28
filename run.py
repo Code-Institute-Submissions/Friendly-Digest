@@ -25,10 +25,10 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/get_recipes")
-def recipes():
+@app.route("/meat")
+def meat():
     recipes = mongo.db.recipes.find()
-    return render_template("recipes.html", recipes=recipes)
+    return render_template("meat.html", recipes=recipes)
 
 
 @app.route("/login", methods=["GET", "POST"])
