@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!--About Page Main Heading-->
+<div class="container">
+    <div class="row">
+        <div class="col s12 center-align">
+            <h1 class="mt-3">Meat Recipes</h1>
+        </div>
+    </div>
+</div>
+
+{% for recipes in recipes %}
+{{ recipes.recipe_name }}<br>
+{{ recipes.category_name }}<br>
+{{ recipes.recipe_prep_mins }}<br>
+{{ recipes.recipe_cook_mins }}<br>
+{{ recipes.recipe_level }}<br>
+{{ recipes.recipe_calories }}<br>
+{{ recipes.recipe_servings }}<br>
+{{ recipes.author_name }}<br>
+{{ recipes.recipe_description }}<br>
+{{ recipes.recipe_ingredients }}<br>
+{{ recipes.recipe_instructions }}<br>
+{{ recipes.recipe_image }}<br>
+{{ recipes.favourite }}<br>
+{% endfor %}
+
+{% endblock %}
