@@ -28,7 +28,7 @@ def index():
 @app.route("/meat")
 def meat():
     recipes = mongo.db.recipes.find()
-    return render_template("meat.html", recipes=recipes)
+    return render_template("meat.html", recipes=recipes, page_title="Meat Recipes")
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -111,7 +111,7 @@ def logout():
 
 @app.route("/addRecipe")
 def addRecipe():
-    return render_template("addRecipe.html")
+    return render_template("addRecipe.html", page_title="Add Recipe")
 
 
 if __name__ == "__main__":
