@@ -111,7 +111,10 @@ def logout():
 
 @app.route("/addRecipe")
 def addRecipe():
-    return render_template("addRecipe.html", page_title="Add Recipe")
+    # Get data from categories collection on Mongo DB
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template(
+        "addRecipe.html", categories=categories, page_title="Add Recipe")
 
 
 if __name__ == "__main__":
