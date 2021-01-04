@@ -109,10 +109,10 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/addRecipe")
+@app.route("/addRecipe", methods=["GET", "POST"])
 def addRecipe():
     # Get data from categories collection on Mongo DB
-    categories = mongo.db.categories.find().sort("category_name", 1)
+    categories = mongo.db.categories.find().sort("category_name")
     return render_template(
         "addRecipe.html", categories=categories, page_title="Add Recipe")
 
