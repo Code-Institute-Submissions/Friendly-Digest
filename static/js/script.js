@@ -29,4 +29,7 @@ $(document).ready(function () {
 
 // Copyright date updated every year
   $("#copyright").text(new Date().getFullYear());
+
+// Select dropdown box for Add Recipe form
+  $('select').material_select();
 });
