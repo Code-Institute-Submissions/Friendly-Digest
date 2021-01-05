@@ -21,11 +21,29 @@
     </div>
 </div>
 
+<!--Add Recipe Form-->
 <div class="container-fluid">
     <div class="row">
         <form class="col s12 m8 offset-m2" method="POST" action="">
             <div class="card-panel form-card z-depth-0">
 
+                <!--Category Name-->
+                <div class="row">
+                    <div class="input-field col s12">
+
+                        <i class="fas fa-list-alt prefix register-icon"></i>
+
+                        <select id="category_name" name="category_name" class="validate" required>
+                            <option value="" disabled selected>Choose Category</option>
+                            {% for category in categories %}
+                            <option value="{{ category.category_name }}"
+                                data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609772608/Milestone%203/chicken-breast_rfy6s3.jpg"
+                                class="left circle">{{ category.category_name }}</option>
+                            {% endfor %}
+                        </select>
+
+                    </div>
+                </div>
             </div>
         </form>
     </div>
