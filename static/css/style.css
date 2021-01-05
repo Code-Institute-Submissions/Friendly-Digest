@@ -319,3 +319,8 @@ ul.dropdown-content.select-dropdown li span:hover {
 textarea.materialize-textarea {
   padding: 0;
 }
+
+/* Added to make text visible within textarea  */
+textarea {
+    line-height: 1rem;
+}
