@@ -26,13 +26,11 @@
     <div class="row">
         <form class="col s12 m8 offset-m2" method="POST" action="">
             <div class="card-panel form-card z-depth-0">
-
-                <!--Category Name-->
                 <div class="row">
                     <div class="input-field col s12">
 
+                        <!--Category Name-->
                         <i class="fas fa-list-alt prefix register-icon"></i>
-
                         <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled selected>Choose Category</option>
                             {% for category in categories %}
@@ -41,6 +39,16 @@
                                 class="left circle">{{ category.category_name }}</option>
                             {% endfor %}
                         </select>
+
+                        <!--Recipe Name-->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="fas fa-pencil-alt prefix register-icon"></i>
+                                <input id="recipe_name" name="recipe_name" type="text" minlength="5" maxlength="50"
+                                    class="validate" required>
+                                <label for="recipe_name">Recipe Name</label>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
