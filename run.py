@@ -111,6 +111,24 @@ def logout():
 
 @app.route("/addRecipe", methods=["GET", "POST"])
 def addRecipe():
+    if request.method == "POST":
+        recipe = {
+            "category_name": request.form.get("category_name"),
+            "recipe_name": request.form.get("recipe_name"),
+            "recipe_description": request.form.get("recipe_name"),
+            "recipe_prep_mins": request.form.get("recipe_prep_mins"),
+            "recipe_cook_mins": request.form.get("recipe_cook_mins"),
+            "recipe_calories": request.form.get("recipe_calories"),
+            "recipe_servings": request.form.get("recipe_servings"),
+            "recipe_level": request.form.get("recipe_level"),
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_instructions": request.form.get("recipe_instructions"),
+            "author_name": session["user"]
+        }
+        mongo.db.recipes.insert_one(recipe)
+        flash("Recipe Successfully Added!")
+        return redirect(url_for("my_recipes"))
+
     # Get data from categories collection on Mongo DB
     categories = mongo.db.categories.find().sort("category_name")
     return render_template(
