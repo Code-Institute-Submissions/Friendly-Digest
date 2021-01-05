@@ -30,7 +30,7 @@
 
                     <!--Category Name-->
                     <div class="input-field col s12">
-                        <i class="fas fa-list-alt prefix register-icon"></i>
+                        <i class="fas fa-list-alt prefix form-icon"></i>
                         <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled selected>Choose Category</option>
                             {% for category in categories %}
@@ -44,7 +44,7 @@
                     <!--Recipe Name-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-pencil-alt prefix register-icon"></i>
+                            <i class="fas fa-pencil-alt prefix form-icon"></i>
                             <input id="recipe_name" name="recipe_name" type="text" minlength="5" maxlength="50"
                                 class="validate" required>
                             <label for="recipe_name">Recipe Name</label>
@@ -54,7 +54,7 @@
                     <!--Recipe Description-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-file-alt prefix register-icon"></i>
+                            <i class="fas fa-file-alt prefix form-icon"></i>
                             <textarea id="recipe_description" name="recipe_description" minlength="5" maxlength="150"
                                 class="materialize-textarea validate" required></textarea>
                             <label for="recipe_description">Recipe Description</label>
@@ -64,7 +64,7 @@
                     <!--Prep Time-->
                     <div class="row">
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-clock prefix register-icon"></i>
+                            <i class="fas fa-clock prefix form-icon"></i>
                             <input id="prep_time" name="prep_time" type="number" minlength="1" maxlength="3"
                                 pattern="^[0-9]{1,3}$" class="validate" required>
                             <label for="prep_time">Prep Time (mins)</label>
@@ -72,7 +72,7 @@
 
                         <!--Cook Time-->
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-clock prefix register-icon"></i>
+                            <i class="fas fa-clock prefix form-icon"></i>
                             <input id="cook_time" name="cook_time" type="number" minlength="1" maxlength="3"
                                 pattern="^[0-9]{1,3}$" class="validate" required>
                             <label for="cook_time">Cook Time (mins)</label>
@@ -82,7 +82,7 @@
                     <!--Calories-->
                     <div class="row">
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-weight prefix register-icon"></i>
+                            <i class="fas fa-weight prefix form-icon"></i>
                             <input id="recipe_calories" name="recipe_calories" type="number" minlength="1" maxlength="4"
                                 pattern="^[0-9]{1,4}$" class="validate" required>
                             <label for="recipe_calories">Calories</label>
@@ -90,7 +90,7 @@
 
                         <!--Servings-->
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-users prefix register-icon"></i>
+                            <i class="fas fa-users prefix form-icon"></i>
                             <input id="recipe_servings" name="recipe_servings" type="number" minlength="1" maxlength="2"
                                 pattern="^[0-9]{1,2}$" class="validate" required>
                             <label for="recipe_servings">Servings</label>
@@ -100,7 +100,7 @@
                     <!--Difficulty-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-user-graduate prefix register-icon"></i>
+                            <i class="fas fa-user-graduate prefix form-icon"></i>
                             <select id="recipe_level" name="recipe_level" class="validate" required>
                                 <option value="" disabled selected>Choose Difficulty</option>
                                 <option value="1"
@@ -119,7 +119,7 @@
                     <!--Recipe Ingredients-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-file-alt prefix register-icon"></i>
+                            <i class="fas fa-file-alt prefix form-icon"></i>
                             <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="3" maxlength="750"
                                 class="materialize-textarea validate" required></textarea>
                             <label for="recipe_ingredients">Recipe Ingredients</label>
@@ -129,7 +129,7 @@
                     <!--Recipe Instructions-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-file-alt prefix register-icon"></i>
+                            <i class="fas fa-file-alt prefix form-icon"></i>
                             <textarea id="recipe_instructions" name="recipe_instructions" minlength="3" maxlength="1500"
                                 class="materialize-textarea validate" required></textarea>
                             <label for="recipe_instructions">Recipe Instructions</label>
