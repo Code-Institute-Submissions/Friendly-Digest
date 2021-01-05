@@ -304,3 +304,8 @@ nav ul a {
 ul.dropdown-content.select-dropdown li span {
     color: #0F0901; 
 }
+
+/* Background hover color of form dropdown list*/
+ul.dropdown-content.select-dropdown li span:hover {
+    background-color: #AEE6A9; 
+}
