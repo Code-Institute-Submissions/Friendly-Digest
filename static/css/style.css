@@ -314,3 +314,8 @@ ul.dropdown-content.select-dropdown li span:hover {
 .input-field label {
   color: #0F0901;
 }
+
+/* Remove padding from recipe description field */
+textarea.materialize-textarea {
+  padding: 0;
+}
