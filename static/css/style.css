@@ -299,3 +299,8 @@ nav ul a {
 .select-dropdown {
   background-color: #A0DB9B;
 }
+
+/* Font color of form dropdown list */
+ul.dropdown-content.select-dropdown li span {
+    color: #0F0901; 
+}
