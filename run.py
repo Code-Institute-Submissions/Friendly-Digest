@@ -115,7 +115,7 @@ def addRecipe():
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
-            "recipe_description": request.form.get("recipe_name"),
+            "recipe_description": request.form.get("recipe_description"),
             "recipe_prep_mins": request.form.get("recipe_prep_mins"),
             "recipe_cook_mins": request.form.get("recipe_cook_mins"),
             "recipe_calories": request.form.get("recipe_calories"),
@@ -127,7 +127,7 @@ def addRecipe():
         }
         mongo.db.recipes.insert_one(recipe)
         flash("Recipe Successfully Added!")
-        return redirect(url_for("my_recipes"))
+        return redirect(url_for("index"))
 
     # Get data from categories collection on Mongo DB
     categories = mongo.db.categories.find().sort("category_name")
