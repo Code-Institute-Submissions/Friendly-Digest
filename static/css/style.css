@@ -61,6 +61,11 @@ h2 {
   background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(250,250,242,1), rgba(160, 219, 155, 1));
 }
 
+/* Text within buttons changed to black */
+.btn-text {
+  color: #0F0901;
+}
+
 /*** NAVIGATION BAR STYLES ***/
 
 /** Desktop Nav Bar **/
@@ -177,11 +182,6 @@ nav ul a {
 /* Font Awesome icons changed to green color */
 .register-icon {
   color: #92D68C;
-}
-
-/* Text within register button changed to black */
-.register-text {
-  color: #0F0901;
 }
 
 /* Font Awesome icons retain their green color when active */
