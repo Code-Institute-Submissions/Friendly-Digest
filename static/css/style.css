@@ -309,3 +309,8 @@ ul.dropdown-content.select-dropdown li span {
 ul.dropdown-content.select-dropdown li span:hover {
     background-color: #AEE6A9; 
 }
+
+/* Change form label color */
+.input-field label {
+  color: #0F0901;
+}
