@@ -3,9 +3,9 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta property="og:title" content="Friendly Digest" />
     <meta property="og:image"
         content="https://res.cloudinary.com/web-slinger/image/upload/v1608119278/Milestone%203/friendly-digest-favicon_n8ncda.png" />
@@ -33,7 +33,7 @@
     <!--Favicon-->
     <link
         href="https://res.cloudinary.com/web-slinger/image/upload/v1608119278/Milestone%203/friendly-digest-favicon_n8ncda.png"
-        rel="shortcut icon" type="image/png">
+        rel="shortcut icon" type="image/png" />
 
     <title>Friendly Digest</title>
 
@@ -66,7 +66,7 @@
                             class="flow-text hvr-bounce-to-bottom">My Recipes</a></li>
                     <li><a href="{{ url_for('addRecipe') }}" class="flow-text hvr-bounce-to-bottom">Add Recipe</a></li>
                     <li><a href="{{ url_for('logout') }}" class="flow-text hvr-bounce-to-bottom">Log Out</a></li>
-                    
+
                     {% else %}
                     <li><a href="{{ url_for('login') }}" class="flow-text hvr-bounce-to-bottom">Login</a></li>
                     <li><a href="{{ url_for('register') }}" class="flow-text hvr-bounce-to-bottom">Register</a></li>
@@ -82,7 +82,7 @@
                 </ul>
 
                 <!--Hamburger Icon for Mobile Dropdown Menu-->
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fas fa-bars"></i></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="fas fa-bars"></i></a>
 
                 <!--Mobile Dropdown Menu (Side Navigation Bar)-->
                 <ul class="side-nav" id="mobile-demo">
@@ -133,8 +133,7 @@
             <div class="row mt-3">
                 <div class="col s12 m8 offset-m2">
                     <div class="card-panel center-align flash-card z-depth-0">
-                        <span class="text">{{ message }}
-                        </span>
+                        <span class="text">{{ message }}</span>
                     </div>
                 </div>
             </div>
