@@ -341,3 +341,8 @@ textarea {
   background-image: linear-gradient(to top, rgba(250,250,242,1),rgba(250,250,242,1));
   display: flow-root;
 }
+
+/* Removes line between the top and bottom of the card */
+.card .card-action {
+  border-top: none;
+}
