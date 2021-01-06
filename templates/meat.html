@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-    
-<!--About Page Main Heading-->
+
+<!--Meat Page Main Heading-->
 <div class="container">
     <div class="row">
         <div class="col s12 center-align">
@@ -10,20 +10,33 @@
     </div>
 </div>
 
-    {% for recipes in recipes %}
-        {{ recipes.recipe_name }}<br>
-        {{ recipes.category_name }}<br>
-        {{ recipes.recipe_prep_mins }}<br>
-        {{ recipes.recipe_cook_mins }}<br>
-        {{ recipes.recipe_level }}<br>
-        {{ recipes.recipe_calories }}<br>
-        {{ recipes.recipe_servings }}<br>
-        {{ recipes.author_name }}<br>
-        {{ recipes.recipe_description }}<br>
-        {{ recipes.recipe_ingredients }}<br>
-        {{ recipes.recipe_instructions }}<br>
-        {{ recipes.recipe_image }}<br>
-        {{ recipes.favourite }}<br>
-    {% endfor %}
+<!--Meat Page Welcoming Text-->
+<div class="container">
+    <div class="row text flow-text">
+        <div class="col s12 mt-3">
+            <p>Welcome to a page chock-full of delicious recipes containing meat which are sure to tickle your taste
+                buds! You probably won't find any dishes containing red meat because red meat isn't very nice for our
+                digestion. Dive in and remember that you can add your own delicious recipes to this list by creating an
+                account and following our simple Add Recipe process. Enjoy!
+            </p>
+        </div>
+    </div>
+</div>
+
+{% for recipes in recipes %}
+{{ recipes.recipe_name }}<br>
+{{ recipes.category_name }}<br>
+{{ recipes.recipe_prep_mins }}<br>
+{{ recipes.recipe_cook_mins }}<br>
+{{ recipes.recipe_level }}<br>
+{{ recipes.recipe_calories }}<br>
+{{ recipes.recipe_servings }}<br>
+{{ recipes.author_name }}<br>
+{{ recipes.recipe_description }}<br>
+{{ recipes.recipe_ingredients }}<br>
+{{ recipes.recipe_instructions }}<br>
+{{ recipes.recipe_image }}<br>
+{{ recipes.favourite }}<br>
+{% endfor %}
 
 {% endblock %}
