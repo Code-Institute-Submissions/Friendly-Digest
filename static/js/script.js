@@ -1,6 +1,7 @@
 $(document).ready(function () {
     // Side nav for mobile view
     $(".button-collapse").sideNav({
+        menuWidth: 200,
         edge: 'right'
     });
 
