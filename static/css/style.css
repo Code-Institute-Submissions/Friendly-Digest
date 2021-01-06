@@ -335,3 +335,9 @@ textarea {
 .card-btn:hover {
   background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(146, 214, 140, 1));
 }
+
+/* Allows card button to sit in correct place */
+.card-action {
+  background-image: linear-gradient(to top, rgba(250,250,242,1),rgba(250,250,242,1));
+  display: flow-root;
+}
