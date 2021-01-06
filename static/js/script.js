@@ -1,6 +1,8 @@
 $(document).ready(function () {
     // Side nav for mobile view
-    $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav({
+        edge: 'right'
+    });
 
     // Clickable recipes dropdown menu for mobile side-nav
     $('.dropdown-trigger').dropdown();
@@ -9,7 +11,7 @@ $(document).ready(function () {
     $('.dropdown-button').dropdown({
         inDuration: 400,
         outDuration: 225,
-        hover: true,
+        hover: true
     });
 
     // Image animation that scrolls through different images
