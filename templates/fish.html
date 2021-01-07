@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!--Fish Page Main Heading-->
+<div class="container">
+    <div class="row">
+        <div class="col s12 center-align">
+            <h1 class="mt-3">{{ page_title }}</h1>
+        </div>
+    </div>
+</div>
+
+<!--Fish Page Welcoming Text-->
+<div class="container">
+    <div class="row text flow-text">
+        <div class="col s12 mt-3">
+            <p>Welcome to a page chock-full of delicious recipes containing Fish which are sure to tickle your
+                taste buds! Fish is among the healthiest foods on the planet. It's loaded with important nutrients, such
+                as protein and vitamin D. Fish is also a great source of omega-3 fatty acids, which are
+                incredibly important for your body and brain. Dive in and remember that you can add your own delicious
+                recipes to this list by creating an account and following our simple Add Recipe process. Enjoy!
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--Fish Page Recipe Card-->
+<div class="container">
+    <div class="row text mt-3">
+
+        {% for recipes in recipes %}
+        <div class="col s12 m6">
+            <div class="card z-depth-3">
+
+                <!--Recipe Image-->
+                <div class="card-image">
+                    <img class="responsive-image" src="{{ recipes.recipe_image }}">
+                </div>
+
+                <!--Recipe Name & Description-->
+                <div class="card-content">
+                    <span class="card-title">{{ recipes.recipe_name }}</span>
+                    <p>{{ recipes.recipe_description }}</p>
+                </div>
+
+                <!--View Recipe Button-->
+                <div class="card-action">
+                    <a href="#">
+                        <button type="button" class="btn card-btn right">
+                            <span>Cook</span>
+                        </button></a>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
