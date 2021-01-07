@@ -25,16 +25,24 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/recipes", methods=["GET"])
+def recipes():
+    recipes = mongo.db.recipes.find()
+    page_title = "recipes"
+    return render_template(
+        "meat.html", recipes=recipes, page_title=page_title)
+
+
 @app.route("/meat", methods=["GET"])
 def meat():
-    recipes = mongo.db.recipes.find()
+    recipes = mongo.db.recipes.find({"category_name": "meat"})
     return render_template(
         "meat.html", recipes=recipes, page_title="Meat Recipes")
 
 
 @app.route("/fish", methods=["GET"])
 def fish():
-    recipes = mongo.db.recipes.find()
+    recipes = mongo.db.recipes.find({"category_name": "fish"})
     return render_template(
         "fish.html", recipes=recipes, page_title="Fish Recipes")
 
