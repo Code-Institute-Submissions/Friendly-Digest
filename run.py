@@ -32,6 +32,13 @@ def meat():
         "meat.html", recipes=recipes, page_title="Meat Recipes")
 
 
+@app.route("/fish", methods=["GET"])
+def fish():
+    recipes = mongo.db.recipes.find()
+    return render_template(
+        "fish.html", recipes=recipes, page_title="Fish Recipes")
+
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
