@@ -103,15 +103,11 @@
                             <i class="fas fa-user-graduate prefix form-icon"></i>
                             <select id="recipe_level" name="recipe_level" class="validate" required>
                                 <option value="" disabled selected>Choose Difficulty</option>
-                                <option value="1"
-                                    data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/level-1_iano98.png"
-                                    class="left circle">Easy</option>
-                                <option value="2"
-                                    data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/level-2_evq6ih.png"
-                                    class="left circle">Medium</option>
-                                <option value="3"
-                                    data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/level-3_jkrjgf.png"
-                                    class="left circle">Hard</option>
+                                {% for recipes in recipes %}
+                                <option value="{{ recipes.recipe_level }}"
+                                    data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/{{ recipes.recipe_level }}.png"
+                                    class="left circle">{{ recipes.recipe_level }}</option>
+                                {% endfor %}
                             </select>
                         </div>
                     </div>
