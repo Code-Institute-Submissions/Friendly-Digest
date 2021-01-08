@@ -161,8 +161,8 @@ def addRecipe():
         return redirect(url_for("index"))
 
     # Get data from categories & recipes collection on Mongo DB
-    categories = mongo.db.categories.find().sort("category_name")
-    recipes = mongo.db.recipes.find().sort("recipe_level")
+    categories = mongo.db.categories.find()
+    recipes = mongo.db.recipes.find()
     return render_template(
         "addRecipe.html", categories=categories,
         recipes=recipes, page_title="Add Recipe")
