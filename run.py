@@ -150,7 +150,7 @@ def addRecipe():
             "recipe_cook_mins": request.form.get("recipe_cook_mins"),
             "recipe_calories": request.form.get("recipe_calories"),
             "recipe_servings": request.form.get("recipe_servings"),
-            "recipe_level": request.form.get("recipe_level").limit(3),
+            "recipe_level": request.form.get("recipe_level"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_instructions": request.form.get("recipe_instructions"),
             "recipe_image": request.form.get("recipe_image"),
@@ -163,8 +163,10 @@ def addRecipe():
 
     # Get data from categories collection on Mongo DB
     categories = mongo.db.categories.find()
+    recipes = mongo.db.recipes.find().limit(3)
     return render_template(
-        "addRecipe.html", categories=categories, page_title="Add Recipe")
+        "addRecipe.html", categories=categories,
+        recipes=recipes, page_title="Add Recipe")
 
 
 if __name__ == "__main__":
