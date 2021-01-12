@@ -25,12 +25,12 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/recipes", methods=["GET"])
-def recipes():
-    recipes = mongo.db.recipes.find()
-    page_title = "recipes"
-    return render_template(
-        "meat.html", recipes=recipes, page_title=page_title)
+# @app.route("/recipes", methods=["GET"])
+# def recipes():
+#     recipes = mongo.db.recipes.find()
+#     page_title = "recipes"
+#     return render_template(
+#         "meat.html", recipes=recipes, page_title=page_title)
 
 
 @app.route("/meat", methods=["GET"])
@@ -49,14 +49,14 @@ def fish():
 
 @app.route("/veg", methods=["GET"])
 def veg():
-    recipes = mongo.db.recipes.find()
+    recipes = mongo.db.recipes.find({"category_name": "veg"})
     return render_template(
         "veg.html", recipes=recipes, page_title="Veg Recipes")
 
 
 @app.route("/dessert", methods=["GET"])
 def dessert():
-    recipes = mongo.db.recipes.find()
+    recipes = mongo.db.recipes.find({"category_name": "dessert"})
     return render_template(
         "dessert.html", recipes=recipes, page_title="Dessert Recipes")
 
@@ -150,22 +150,21 @@ def addRecipe():
             "recipe_cook_mins": request.form.get("recipe_cook_mins"),
             "recipe_calories": request.form.get("recipe_calories"),
             "recipe_servings": request.form.get("recipe_servings"),
-            "recipe_level": request.form.get("recipe_level"),
+            "recipe_level": request.form.get("recipe_level").limit(3),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_instructions": request.form.get("recipe_instructions"),
             "recipe_image": request.form.get("recipe_image"),
             "author_name": session["user"]
         }
+        # Display flash message when recipe is added
         mongo.db.recipes.insert_one(recipe)
         flash("Recipe Successfully Added!")
         return redirect(url_for("index"))
 
-    # Get data from categories & recipes collection on Mongo DB
+    # Get data from categories collection on Mongo DB
     categories = mongo.db.categories.find()
-    recipes = mongo.db.recipes.find()
     return render_template(
-        "addRecipe.html", categories=categories,
-        recipes=recipes, page_title="Add Recipe")
+        "addRecipe.html", categories=categories, page_title="Add Recipe")
 
 
 if __name__ == "__main__":
