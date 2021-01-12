@@ -125,8 +125,10 @@ def myRecipes(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
+        recipes = mongo.db.recipes.find({"author_name": username})
         return render_template(
-            "myRecipes.html", username=username, page_title="My Recipes")
+            "myRecipes.html", username=username,
+            recipes=recipes, page_title="My Recipes")
 
     return redirect(url_for("login"))
 
