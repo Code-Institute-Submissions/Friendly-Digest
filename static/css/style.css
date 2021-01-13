@@ -363,6 +363,10 @@ textarea {
   border-top: none;
 }
 
+.card .card-content {
+    max-height: 7.3rem;
+}
+
 .card-title {
   text-shadow: 0.047rem 0.047rem #0F0901;
 }
