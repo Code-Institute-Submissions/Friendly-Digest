@@ -379,7 +379,7 @@ textarea {
 @media (max-width: 600px) {
 /* Card button positioning for mobile view */
 .btn-pos {
-    margin: 0 0 1rem 2rem;
+    margin: 1rem 0 0 2rem;
     }
 
 .mb-0 {
