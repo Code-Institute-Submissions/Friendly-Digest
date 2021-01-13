@@ -28,7 +28,7 @@
     <div class="row text mt-3">
 
         {% for recipes in recipes %}
-        <div class="col s12 m6">
+        <div class="col s12 xl6">
             <div class="card z-depth-3">
 
                 <!--Recipe Image-->
@@ -46,22 +46,32 @@
                 <div class="card-action">
 
                     <!--Edit Recipe-->
-                    <a href="#">
-                        <button type="button" class="btn card-btn left">
-                            <span>Edit</span>
-                        </button></a>
+                    <div class="row center-align">
 
-                    <!--Delete Recipe-->
-                    <a href="#">
-                        <button type="button" class="btn card-btn">
-                            <span>Delete</span>
-                        </button></a>
+                        <div class="col s12 m3 left">
+                            <a href="#">
+                                <button type="button" class="btn card-btn btn-pos flt-r">
+                                    <span>Edit</span>
+                                </button></a>
+                        </div>
 
-                    <!--View Recipe-->
-                    <a href="#">
-                        <button type="button" class="btn card-btn right">
-                            <span>Cook</span>
-                        </button></a>
+                        <!--Delete Recipe-->
+                        <div class="col s12 m3 left">
+                            <a href="#">
+                                <button type="button" class="btn card-btn btn-pos">
+                                    <span>Delete</span>
+                                </button></a>
+                        </div>
+
+                        <!--View Recipe-->
+                        <div class="col s12 m3 right mb-0">
+                            <a href="#">
+                                <button type="button" class="btn card-btn btn-pos mb-0 flt-l">
+                                    <span>Cook</span>
+                                </button></a>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
