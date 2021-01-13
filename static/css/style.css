@@ -74,6 +74,13 @@ h2 {
 
 /** Desktop Nav Bar **/
 
+/* Font size for larger devices */
+@media only screen and (min-width: 1200px) {
+    .nav-text{
+        font-size: 1.5rem
+    }
+}
+
 /* Removes shadow from bottom of navbar */
 .nav-extended {
   box-shadow: none;
@@ -126,6 +133,13 @@ nav ul a {
 }
 
 /** Mobile Nav Bar **/
+
+/* Font size for smaller devices */
+@media only screen and (max-width: 1024px) {
+    .nav-text{
+        font-size: 1rem
+    }
+}
 
 /* Mobile side nav color changed to green */
 .side-nav {
@@ -350,7 +364,6 @@ textarea {
 .card-title {
   text-shadow: 0.047rem 0.047rem #0F0901;
 }
-
 
 .card img {
     min-height: 26rem;
