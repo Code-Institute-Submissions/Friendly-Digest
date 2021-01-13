@@ -55,21 +55,21 @@
 
                 <!--Desktop Nav Bar Links-->
                 <ul class="hide-on-med-and-down" id="nav-tabs">
-                    <li><a href="{{ url_for('index') }}" class="flow-text hvr-bounce-to-bottom">About</a></li>
-                    <li><a class="dropdown-button flow-text hvr-bounce-to-bottom" href="#!"
+                    <li><a href="{{ url_for('index') }}" class="nav-text hvr-bounce-to-bottom">About</a></li>
+                    <li><a class="dropdown-button nav-text hvr-bounce-to-bottom" href="#!"
                             data-activates="dropdown-desktop">Recipes<i
                                 class="material-icons right">arrow_drop_down</i></a>
                     </li>
 
                     {% if session.user %}
                     <li><a href="{{ url_for('myRecipes', username=session['user']) }}"
-                            class="flow-text hvr-bounce-to-bottom">My Recipes</a></li>
-                    <li><a href="{{ url_for('addRecipe') }}" class="flow-text hvr-bounce-to-bottom">Add Recipe</a></li>
-                    <li><a href="{{ url_for('logout') }}" class="flow-text hvr-bounce-to-bottom">Log Out</a></li>
+                            class="nav-text hvr-bounce-to-bottom">My Recipes</a></li>
+                    <li><a href="{{ url_for('addRecipe') }}" class="nav-text hvr-bounce-to-bottom">Add Recipe</a></li>
+                    <li><a href="{{ url_for('logout') }}" class="nav-text hvr-bounce-to-bottom">Log Out</a></li>
 
                     {% else %}
-                    <li><a href="{{ url_for('login') }}" class="flow-text hvr-bounce-to-bottom">Login</a></li>
-                    <li><a href="{{ url_for('register') }}" class="flow-text hvr-bounce-to-bottom">Register</a></li>
+                    <li><a href="{{ url_for('login') }}" class="nav-text hvr-bounce-to-bottom">Login</a></li>
+                    <li><a href="{{ url_for('register') }}" class="nav-text hvr-bounce-to-bottom">Register</a></li>
                     {% endif %}
                 </ul>
 
