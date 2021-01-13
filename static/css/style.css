@@ -376,7 +376,7 @@ textarea {
     max-height: 26rem;
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 600px) {
 /* Card button positioning for mobile view */
 .btn-pos {
     margin: 0 0 1rem 2rem;
@@ -391,3 +391,13 @@ textarea {
 }
 }
 
+@media (min-width: 600px) {
+/* Float card buttons right and left for desktop & tablet view */
+    .flt-r{
+        float: right;
+    }
+
+    .flt-l{
+        float: left;
+    }
+}
