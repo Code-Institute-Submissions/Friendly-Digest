@@ -350,3 +350,9 @@ textarea {
 .card-title {
   text-shadow: 0.047rem 0.047rem #0F0901;
 }
+
+
+.card img {
+    min-height: 26rem;
+    max-height: 26rem;
+}
