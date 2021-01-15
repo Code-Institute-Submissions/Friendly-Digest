@@ -45,25 +45,25 @@
                 <!--Recipe Buttons-->
                 <div class="card-action">
 
-                    <!--Edit Recipe-->
+                    <!--View Recipe-->
                     <div class="row center-align d-flex">
 
                         <div class="col s12 m3">
-                            <a href="{{ url_for('editRecipe', recipes_id=recipes._id) }}">
+                            <a href="#">
                                 <button type="button" class="btn card-btn btn-pos">
                                     <span>Cook</span>
                                 </button></a>
                         </div>
 
-                        <!--Delete Recipe-->
+                        <!--Edit Recipe-->
                         <div class="col s12 m3">
-                            <a href="#">
+                            <a href="{{ url_for('editRecipe', recipes_id=recipes._id) }}">
                                 <button type="button" class="btn card-btn btn-pos">
                                     <span>Edit</span>
                                 </button></a>
                         </div>
 
-                        <!--View Recipe-->
+                        <!--Delete Recipe-->
                         <div class="col s12 m3 mb-0">
                             <a href="#">
                                 <button type="button" class="btn card-btn btn-pos">
