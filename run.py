@@ -176,7 +176,8 @@ def editRecipe(recipes_id):
     recipes = mongo.db.recipes.find_one({"_id": ObjectId(recipes_id)})
     categories = mongo.db.categories.find()
     return render_template(
-        "editRecipes.html", recipes=recipes, categories=categories)
+        "editRecipe.html", recipes=recipes,
+        categories=categories, page_title="Edit Recipe")
 
 
 if __name__ == "__main__":
