@@ -103,10 +103,10 @@
                             <i class="fas fa-user-graduate prefix form-icon"></i>
                             <select id="recipe_level" name="recipe_level" class="validate" required>
                                 <option value="" disabled selected>Choose Difficulty</option>
-                                {% for recipes in recipes %}
-                                <option value="{{ recipes.recipe_level }}"
-                                    data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/{{ recipes.recipe_level }}.png"
-                                    class="left circle">{{ recipes.recipe_level }}</option>
+                                {% for difficulty in difficulties %}
+                                <option value="{{ difficulty.recipe_level }}"
+                                    data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/{{ difficulty.recipe_level }}.png"
+                                    class="left circle">{{ difficulty.recipe_level }}</option>
                                 {% endfor %}
                             </select>
                         </div>
