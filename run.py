@@ -144,6 +144,7 @@ def logout():
 @app.route("/addRecipe", methods=["GET", "POST"])
 def addRecipe():
     if request.method == "POST":
+        ingredients = request.form.get("recipe_ingredients").splitlines()
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
@@ -153,7 +154,7 @@ def addRecipe():
             "recipe_calories": request.form.get("recipe_calories"),
             "recipe_servings": request.form.get("recipe_servings"),
             "recipe_level": request.form.get("recipe_level"),
-            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_ingredients": ingredients,
             "recipe_instructions": request.form.get("recipe_instructions"),
             "recipe_image": request.form.get("recipe_image"),
             "author_name": session["user"]
@@ -165,19 +166,21 @@ def addRecipe():
 
     # Get data from categories collection on Mongo DB
     categories = mongo.db.categories.find()
-    recipes = mongo.db.recipes.find().limit(3)
+    difficulties = mongo.db.difficulties.find()
     return render_template(
         "addRecipe.html", categories=categories,
-        recipes=recipes, page_title="Add Recipe")
+        difficulties=difficulties, page_title="Add Recipe")
 
 
-@app.route("/editRecipe/<recipes_id>", methods=["GET", "POST"])
-def editRecipe(recipes_id):
-    recipes = mongo.db.recipes.find_one({"_id": ObjectId(recipes_id)})
+@app.route("/editRecipe/<recipe_id>", methods=["GET", "POST"])
+def editRecipe(recipe_id):
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find()
+    difficulties = mongo.db.difficulties.find()
     return render_template(
-        "editRecipe.html", recipes=recipes,
-        categories=categories, page_title="Edit Recipe")
+        "editRecipe.html", recipe=recipe,
+        categories=categories, difficulties=difficulties,
+        page_title="Edit Recipe")
 
 
 if __name__ == "__main__":
