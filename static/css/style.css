@@ -70,6 +70,16 @@ h2 {
   color: #0F0901;
 }
 
+/* Reduce logo image size on larger screens */
+@media (min-width: 1200px) {
+header div img {
+  width: 75%;
+}
+.title-bg {
+    background-color: #92D68C;
+}
+}
+
 /*** NAVIGATION BAR STYLES ***/
 
 /** Desktop Nav Bar **/
