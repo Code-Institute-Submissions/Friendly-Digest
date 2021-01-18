@@ -408,3 +408,7 @@ textarea {
     width: 100%;
     }
 }
+
+.edit-btn {
+    width: 15rem;
+}

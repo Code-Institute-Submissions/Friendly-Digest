@@ -34,15 +34,15 @@
                         <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled>Choose Category</option>
                             {% for category in categories %}
-                                {% if category.category_name == recipe.category_name %}
-                                    <option value="{{ category.category_name }}" selected
-                                        data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609772608/Milestone%203/{{ category.category_name }}.jpg"
-                                        class="left circle">{{ category.category_name }}</option>
-                                {% else %}
-                                    <option value="{{ category.category_name }}"
-                                        data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609772608/Milestone%203/{{ category.category_name }}.jpg"
-                                        class="left circle">{{ category.category_name }}</option>
-                                {% endif %}
+                            {% if category.category_name == recipe.category_name %}
+                            <option value="{{ category.category_name }}" selected
+                                data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609772608/Milestone%203/{{ category.category_name }}.jpg"
+                                class="left circle">{{ category.category_name }}</option>
+                            {% else %}
+                            <option value="{{ category.category_name }}"
+                                data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609772608/Milestone%203/{{ category.category_name }}.jpg"
+                                class="left circle">{{ category.category_name }}</option>
+                            {% endif %}
                             {% endfor %}
                         </select>
                     </div>
@@ -62,7 +62,8 @@
                         <div class="input-field col s12">
                             <i class="fas fa-file-alt prefix form-icon"></i>
                             <textarea id="recipe_description" name="recipe_description" minlength="5" maxlength="70"
-                                class="materialize-textarea validate" required>{{ recipe.recipe_description }}</textarea>
+                                class="materialize-textarea validate"
+                                required>{{ recipe.recipe_description }}</textarea>
                             <label for="recipe_description">Recipe Description</label>
                         </div>
                     </div>
@@ -110,15 +111,15 @@
                             <select id="recipe_level" name="recipe_level" class="validate" required>
                                 <option value="" disabled>Choose Difficulty</option>
                                 {% for difficulty in difficulties %}
-                                    {% if difficulty.recipe_level == recipe.recipe_level %}
-                                        <option value="{{ difficulty.recipe_level }}" selected
-                                            data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/{{ difficulty.recipe_level }}.png"
-                                            class="left circle">{{ difficulty.recipe_level }}</option>
-                                    {% else %}
-                                        <option value="{{ difficulty.recipe_level }}"
-                                            data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/{{ difficulty.recipe_level }}.png"
-                                            class="left circle">{{ difficulty.recipe_level }}</option>
-                                    {% endif %}
+                                {% if difficulty.recipe_level == recipe.recipe_level %}
+                                <option value="{{ difficulty.recipe_level }}" selected
+                                    data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/{{ difficulty.recipe_level }}.png"
+                                    class="left circle">{{ difficulty.recipe_level }}</option>
+                                {% else %}
+                                <option value="{{ difficulty.recipe_level }}"
+                                    data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/{{ difficulty.recipe_level }}.png"
+                                    class="left circle">{{ difficulty.recipe_level }}</option>
+                                {% endif %}
                                 {% endfor %}
                             </select>
                         </div>
@@ -129,7 +130,8 @@
                         <div class="input-field col s12">
                             <i class="fas fa-file-alt prefix form-icon"></i>
                             <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="3" maxlength="750"
-                                class="materialize-textarea validate" required>{{ recipe.recipe_ingredients }}</textarea>
+                                class="materialize-textarea validate"
+                                required>{{ recipe.recipe_ingredients }}</textarea>
                             <label for="recipe_ingredients">Recipe Ingredients</label>
                         </div>
                     </div>
@@ -139,7 +141,8 @@
                         <div class="input-field col s12">
                             <i class="fas fa-file-alt prefix form-icon"></i>
                             <textarea id="recipe_instructions" name="recipe_instructions" minlength="3" maxlength="1500"
-                                class="materialize-textarea validate" required>{{ recipe.recipe_instructions }}</textarea>
+                                class="materialize-textarea validate"
+                                required>{{ recipe.recipe_instructions }}</textarea>
                             <label for="recipe_instructions">Recipe Instructions</label>
                         </div>
                     </div>
@@ -154,11 +157,24 @@
                         </div>
                     </div>
 
-                    <!--Edit Recipe Button -->
-                    <div class="row">
-                        <button type="submit" class="col s12 btn-large btn-text mt-3">
-                            <span class="submit-text">Edit Recipe</span><i class="fas fa-edit"></i>
-                        </button>
+                    <!--Form Buttons -->
+                    <div class="row center-align">
+
+                        <!--Edit Recipe Button-->
+                        <div class="col s12 l6">
+                            <button type="submit" class="btn-large btn-text mt-3 edit-btn">
+                                <span class="submit-text">Edit Recipe</span><i class="fas fa-edit"></i>
+                            </button>
+                        </div>
+
+                        <!--Cancel Editing Button-->
+                        <div class="col s12 l6">
+                            <a href="{{ url_for('myRecipes', username=session['user']) }}"
+                                class="btn-large btn-text mt-3 edit-btn">
+                                <span class="submit-text">Cancel</span><i class="fas fa-times-circle"></i>
+                            </a>
+                        </div>
+
                     </div>
 
                 </div>

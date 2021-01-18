@@ -127,7 +127,7 @@ def myRecipes(username):
     if session["user"]:
         recipes = mongo.db.recipes.find({"author_name": username})
         return render_template(
-            "myRecipes.html", username=username,
+            "myRecipes.html", username=session["user"],
             recipes=recipes, page_title="My Recipes")
 
     return redirect(url_for("login"))
@@ -162,7 +162,7 @@ def addRecipe():
         # Display flash message when recipe is added
         mongo.db.recipes.insert_one(recipe)
         flash("Recipe Successfully Added!")
-        return redirect(url_for("index"))
+        return redirect(url_for("myRecipes", username=session["user"]))
 
     # Get data from categories collection on Mongo DB
     categories = mongo.db.categories.find()
