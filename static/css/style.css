@@ -55,6 +55,10 @@ h2 {
     margin-top: 3rem;
 }
 
+.valign-wrapper{
+    flex-wrap: wrap;
+}
+
 /* Background color of register, login and add recipe forms */
 .form-card{
   background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(250,250,242,1), rgba(160, 219, 155, 1));
@@ -398,6 +402,11 @@ textarea {
 /* Card image height set for mobile view */
 .card img {
     min-height: 16rem;
+}
+
+/* Index info card content max height */
+.card .card-content{
+    max-height: none;
 }
 }
 
