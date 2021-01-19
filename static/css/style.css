@@ -186,7 +186,7 @@ nav ul a {
   color: #0F0901;
 }
 
-/** Fixed Action Button **/
+/** To Top Button **/
 
 .btn-large {
   background-color:#92D68C;
@@ -198,6 +198,14 @@ nav ul a {
 
 .btn-large:hover {
   background-color:#AEE6A9;
+}
+
+.to-top{
+    z-index: 100;
+	position: fixed;
+	bottom: 2.5rem;
+	right: 2.5rem;
+    display: none;
 }
 
 /** Social Links **/
