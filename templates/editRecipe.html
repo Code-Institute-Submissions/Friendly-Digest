@@ -178,16 +178,18 @@
                                 <div class="modal-content">
 
                                     <h4>Warning!</h4>
-                                    <p class="mt-3">Any unsaved changes made to your recipe will be lost. Are you sure you want
-                                        to return?
+                                    <p class="mt-3 center-align">
+                                        Any unsaved changes made to your recipe will be lost.
+                                        Are you sure you want to return?
                                     </p>
+
                                 </div>
 
+                                <!--Modal Buttons-->
                                 <div class="modal-footer">
-                                    <a href="#!"
-                                        class="modal-action modal-close btn-flat"><span>No</span></a>
+                                    <a href="#!" class="modal-action modal-close btn-flat mr-1"><span>No</span></a>
                                     <a href="{{ url_for('myRecipes', username=session['user']) }}"
-                                        class="modal-action modal-close btn-flat"><span>Yes</span></a>
+                                        class="modal-action modal-close btn-flat mr-1"><span>Yes</span></a>
                                 </div>
 
                             </div>
