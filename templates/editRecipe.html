@@ -171,15 +171,15 @@
                         <div class="col s12 l6">
 
                             <a class="btn-large btn-text mt-3 edit-btn modal-trigger" href="#modal-c"><span
-                                    class="submit-text">Cancel</span><i class="fas fa-times-circle"></i></a>
+                                    class="submit-text">Return</span><i class="fas fa-arrow-circle-left"></i></a>
 
                             <!--Cancel Edit Modal-->
                             <div id="modal-c" class="modal">
                                 <div class="modal-content">
 
                                     <h4>Warning!</h4>
-                                    <p class="mt-3">Any changes made to your recipe will be lost. Are you sure you want
-                                        to cancel?
+                                    <p class="mt-3">Any unsaved changes made to your recipe will be lost. Are you sure you want
+                                        to return?
                                     </p>
                                 </div>
 
@@ -189,7 +189,7 @@
                                     <a href="{{ url_for('myRecipes', username=session['user']) }}"
                                         class="modal-action modal-close btn-flat"><span>Yes</span></a>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
