@@ -169,14 +169,30 @@
 
                         <!--Cancel Editing Button-->
                         <div class="col s12 l6">
-                            <a href="{{ url_for('myRecipes', username=session['user']) }}"
-                                class="btn-large btn-text mt-3 edit-btn">
-                                <span class="submit-text">Cancel</span><i class="fas fa-times-circle"></i>
-                            </a>
+
+                            <a class="btn-large btn-text mt-3 edit-btn modal-trigger" href="#modal-c"><span
+                                    class="submit-text">Cancel</span><i class="fas fa-times-circle"></i></a>
+
+                            <!--Cancel Edit Modal-->
+                            <div id="modal-c" class="modal">
+                                <div class="modal-content">
+
+                                    <h4>Warning!</h4>
+                                    <p class="mt-3">Any changes made to your recipe will be lost. Are you sure you want
+                                        to cancel?
+                                    </p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <a href="#!"
+                                        class="modal-action modal-close btn-flat"><span>No</span></a>
+                                    <a href="{{ url_for('myRecipes', username=session['user']) }}"
+                                        class="modal-action modal-close btn-flat"><span>Yes</span></a>
+                                </div>
+                                
+                            </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </form>
