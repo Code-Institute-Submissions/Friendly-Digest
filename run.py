@@ -174,6 +174,26 @@ def addRecipe():
 
 @app.route("/editRecipe/<recipe_id>", methods=["GET", "POST"])
 def editRecipe(recipe_id):
+    if request.method == "POST":
+        ingredients = request.form.get("recipe_ingredients").splitlines()
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "recipe_name": request.form.get("recipe_name"),
+            "recipe_description": request.form.get("recipe_description"),
+            "recipe_prep_mins": request.form.get("recipe_prep_mins"),
+            "recipe_cook_mins": request.form.get("recipe_cook_mins"),
+            "recipe_calories": request.form.get("recipe_calories"),
+            "recipe_servings": request.form.get("recipe_servings"),
+            "recipe_level": request.form.get("recipe_level"),
+            "recipe_ingredients": ingredients,
+            "recipe_instructions": request.form.get("recipe_instructions"),
+            "recipe_image": request.form.get("recipe_image"),
+            "author_name": session["user"]
+        }
+        # Display flash message when recipe is added
+        mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
+        flash("Recipe Successfully Updated!")
+
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find()
     difficulties = mongo.db.difficulties.find()
