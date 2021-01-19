@@ -36,6 +36,21 @@ $(document).ready(function () {
     // Select dropdown box for Add Recipe form
     $('select').material_select();
 
+    // Return to top button scrolls to top
+    $("a[href='#top']").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 800);
+        return false;
+    });
+
+    // Return to top button appears when user scrolls down
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('.to-top').fadeIn();
+        } else {
+            $('.to-top').fadeOut();
+        }
+    });
+
     // Materialize form validation for select dropdown
     validateMaterializeSelect();
     function validateMaterializeSelect() {
