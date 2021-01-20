@@ -25,6 +25,23 @@ def index():
     return render_template("index.html")
 
 
+@ app.route('/searchRecipes', methods=["GET", "POST"])
+def search():
+    mongo.db.recipes.create_index([('$**', 'text')])
+    query = request.form.get("query")
+    results = mongo.db.recipes.find({"$text": {"$search": query}}).limit(10)
+    result_num = mongo.db.recipes.find({"$text": {"$search": query}}).count()
+    if result_num > 0:
+        return render_template(
+            "searchRecipes.html", results=results, query=query,
+            page_title="Search Results")
+    else:
+        flash("No Search Results Found. Please Try Again.")
+        return render_template(
+            "searchRecipes.html", results=results, query=query,
+            page_title="Search Results")
+
+
 # @app.route("/recipes", methods=["GET"])
 # def recipes():
 #     recipes = mongo.db.recipes.find()
