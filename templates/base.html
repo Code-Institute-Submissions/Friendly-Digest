@@ -159,7 +159,9 @@
                             <button type="submit" class="btn card-btn mr-1">
                                 <i class="fas fa-search"></i>
                             </button>
+                            {% block undo_button %}
                             <a href="#" onclick="history.go(-1)" class="btn card-btn"><i class="fas fa-undo"></i></a>
+                            {% endblock %}
                         </div>
                     </div>
                 </form>
