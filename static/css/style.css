@@ -59,6 +59,10 @@ h2 {
     margin-right: 1.5rem!important;
 }
 
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
 .valign-wrapper{
     flex-wrap: wrap;
 }
