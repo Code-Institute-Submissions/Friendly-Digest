@@ -36,10 +36,10 @@ def search():
             "searchRecipes.html", results=results, query=query,
             page_title="Search Results")
     else:
-        flash("No Search Results Found. Please Try Again.")
         return render_template(
-            "searchRecipes.html", results=results, query=query,
-            page_title="Search Results")
+            "searchRecipes.html", results=results,
+            query=query, page_title="Search Results",
+            message="No Search Results Found. Please Try Again.")
 
 
 # @app.route("/recipes", methods=["GET"])
