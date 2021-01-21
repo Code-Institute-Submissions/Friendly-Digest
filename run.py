@@ -42,12 +42,16 @@ def search():
             message="No Search Results Found. Please Try Again.")
 
 
-# @app.route("/recipes", methods=["GET"])
-# def recipes():
-#     recipes = mongo.db.recipes.find()
-#     page_title = "recipes"
-#     return render_template(
-#         "meat.html", recipes=recipes, page_title=page_title)
+@ app.route('/recipe/<recipe_id>')
+def recipe(recipe_id):
+    if session.get("user"):
+        username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    author = recipe.get("author_name")
+    return render_template(
+        "recipe.html", recipe=recipe,
+        author=author, username=username)
 
 
 @app.route("/meat", methods=["GET"])
