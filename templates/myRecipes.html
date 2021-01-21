@@ -19,7 +19,7 @@
     <div class="row text flow-text">
         <div class="col s12 mt-3">
             <p>Here is where all of your yummy recipes are saved! If this page is empty, don't worry, you can easily add
-                some recipes by clicking on the Add Recipes link above. You can edit and delete your recipes from this
+                some recipes by clicking on the Add Recipes links above or below. You can edit and delete your recipes from this
                 page, so if you make a mistake, don't worry!
             </p>
         </div>
@@ -30,6 +30,7 @@
 <div class="container">
     <div class="row text mt-3">
 
+        {% if recipes.count() > 0 %}
         {% for recipe in recipes %}
         <div class="col s12 xl6">
             <div class="card z-depth-3">
@@ -100,6 +101,11 @@
         {% endfor %}
     </div>
 </div>
+
+{% else %}
+<h5 class="center-align"><i class="fas fa-sad-tear form-icon"></i></h5>
+<h5 class="center-align mb-5">You don't currently have any recipes.</h5>
+{% endif %}
 
 <!--Add Recipe Button-->
 <div class="container">
