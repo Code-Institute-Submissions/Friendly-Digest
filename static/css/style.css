@@ -34,13 +34,13 @@ main {
 h1 {
   margin-bottom: -1rem;
   font-family: 'Calligraffitti', cursive;
-  font-size: 6.5vh;
+  font-size: 4rem;
 }
 
 h2 {
     margin-bottom: -1rem;
     font-family: 'Calligraffitti', cursive;
-    font-size: 3vh;
+    font-size: 2.2rem;
 }
 
 .text {
@@ -266,7 +266,7 @@ nav ul a {
 
 .tabs .tab a {
   color:#0F0901;
-  font-size: 1.5vh;
+  font-size: 0.8rem;
 }
 
 /* Tuna image size & positioning */
