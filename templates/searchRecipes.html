@@ -31,7 +31,7 @@
 
                 <!--View Recipe Button-->
                 <div class="card-action">
-                    <a href="#">
+                    <a href="{{ url_for('recipe', recipe_id=recipe._id) }}">
                         <button type="button" class="btn card-btn right">
                             <span>Cook</span>
                         </button></a>
