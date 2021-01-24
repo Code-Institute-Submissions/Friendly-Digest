@@ -42,16 +42,11 @@ def search():
             message="No Search Results Found. Please Try Again.")
 
 
-@ app.route('/recipe/<recipe_id>')
+@ app.route('/recipe/<recipe_id>', methods=["GET"])
 def recipe(recipe_id):
-    if session.get("user"):
-        username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    author = recipe.get("author_name")
     return render_template(
-        "recipe.html", recipe=recipe,
-        author=author, username=username)
+        "recipe.html", recipe=recipe)
 
 
 @app.route("/meat", methods=["GET"])
@@ -166,6 +161,7 @@ def logout():
 def addRecipe():
     if request.method == "POST":
         ingredients = request.form.get("recipe_ingredients").splitlines()
+        instructions = request.form.get("recipe_instructions").splitlines()
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
@@ -176,7 +172,7 @@ def addRecipe():
             "recipe_servings": request.form.get("recipe_servings"),
             "recipe_level": request.form.get("recipe_level"),
             "recipe_ingredients": ingredients,
-            "recipe_instructions": request.form.get("recipe_instructions"),
+            "recipe_instructions": instructions,
             "recipe_image": request.form.get("recipe_image"),
             "author_name": session["user"]
         }
