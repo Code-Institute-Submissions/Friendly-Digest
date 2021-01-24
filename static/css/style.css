@@ -428,7 +428,7 @@ textarea {
 
 @media (min-width: 600px) {
 /* Display card buttons in middle of div */
-.d-flex {
+.d-flex-w {
     display: flex;
     width: 100%;
     }
@@ -436,4 +436,9 @@ textarea {
 
 .edit-btn {
     width: 15rem;
+}
+
+/* List item text positioning */
+.d-flex {
+    display: flex;
 }
