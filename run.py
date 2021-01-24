@@ -193,6 +193,7 @@ def addRecipe():
 def editRecipe(recipe_id):
     if request.method == "POST":
         ingredients = request.form.get("recipe_ingredients").splitlines()
+        instructions = request.form.get("recipe_instructions").splitlines()
         submit = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
@@ -203,7 +204,7 @@ def editRecipe(recipe_id):
             "recipe_servings": request.form.get("recipe_servings"),
             "recipe_level": request.form.get("recipe_level"),
             "recipe_ingredients": ingredients,
-            "recipe_instructions": request.form.get("recipe_instructions"),
+            "recipe_instructions": instructions,
             "recipe_image": request.form.get("recipe_image"),
             "author_name": session["user"]
         }
