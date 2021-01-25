@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 
+/*-------------------------------------------------*/
 /*** UNIVERSAL STYLES THAT EFFECT WHOLE WEBSITE ***/
+/*-------------------------------------------------*/
 
 body, html {
   background-color: #FAFAF2;
@@ -34,7 +36,7 @@ main {
 h1 {
   margin-bottom: -1rem;
   font-family: 'Calligraffitti', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -67,6 +69,7 @@ h2 {
     margin-bottom: 5rem;
 }
 
+/* Allows valign-wrapper to ignore columns */
 .valign-wrapper{
     flex-wrap: wrap;
 }
@@ -86,26 +89,11 @@ h2 {
   color: #0F0901;
 }
 
-/* Reduce logo image size on larger screens */
-@media (min-width: 1200px) {
-header div img {
-  width: 75%;
-}
-.title-bg {
-    background-color: #92D68C;
-}
-}
-
+/*----------------------------*/
 /*** NAVIGATION BAR STYLES ***/
+/*---------------------------*/
 
-/** Desktop Nav Bar **/
-
-/* Font size for larger devices */
-@media only screen and (min-width: 1200px) {
-    .nav-text{
-        font-size: 1.5rem
-    }
-}
+/** DESKTOP NAV BAR **/
 
 /* Removes shadow from bottom of navbar */
 .nav-extended {
@@ -158,14 +146,7 @@ nav ul a {
   background-color: #AEE6A9;
 }
 
-/** Mobile Nav Bar **/
-
-/* Font size for smaller devices */
-@media only screen and (max-width: 1024px) {
-    .nav-text{
-        font-size: 1rem
-    }
-}
+/** MOBILE NAV BAR **/
 
 /* Mobile side nav color changed to green */
 .side-nav {
@@ -183,8 +164,9 @@ nav ul a {
     width: 6rem;
     margin-top: 2rem;
 }
-
+/*--------------------*/
 /*** FOOTER STYLES ***/
+/*-------------------*/
 
 .page-footer {
   background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
@@ -229,7 +211,9 @@ nav ul a {
   background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(146, 214, 140, 1));
 }
 
+/*---------------------------*/
 /*** REGISTER PAGE STYLES ***/
+/*--------------------------*/
 
 /* Font Awesome icons retain their green color when active */
 .input-field .prefix.active {
@@ -240,7 +224,9 @@ nav ul a {
     background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(160, 219, 155, 1));
 }
 
+/*-------------------------*/
 /*** ABOUT PAGE STYLES ***/
+/*------------------------*/
 
 /* Carousel size */
 .carousel {
@@ -280,7 +266,7 @@ nav ul a {
   margin: auto;
 }
 
-/** Success stories **/
+/** SUCCESS STORIES **/
 
 /* Size & positioning */
 .success-img {
@@ -289,25 +275,6 @@ nav ul a {
   display: block;
   margin: auto;
   cursor: pointer;
-}
-
-/* Adds 5rem bottom margin to success images when above 600px */
-@media only screen and (min-width: 600px) {
-  .success-img {
-    margin-bottom: 5rem;
-  }
-}
-
-
-@media only screen and (max-width: 600px) {
-    /* Adds bottom margin to two top images in mobile view */
-  #success-stories > div:nth-child(1), div:nth-child(3) {
-    margin-bottom: 2rem;
-  }
-    /* Disabled tooltip whilst in mobile view */
-  .material-tooltip {
-    display: none;
-  }
 }
 
 /* Background color of success' tooltip */
@@ -341,7 +308,9 @@ nav ul a {
   background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
 }
 
+/*-------------------------------*/
 /*** ADD RECIPES PAGE STYLES ***/
+/*------------------------------*/
 
 /* Background color of form dropdown list */
 .select-dropdown {
@@ -373,7 +342,9 @@ textarea {
     line-height: 1rem;
 }
 
+/*----------------------------*/
 /*** CATEGORY PAGE STYLES ***/
+/*---------------------------*/
 
 .card-btn {
   background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(146, 214, 140, 1));
@@ -410,6 +381,96 @@ textarea {
     max-height: 26rem;
 }
 
+.edit-btn {
+    width: 15rem;
+}
+
+/*--------------------------*/
+/*** RECIPE PAGE STYLES ***/
+/*-------------------------*/
+
+/* List item text positioning */
+.d-flex {
+    display: flex;
+}
+
+/* Collapsible header styles */
+.collapsible-header {
+    font-size: 0.85rem;
+    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(174, 230, 169, 1));
+    border-bottom: none;
+}
+/* Collapsible body styles */
+.collapsible-body {
+  font-size: 0.85rem;
+  background-color: #AEE6A9;
+}
+
+/*---------------------*/
+/*** MEDIA QUERIES ***/
+/*--------------------*/
+
+/** UNIVERSAL STYLES **/
+
+/* Reduce logo image size on larger screens */
+@media (min-width: 1200px) {
+header div img {
+  width: 75%;
+}
+.title-bg {
+    background-color: #92D68C;
+}
+}
+
+/** NAV BAR STYLES **/
+
+/* Font size for larger devices */
+@media (min-width: 1200px) {
+    .nav-text{
+        font-size: 1.5rem
+    }
+}
+
+/* Font size for smaller devices */
+@media (max-width: 1024px) {
+    .nav-text{
+        font-size: 1rem
+    }
+}
+
+/** ABOUT STYLES **/
+
+/* Adds 5rem bottom margin to success images when above 600px */
+@media (min-width: 600px) {
+  .success-img {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+    /* Adds bottom margin to two top images in mobile view */
+  #success-stories > div:nth-child(1), div:nth-child(3) {
+    margin-bottom: 2rem;
+  }
+    /* Disabled tooltip whilst in mobile view */
+  .material-tooltip {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+    /* Adds margin top to stop info card from touching header */
+  .mt-6 {
+    margin-top: 6rem;
+  }
+  /* Adds margin to stop card content leaking into card tabs */
+  .mb-1 {
+    margin-bottom: 1rem;
+}
+}
+
+/** CATEGORY STYLES **/
+
 @media (max-width: 600px) {
 /* Card button positioning for mobile view */
 .btn-pos {
@@ -431,33 +492,9 @@ textarea {
 }
 
 @media (min-width: 600px) {
-/* Display card buttons in middle of div */
+/* Display Card buttons in middle of div */
 .d-flex-w {
     display: flex;
     width: 100%;
     }
 }
-
-.edit-btn {
-    width: 15rem;
-}
-
-/* RECIPE PAGE STYLES */
-
-/* List item text positioning */
-.d-flex {
-    display: flex;
-}
-
-/* Collapsible header styles */
-.collapsible-header {
-    font-size: 0.85rem;
-    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(174, 230, 169, 1));
-    border-bottom: none;
-}
-/* Collapsible body styles */
-.collapsible-body {
-  font-size: 0.85rem;
-  background-color: #AEE6A9;
-}
-
