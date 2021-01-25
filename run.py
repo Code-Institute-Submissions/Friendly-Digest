@@ -160,8 +160,6 @@ def logout():
 @app.route("/addRecipe", methods=["GET", "POST"])
 def addRecipe():
     if request.method == "POST":
-        ingredients = request.form.get("recipe_ingredients").splitlines()
-        instructions = request.form.get("recipe_instructions").splitlines()
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
@@ -171,8 +169,8 @@ def addRecipe():
             "recipe_calories": request.form.get("recipe_calories"),
             "recipe_servings": request.form.get("recipe_servings"),
             "recipe_level": request.form.get("recipe_level"),
-            "recipe_ingredients": ingredients,
-            "recipe_instructions": instructions,
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_instructions": request.form.get("recipe_instructions"),
             "recipe_image": request.form.get("recipe_image"),
             "author_name": session["user"]
         }
