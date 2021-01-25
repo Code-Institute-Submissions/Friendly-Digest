@@ -90,7 +90,7 @@
 <!--Recipe Ingredients List-->
 <div class="container">
     <div class="row">
-        <div class="col s12 m8 push-m4">
+        <div class="col s12 m6 l4 push-m4 push-l4 mt-3">
             <ul>
                 {% for ingredient in recipe.recipe_ingredients.split(",") %}
                     <li class="d-flex"><i class="fas fa-circle form-icon mr-1"></i>{{ ingredient }}</li><br>
@@ -112,7 +112,7 @@
 <!--Recipe Instructions-->
 <div class="container">
     <div class="row">
-        <div class="col s12">
+        <div class="col s12 m6 l4 push-m4 push-l4 mt-3">
             <ul>
                 {% for instruction in recipe.recipe_instructions.split(".") %}
                     <li class="d-flex"><i class="fas fa-circle form-icon mr-1"></i>{{ instruction }}</li><br>
