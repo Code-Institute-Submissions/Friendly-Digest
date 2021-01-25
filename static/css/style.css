@@ -43,6 +43,10 @@ h2 {
     font-size: 2.2rem;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
+
 .text {
     text-align: justify;
 }
@@ -438,7 +442,22 @@ textarea {
     width: 15rem;
 }
 
+/* RECIPE PAGE STYLES */
+
 /* List item text positioning */
 .d-flex {
     display: flex;
 }
+
+/* Collapsible header styles */
+.collapsible-header {
+    font-size: 0.85rem;
+    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(174, 230, 169, 1));
+    border-bottom: none;
+}
+/* Collapsible body styles */
+.collapsible-body {
+  font-size: 0.85rem;
+  background-color: #AEE6A9;
+}
+
