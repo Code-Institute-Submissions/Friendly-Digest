@@ -115,7 +115,9 @@
         <div class="col s12 m6 l4 push-m4 push-l4 mt-3">
             <ul>
                 {% for instruction in recipe.recipe_instructions.split(".") %}
-                    <li class="d-flex"><i class="fas fa-circle form-icon mr-1"></i>{{ instruction }}</li><br>
+                    {% if instruction %}
+                        <li class="d-flex"><i class="fas fa-circle form-icon mr-1"></i>{{ instruction }}</li><br>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>
