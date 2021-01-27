@@ -4,6 +4,7 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
@@ -18,6 +19,17 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 
 mongo = PyMongo(app)
+
+
+def login_required(f):
+    @wraps(f)
+    def wrap(*args, **kwargs):
+        if 'user' in session:
+            return f(*args, **kwargs)
+        else:
+            flash('You need to login to see this page.')
+            return redirect(url_for("login"))
+    return wrap
 
 
 @app.route("/")
@@ -135,6 +147,7 @@ def register():
 
 
 @app.route("/myRecipes/<username>", methods=["GET", "POST"])
+@login_required
 def myRecipes(username):
     # Grab the session user's username from DB
     username = mongo.db.users.find_one(
@@ -158,6 +171,7 @@ def logout():
 
 
 @app.route("/addRecipe", methods=["GET", "POST"])
+@login_required
 def addRecipe():
     if request.method == "POST":
         recipe = {
@@ -188,6 +202,7 @@ def addRecipe():
 
 
 @app.route("/editRecipe/<recipe_id>", methods=["GET", "POST"])
+@login_required
 def editRecipe(recipe_id):
     if request.method == "POST":
         submit = {
