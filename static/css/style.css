@@ -437,33 +437,34 @@ header div img {
 }
 }
 
-/* Adds 5rem bottom margin to success images when above 600px */
+
 @media (min-width: 600px) {
+/* Adds margin to success images when above 600px */
   .success-img {
     margin-bottom: 5rem;
+  }
+/* Adds margin to stop info card from touching header */
+  .mt-6 {
+    margin-top: 6rem;
   }
 }
 
 @media (max-width: 600px) {
-    /* Adds bottom margin to two top images in mobile view */
+/* Adds margin to two top images in mobile view */
   #success-stories > div:nth-child(1), div:nth-child(3) {
     margin-bottom: 2rem;
   }
-    /* Disabled tooltip whilst in mobile view */
+/* Disabled tooltip whilst in mobile view */
   .material-tooltip {
     display: none;
   }
 }
 
 @media (min-width: 1200px) {
-    /* Adds margin top to stop info card from touching header */
-  .mt-6 {
-    margin-top: 6rem;
-  }
   /* Adds margin to stop card content leaking into card tabs */
   .mb-1 {
     margin-bottom: 1rem;
-}
+  }
 }
 
 /** CATEGORY STYLES **/
