@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% block undo_button %}
+{% endblock %}
+
+<!--Meat Page Main Heading-->
+<div class="container">
+    <div class="row">
+        <div class="col s12 center-align">
+            <h1>{{ page_title }}</h1>
+        </div>
+    </div>
+</div>
+
+<!-- Category Welcoming Text -->
+<!-- <div class="container">
+    <div class="row flow-text">
+        <div class="col s12">
+
+            <p>Welcome to a page chock-full of delicious recipes containing meat which are sure to tickle your taste
+                buds! You probably won't find any dishes containing red meat because red meat isn't very nice for our
+                digestion. Dive in and remember that you can add your own delicious recipes to this list by creating an
+                account and following our simple Add Recipe process. Enjoy!
+            </p>
+
+            <p>Welcome to a page chock-full of delicious recipes containing meat which are sure to tickle your taste
+                buds! You probably won't find any dishes containing red meat because red meat isn't very nice for our
+                digestion. Dive in and remember that you can add your own delicious recipes to this list by creating an
+                account and following our simple Add Recipe process. Enjoy!
+            </p>
+
+            <p>Welcome to a page chock-full of delicious recipes containing Fish which are sure to tickle your
+                taste buds! Fish is among the healthiest foods on the planet. It's loaded with important nutrients, such
+                as protein and vitamin D. Fish is also a great source of omega-3 fatty acids, which are
+                incredibly important for your body and brain. Dive in and remember that you can add your own delicious
+                recipes to this list by creating an account and following our simple Add Recipe process. Enjoy!
+            </p>
+
+            <p>Eating vegetables every day is important for your health. They provide essential vitamins,
+                minerals, and other nutrients, such as antioxidants and fibre. They're an excellent source of dietary
+                fibre, which can help to maintain a healthy gut and prevent constipation and other digestion problems.
+                Dive in to these delicious recipes and remember that you can add your own delicious recipes to this list
+                by creating an account and following our simple Add Recipe process. Enjoy!
+            </p>
+
+            <p>Welcome to a page chock-full of delicious recipes for desserts! Eating desserts whilst battling a
+                digestive disorder isn't an easy task, but it's not impossible! We have an extensive array of yummy puds
+                for you to sink your teeth into which are free from all the nasties! Dive in and remember that you can add
+                your own delicious recipes to this list by creating an account and following our simple Add Recipe
+                process. Enjoy!
+            </p> 
+
+        </div>
+    </div>
+</div> -->
+
+<!--Category Page Recipe Card-->
+<div class="container">
+    <div class="row mt-3">
+
+        {% for recipe in recipes %}
+        <div class="col s12 xl6">
+            <div class="card z-depth-3">
+
+                <!--Recipe Image-->
+                <div class="card-image">
+                    <img src="{{ recipe.recipe_image }}">
+                </div>
+
+                <!--Recipe Name & Description-->
+                <div class="card-content">
+                    <span class="card-title">{{ recipe.recipe_name }}</span>
+                    <p>{{ recipe.recipe_description }}</p>
+                </div>
+
+                <!--View Recipe Button-->
+                <div class="card-action">
+                    <a href="{{ url_for('recipe', recipe_id=recipe._id) }}">
+                        <button type="button" class="btn card-btn right">
+                            <span>Cook</span>
+                        </button></a>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
