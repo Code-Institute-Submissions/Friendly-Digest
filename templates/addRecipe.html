@@ -15,8 +15,8 @@
 <!--Inspirational Text-->
 <div class="container">
     <div class="row">
-        <div class="col s12 text mt-3 flow-text">
-            <p class="center-align">Please fill out this form to the best of your ability so that you can share your
+        <div class="col s12 flow-text mt-3">
+            <p>Please fill out this form to the best of your ability so that you can share your
                 tasty recipe with the world. We can't wait to try it!
             </p>
         </div>
@@ -32,7 +32,7 @@
 
                     <!--Category Name-->
                     <div class="input-field col s12">
-                        <i class="fas fa-list-alt prefix form-icon"></i>
+                        <i class="fas fa-list-alt prefix icon-color"></i>
                         <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled selected>Choose Category</option>
                             {% for category in categories %}
@@ -46,7 +46,7 @@
                     <!--Recipe Name-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-pencil-alt prefix form-icon"></i>
+                            <i class="fas fa-pencil-alt prefix icon-color"></i>
                             <input id="recipe_name" name="recipe_name" type="text" minlength="5" maxlength="30"
                                 class="validate" required>
                             <label for="recipe_name">Recipe Name</label>
@@ -56,7 +56,7 @@
                     <!--Recipe Description-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-file-alt prefix form-icon"></i>
+                            <i class="fas fa-file-alt prefix icon-color"></i>
                             <textarea id="recipe_description" name="recipe_description" minlength="5" maxlength="70"
                                 class="materialize-textarea validate" required></textarea>
                             <label for="recipe_description">Recipe Description</label>
@@ -66,7 +66,7 @@
                     <!--Prep Time-->
                     <div class="row">
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-clock prefix form-icon"></i>
+                            <i class="fas fa-clock prefix icon-color"></i>
                             <input id="recipe_prep_mins" name="recipe_prep_mins" type="number" min="1" max="999"
                                 class="validate" required>
                             <label for="recipe_prep_mins">Prep Time (mins)</label>
@@ -74,7 +74,7 @@
 
                         <!--Cook Time-->
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-clock prefix form-icon"></i>
+                            <i class="fas fa-clock prefix icon-color"></i>
                             <input id="recipe_cook_mins" name="recipe_cook_mins" type="number" min="1" max="999"
                                 class="validate" required>
                             <label for="recipe_cook_mins">Cook Time (mins)</label>
@@ -84,7 +84,7 @@
                     <!--Calories-->
                     <div class="row">
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-weight prefix form-icon"></i>
+                            <i class="fas fa-weight prefix icon-color"></i>
                             <input id="recipe_calories" name="recipe_calories" type="number" min="1" max="9999"
                                 class="validate" required>
                             <label for="recipe_calories">Calories</label>
@@ -92,7 +92,7 @@
 
                         <!--Servings-->
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-users prefix form-icon"></i>
+                            <i class="fas fa-users prefix icon-color"></i>
                             <input id="recipe_servings" name="recipe_servings" type="number" min="1" max="99"
                                 class="validate" required>
                             <label for="recipe_servings">Servings</label>
@@ -102,7 +102,7 @@
                     <!--Difficulty-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-user-graduate prefix form-icon"></i>
+                            <i class="fas fa-user-graduate prefix icon-color"></i>
                             <select id="recipe_level" name="recipe_level" class="validate" required>
                                 <option value="" disabled selected>Choose Difficulty</option>
                                 {% for difficulty in difficulties %}
@@ -117,7 +117,7 @@
                     <!--Recipe Ingredients-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-file-alt prefix form-icon"></i>
+                            <i class="fas fa-file-alt prefix icon-color"></i>
                             <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="3" maxlength="750"
                                 class="materialize-textarea validate" required></textarea>
                             <label for="recipe_ingredients">Recipe Ingredients</label>
@@ -127,7 +127,7 @@
                     <!--Recipe Instructions-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-file-alt prefix form-icon"></i>
+                            <i class="fas fa-file-alt prefix icon-color"></i>
                             <textarea id="recipe_instructions" name="recipe_instructions" minlength="3" maxlength="1500"
                                 class="materialize-textarea validate" required></textarea>
                             <label for="recipe_instructions">Recipe Instructions</label>
@@ -137,7 +137,7 @@
                     <!--Recipe Image-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-image prefix form-icon"></i>
+                            <i class="fas fa-image prefix icon-color"></i>
                             <input id="recipe_image" name="recipe_image" type="text" minlength="5" maxlength="1000"
                                 class="validate" required>
                             <label for="recipe_image">Paste Image URL</label>

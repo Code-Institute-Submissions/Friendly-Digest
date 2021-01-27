@@ -6,7 +6,7 @@
 <!--Recipe Name Heading-->
 <div class="container">
     <div class="row">
-        <div class="col s12 center-align mt-3 capitalize">
+        <div class="col s12 center-align mt-3">
             <h1>{{ recipe.recipe_name }}</h1>
         </div>
     </div>
@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col s12 center-align">
             <img class="responsive-img mt-3 z-depth-4" src="{{ recipe.recipe_image }}" alt="Recipe Picture">
-            <p class="mt-3">{{ recipe.recipe_description }}</p>
+            <p class="center-align mt-3">{{ recipe.recipe_description }}</p>
         </div>
     </div>
 </div>
@@ -32,19 +32,19 @@
 
                 <li>
                     <!--Recipe Author Name-->
-                    <div class="collapsible-header"><i class="fas fa-user form-icon"></i>Author</div>
+                    <div class="collapsible-header"><i class="fas fa-user icon-color"></i>Author</div>
                     <div class="collapsible-body center-align"><span>{{ recipe.author_name }}</span></div>
                 </li>
 
                 <li>
                     <!--Recipe Preparation Minutes-->
-                    <div class="collapsible-header"><i class="fas fa-clock form-icon"></i>Prep (Mins)</div>
+                    <div class="collapsible-header"><i class="fas fa-clock icon-color"></i>Prep (Mins)</div>
                     <div class="collapsible-body center-align"><span>{{ recipe.recipe_prep_mins }}</span></div>
                 </li>
 
                 <li>
                     <!--Recipe Total Servings-->
-                    <div class="collapsible-header"><i class="fas fa-users form-icon"></i>Servings</div>
+                    <div class="collapsible-header"><i class="fas fa-users icon-color"></i>Servings</div>
                     <div class="collapsible-body center-align"><span>{{ recipe.recipe_servings }}</span></div>
                 </li>
             </ul>
@@ -56,19 +56,19 @@
 
                 <li>
                     <!--Recipe Difficulty-->
-                    <div class="collapsible-header"><i class="fas fa-graduation-cap form-icon"></i>Level</div>
+                    <div class="collapsible-header"><i class="fas fa-graduation-cap icon-color"></i>Level</div>
                     <div class="collapsible-body center-align"><span>{{ recipe.recipe_level }}</span></div>
                 </li>
 
                 <li>
                     <!--Recipe Cooking Minutes-->
-                    <div class="collapsible-header"><i class="fas fa-clock form-icon"></i>Cook (Mins)</div>
+                    <div class="collapsible-header"><i class="fas fa-clock icon-color"></i>Cook (Mins)</div>
                     <div class="collapsible-body center-align"><span>{{ recipe.recipe_cook_mins }}</span></div>
                 </li>
 
                 <li>
                     <!--Recipe Total Calories-->
-                    <div class="collapsible-header"><i class="fas fa-weight prefix form-icon"></i>Calories</div>
+                    <div class="collapsible-header"><i class="fas fa-weight prefix icon-color"></i>Calories</div>
                     <div class="collapsible-body center-align"><span>{{ recipe.recipe_calories }}</span></div>
                 </li>
             </ul>
@@ -89,10 +89,10 @@
 <!--Recipe Ingredients List-->
 <div class="container">
     <div class="row">
-        <div class="col s12 m6 l4 push-m4 push-l4 mt-3">
+        <div class="col s12 m6 l4 push-m4 push-l4">
             <ul>
                 {% for ingredient in recipe.recipe_ingredients.split(",") %}
-                    <li class="d-flex"><i class="fas fa-circle form-icon mr-1"></i>{{ ingredient }}</li><br>
+                    <li class="d-flex"><i class="fas fa-circle icon-color mr-1"></i>{{ ingredient }}</li><br>
                 {% endfor %}
             </ul>
         </div>
@@ -111,11 +111,11 @@
 <!--Recipe Instructions-->
 <div class="container">
     <div class="row">
-        <div class="col s12 m6 l4 push-m4 push-l4 mt-3">
+        <div class="col s12 m6 l4 push-m4 push-l4">
             <ul>
                 {% for instruction in recipe.recipe_instructions.split(".") %}
                     {% if instruction %}
-                        <li class="d-flex"><i class="fas fa-circle form-icon mr-1"></i>{{ instruction }}</li><br>
+                        <li class="d-flex"><i class="fas fa-circle icon-color mr-1"></i>{{ instruction }}</li><br>
                     {% endif %}
                 {% endfor %}
             </ul>

@@ -15,8 +15,8 @@
 <!--Inspirational Text-->
 <div class="container">
     <div class="row">
-        <div class="col s12 text mt-3 flow-text">
-            <p class="center-align">Made a mistake? Improved your masterpiece? No problem! Feel free to fine-tune that
+        <div class="col s12 flow-text mt-3">
+            <p>Made a mistake? Improved your masterpiece? No problem! Feel free to fine-tune that
                 beauty below, we're dying to get stuck in!
             </p>
         </div>
@@ -32,7 +32,7 @@
 
                     <!--Category Name-->
                     <div class="input-field col s12">
-                        <i class="fas fa-list-alt prefix form-icon"></i>
+                        <i class="fas fa-list-alt prefix icon-color"></i>
                         <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled>Choose Category</option>
                             {% for category in categories %}
@@ -52,7 +52,7 @@
                     <!--Recipe Name-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-pencil-alt prefix form-icon"></i>
+                            <i class="fas fa-pencil-alt prefix icon-color"></i>
                             <input id="recipe_name" name="recipe_name" type="text" minlength="5" maxlength="30"
                                 value="{{ recipe.recipe_name }}" class="validate" required>
                             <label for="recipe_name">Recipe Name</label>
@@ -62,7 +62,7 @@
                     <!--Recipe Description-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-file-alt prefix form-icon"></i>
+                            <i class="fas fa-file-alt prefix icon-color"></i>
                             <textarea id="recipe_description" name="recipe_description" minlength="5" maxlength="70"
                                 class="materialize-textarea validate"
                                 required>{{ recipe.recipe_description }}</textarea>
@@ -73,7 +73,7 @@
                     <!--Prep Time-->
                     <div class="row">
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-clock prefix form-icon"></i>
+                            <i class="fas fa-clock prefix icon-color"></i>
                             <input id="recipe_prep_mins" name="recipe_prep_mins" type="number" min="1" max="999"
                                 value="{{ recipe.recipe_prep_mins }}" class="validate" required>
                             <label for="recipe_prep_mins">Prep Time (mins)</label>
@@ -81,7 +81,7 @@
 
                         <!--Cook Time-->
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-clock prefix form-icon"></i>
+                            <i class="fas fa-clock prefix icon-color"></i>
                             <input id="recipe_cook_mins" name="recipe_cook_mins" type="number" min="1" max="999"
                                 value="{{ recipe.recipe_cook_mins }}" class="validate" required>
                             <label for="recipe_cook_mins">Cook Time (mins)</label>
@@ -91,7 +91,7 @@
                     <!--Calories-->
                     <div class="row">
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-weight prefix form-icon"></i>
+                            <i class="fas fa-weight prefix icon-color"></i>
                             <input id="recipe_calories" name="recipe_calories" type="number" min="1" max="9999"
                                 value="{{ recipe.recipe_calories }}" class="validate" required>
                             <label for="recipe_calories">Calories</label>
@@ -99,7 +99,7 @@
 
                         <!--Servings-->
                         <div class="input-field col s12 m6">
-                            <i class="fas fa-users prefix form-icon"></i>
+                            <i class="fas fa-users prefix icon-color"></i>
                             <input id="recipe_servings" name="recipe_servings" type="number" min="1" max="99"
                                 value="{{ recipe.recipe_servings }}" class="validate" required>
                             <label for="recipe_servings">Servings</label>
@@ -109,7 +109,7 @@
                     <!--Difficulty-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-user-graduate prefix form-icon"></i>
+                            <i class="fas fa-user-graduate prefix icon-color"></i>
                             <select id="recipe_level" name="recipe_level" class="validate" required>
                                 <option value="" disabled>Choose Difficulty</option>
                                 {% for difficulty in difficulties %}
@@ -130,7 +130,7 @@
                     <!--Recipe Ingredients-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-file-alt prefix form-icon"></i>
+                            <i class="fas fa-file-alt prefix icon-color"></i>
                             <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="3" maxlength="750"
                                 class="materialize-textarea validate"
                                 required>{{ recipe.recipe_ingredients }}</textarea>
@@ -141,7 +141,7 @@
                     <!--Recipe Instructions-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-file-alt prefix form-icon"></i>
+                            <i class="fas fa-file-alt prefix icon-color"></i>
                             <textarea id="recipe_instructions" name="recipe_instructions" minlength="3" maxlength="1500"
                                 class="materialize-textarea validate"
                                 required>{{ recipe.recipe_instructions }}</textarea>
@@ -152,7 +152,7 @@
                     <!--Recipe Image-->
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-image prefix form-icon"></i>
+                            <i class="fas fa-image prefix icon-color"></i>
                             <input id="recipe_image" name="recipe_image" type="text" minlength="5" maxlength="1000"
                                 value="{{ recipe.recipe_image }}" class="validate" required>
                             <label for="recipe_image">Paste Image URL</label>
