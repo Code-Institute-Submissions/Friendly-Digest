@@ -24,13 +24,13 @@ main {
 
 /* Joins logo image and navbar seamlessly */
 .container-fluid {
-  line-height: 0;
+    line-height: 0;
 }
 
 h1 {
-  font-family: 'Calligraffitti', cursive;
-  font-size: 3rem;
-  text-transform: capitalize;
+    font-family: 'Calligraffitti', cursive;
+    text-transform: capitalize;
+    font-size: 3rem;
 }
 
 h2 {
@@ -59,207 +59,59 @@ p {
     flex-wrap: wrap;
 }
 
-/* Background color of register, login and add recipe forms */
-.form-card{
-  background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(250,250,242,1), rgba(160, 219, 155, 1));
-}
-
 /* Font Awesome icons changed to green color */
 .icon-color {
-  color: #92D68C;
+    color: #92D68C;
 }
 
-/* Text within buttons changed to black */
-.btn-text {
-  color: #0F0901;
-}
+/* CARD STYLES */
 
-/*----------------------------*/
-/*** NAVIGATION BAR STYLES ***/
-/*---------------------------*/
-
-/** DESKTOP NAV BAR **/
-
-/* Removes shadow from bottom of navbar */
-.nav-extended {
-  box-shadow: none;
-}
-
-/* Background color of navbar set as gradient */
-.nav-wrapper {
-  background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
-}
-
-/* Centers nav tabs */
-#nav-tabs {
-  display: flex;
-  justify-content: center;
-}
-
-/* Changes nav tab font color and pushes tabs further apart */
-nav ul a {
-  color: #0F0901;
-  padding: 0 4rem;
-}
-
-/* Hover.css animation color change and transition speed change for nav tabs */
-.hvr-bounce-to-bottom:before {
-  background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
-}
-
-/* Retains black text color when mouse is hovered over nav tabs */
-.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
-  color: #0F0901;
-  text-shadow: 0.125rem 0.125rem 0.125rem rgba(15, 9, 1, 0.5);
-}
-
-/* Removed white lines between list items for seamlessness */
-.dropdown-content li {
-  min-height: 0;
-}
-
-/* Set colors of dropdown menu  */
-.dropdown-content li a {
-  background-color: #A0DB9B;
-  color: #0F0901;
-}
-
-/* Color change of dropdown menu items when hover */
-.dropdown-content li a:hover {
-  background-color: #AEE6A9;
-}
-
-/** MOBILE NAV BAR **/
-
-/* Mobile side nav color changed to green */
-.side-nav {
-  background-color: #92D68C;
-}
-
-/* Hamburger menu icon color change and shadow */
-.button-collapse i {
-  color: #0F0901;
-  text-shadow: 0.125rem 0.125rem 0.125rem rgba(15, 9, 1, 0.5);
-}
-
-/* Logo image sizing and positioning */
-.chef-hat {
-    width: 6rem;
-    margin-top: 2rem;
-}
-/*--------------------*/
-/*** FOOTER STYLES ***/
-/*-------------------*/
-
-.page-footer {
-  background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
-}
-
-.footer-text {
-  color: #0F0901;
-}
-
-/** To Top Button **/
-
-.btn-large {
-  background-color:#92D68C;
-}
-
-.btn-large i {
-  color:#0F0901;
-}
-
-.btn-large:hover {
-  background-color:#AEE6A9;
-}
-
-.to-top{
-    z-index: 100;
-	position: fixed;
-	bottom: 2.5rem;
-	right: 2.5rem;
-    display: none;
-}
-
-/** Social Links **/
-
-.link-btn {
-  background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(146, 214, 140, 1));
-  color: #0F0901;
-  width: 11rem;
-  margin-bottom: 20px;
-}
-
-.link-btn:hover {
-  background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(146, 214, 140, 1));
-}
-
-/*---------------------------*/
-/*** REGISTER PAGE STYLES ***/
-/*--------------------------*/
-
-/* Font Awesome icons retain their green color when active */
-.input-field .prefix.active {
-  color: #92D68C
-}
-
-.flash-card {
-    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(160, 219, 155, 1));
-}
-
-/*-------------------------*/
-/*** ABOUT PAGE STYLES ***/
-/*------------------------*/
-
-/* Ribbon image size & positioning */
-.ribbon {
-  width: 40%;
-  display: block;
-  margin: auto;
-}
-
-/* Card styles */
-
+/* Background color of cards - eg. recipe cards */
 .card-content {
   background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(160, 219, 155, 1));
   font-size: 1rem;
 }
 
-.tabs .tab a {
-  color:#0F0901;
-  font-size: 0.8rem;
+/* Background color of register, login and add recipe forms */
+.form-card{
+    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(250,250,242,1), rgba(160, 219, 155, 1));
 }
 
-/* Tuna image size & positioning */
-.tuna {
-  width: 70%;
-  display: block;
-  margin: auto;
+/* Background color of flash messages */
+.flash-card {
+    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(160, 219, 155, 1));
 }
 
-/** SUCCESS STORIES **/
+/** BUTTON STYLES **/
 
-/* Size & positioning */
-.success-img {
-  border-radius: 50%;
-  width: 75%;
-  display: block;
-  margin: auto;
-  cursor: pointer;
+.btn-text {
+    color: #0F0901;
 }
 
-/* Background color of success' tooltip */
-.backdrop {
-    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
+.btn-large {
+    background-color:#92D68C;
 }
 
-/* Tooltip font color and positioning */
-.material-tooltip {
-  color: #0F0901;
-  margin-left: 0.25rem;
+.btn-large i {
+    color:#0F0901;
 }
+
+.btn-large:hover {
+    background-color:#AEE6A9;
+}
+
+.link-btn {
+    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(146, 214, 140, 1));
+    color: #0F0901;
+    width: 11rem;
+    margin-bottom: 20px;
+}
+
+.link-btn:hover {
+    background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(146, 214, 140, 1));
+}
+
+/** MODAL STYLES **/
 
 /* Modal background color */
 .modal-content {
@@ -281,13 +133,155 @@ nav ul a {
   background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
 }
 
-/*-------------------------------*/
-/*** ADD RECIPES PAGE STYLES ***/
-/*------------------------------*/
+/** TO TOP BUTTON STYLES **/
+
+.to-top{
+    z-index: 100;
+	position: fixed;
+	bottom: 2.5rem;
+	right: 2.5rem;
+    display: none;
+}
+
+/*----------------------------*/
+/*** NAVIGATION BAR STYLES ***/
+/*---------------------------*/
+
+/** DESKTOP NAV BAR **/
+
+/* Removes shadow from bottom of navbar */
+.nav-extended {
+    box-shadow: none;
+}
+
+/* Background color of navbar set as gradient */
+.nav-wrapper {
+    background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
+}
+
+/* Centers nav tabs */
+#nav-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+/* Changes nav tab font color and pushes tabs further apart */
+nav ul a {
+    color: #0F0901;
+    padding: 0 4rem;
+}
+
+/* Hover.css animation color change and transition speed change for nav tabs */
+.hvr-bounce-to-bottom:before {
+    background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+/* Retains black text color when mouse is hovered over nav tabs */
+.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+    color: #0F0901;
+    text-shadow: 0.125rem 0.125rem 0.125rem rgba(15, 9, 1, 0.5);
+}
+
+/* Removed white lines between list items for seamlessness */
+.dropdown-content li {
+    min-height: 0;
+}
+
+/* Set colors of dropdown menu  */
+.dropdown-content li a {
+    background-color: #A0DB9B;
+    color: #0F0901;
+}
+
+/* Color change of dropdown menu items when hover */
+.dropdown-content li a:hover {
+    background-color: #AEE6A9;
+}
+
+/** MOBILE NAV BAR **/
+
+/* Mobile side nav color changed to green */
+.side-nav {
+    background-color: #92D68C;
+}
+
+/* Hamburger menu icon color change and shadow */
+.button-collapse i {
+    color: #0F0901;
+    text-shadow: 0.125rem 0.125rem 0.125rem rgba(15, 9, 1, 0.5);
+}
+
+/* Logo image sizing and positioning */
+.chef-hat {
+    width: 6rem;
+    margin-top: 2rem;
+}
+
+/*------------------------------------*/
+/*** REGISTER & LOGIN PAGE STYLES ***/
+/*----------------------------------*/
+
+/* Font Awesome icons retain their green color when active */
+.input-field .prefix.active {
+    color: #92D68C
+}
+
+/*-------------------------*/
+/*** ABOUT PAGE STYLES ***/
+/*------------------------*/
+
+/* Information card tabs */
+.tabs .tab a {
+    color:#0F0901;
+    font-size: 0.8rem;
+}
+
+/* Ribbon image size & positioning */
+.ribbon {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+/* Tuna image size & positioning */
+.tuna {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+/** SUCCESS STORIES **/
+
+/* Size & positioning */
+.success-img {
+    border-radius: 50%;
+    width: 75%;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* Background color of success' tooltip */
+.backdrop {
+    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
+}
+
+/* Tooltip font color and positioning */
+.material-tooltip {
+    color: #0F0901;
+    margin-left: 0.25rem;
+}
+
+
+/*--------------------------------------*/
+/*** ADD & EDIT RECIPES PAGE STYLES ***/
+/*------------------------------------*/
 
 /* Background color of form dropdown list */
 .select-dropdown {
-  background-color: #A0DB9B;
+    background-color: #A0DB9B;
 }
 
 /* Font color of form dropdown list */
@@ -300,14 +294,12 @@ ul.dropdown-content.select-dropdown li span:hover {
     background-color: #AEE6A9; 
 }
 
-/* Change form label color */
 .input-field label {
-  color: #0F0901;
+    color: #0F0901;
 }
 
-/* Remove padding from recipe description field */
 textarea.materialize-textarea {
-  padding: 0;
+    padding: 0;
 }
 
 /* Added to make text visible within textarea  */
@@ -315,22 +307,22 @@ textarea {
     line-height: 1rem;
 }
 
-/*----------------------------*/
-/*** CATEGORY PAGE STYLES ***/
-/*---------------------------*/
+/*----------------------------------------*/
+/*** CATEGORY & MYRECIPES PAGE STYLES ***/
+/*--------------------------------------*/
 
 .card-btn {
-  background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(146, 214, 140, 1));
-  color: #0F0901;
-  width: 5.5rem;
-  padding: 0;
+    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(146, 214, 140, 1));
+    color: #0F0901;
+    width: 5.5rem;
+    padding: 0;
 }
 
 .card-btn:hover {
   background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(146, 214, 140, 1));
 }
 
-/* Allows card button to sit in correct place */
+/* Color & allows card button to sit in correct place */
 .card-action {
   background-image: linear-gradient(to top, rgba(250,250,242,1),rgba(250,250,242,1));
   display: flow-root;
@@ -345,17 +337,15 @@ textarea {
     max-height: 7.3rem;
 }
 
+/* Bold recipe titles */
 .card-title {
   text-shadow: 0.047rem 0.047rem #0F0901;
 }
 
+/* All uploaded images will be same size */
 .card img {
     min-height: 26rem;
     max-height: 26rem;
-}
-
-.edit-btn {
-    width: 15rem;
 }
 
 /*--------------------------*/
@@ -377,6 +367,18 @@ textarea {
 .collapsible-body {
   font-size: 0.85rem;
   background-color: #AEE6A9;
+}
+
+/*--------------------*/
+/*** FOOTER STYLES ***/
+/*-------------------*/
+
+.page-footer {
+    background-image: linear-gradient(to bottom, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
+}
+
+.footer-text {
+    color: #0F0901;
 }
 
 /*---------------------*/
@@ -412,6 +414,13 @@ header div img {
 }
 
 /** ABOUT STYLES **/
+
+@media (min-width: 1200px) {
+  /* Adds margin to stop card content leaking into card tabs */
+  .mb-1 {
+    margin-bottom: 1rem;
+  }
+}
 
 @media (min-width: 992px) {
 /* Carousel size increase */
@@ -457,13 +466,6 @@ header div img {
 /* Disabled tooltip whilst in mobile view */
   .material-tooltip {
     display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  /* Adds margin to stop card content leaking into card tabs */
-  .mb-1 {
-    margin-bottom: 1rem;
   }
 }
 
