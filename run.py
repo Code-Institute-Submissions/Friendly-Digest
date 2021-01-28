@@ -33,13 +33,15 @@ def login_required(f):
     return wrap
 
 
-# About page / landing page.
+# ---- About/Landing Page ---- #
+
 @app.route("/")
 def index():
     return render_template("index.html")
 
 
-# Search box that renders searchRecipes page.
+# ---- Search Recipes Page ---- #
+
 @ app.route('/searchRecipes', methods=["GET", "POST"])
 def search():
     mongo.db.recipes.create_index([('$**', 'text')])
@@ -57,7 +59,8 @@ def search():
             message="No Search Results Found. Please Try Again.")
 
 
-# Recipe page for individual recipe.
+# ---- Individual Recipe Page ---- #
+
 @ app.route('/recipe/<recipe_id>', methods=["GET"])
 def recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
@@ -65,7 +68,8 @@ def recipe(recipe_id):
         "recipe.html", recipe=recipe)
 
 
-# Page for all recipes in category.
+# ---- Category Recipe Page ---- #
+
 @app.route("/categoryRecipes/<category>", methods=["GET"])
 def categoryRecipes(category):
     recipes = mongo.db.recipes.find({"$text": {"$search": category}})
@@ -73,7 +77,8 @@ def categoryRecipes(category):
         "categoryRecipes.html", recipes=recipes, page_title=category)
 
 
-# Login page.
+# ---- Log In Page ---- #
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -103,7 +108,8 @@ def login():
     return render_template("login.html", page_title="Log In")
 
 
-# Register page.
+# ---- Register Page ---- #
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -132,7 +138,8 @@ def register():
     return render_template("register.html", page_title="Register")
 
 
-# My Recipes page.
+# ---- My Recipes Page ---- #
+
 @app.route("/myRecipes/<username>", methods=["GET", "POST"])
 @login_required
 def myRecipes(username):
@@ -149,16 +156,8 @@ def myRecipes(username):
     return redirect(url_for("login"))
 
 
-# Function for logging out.
-@app.route("/logout")
-def logout():
-    # Remove user from session cookie.
-    flash("You have been logged out")
-    session.pop("user")
-    return redirect(url_for("login"))
+# ---- Add Recipe Page ---- #
 
-
-# Add Recipe Page.
 @app.route("/addRecipe", methods=["GET", "POST"])
 @login_required
 def addRecipe():
@@ -190,7 +189,8 @@ def addRecipe():
         difficulties=difficulties, page_title="Add Recipe")
 
 
-# Edit Recipe Page.
+# ---- Edit Recipe Page ---- #
+
 @app.route("/editRecipe/<recipe_id>", methods=["GET", "POST"])
 @login_required
 def editRecipe(recipe_id):
@@ -224,12 +224,34 @@ def editRecipe(recipe_id):
         page_title="Edit Recipe")
 
 
-# Function for deleting recipes.
+# ---- Delete Recipe Function ---- #
+
 @app.route("/deleteRecipe/<recipe_id>")
 def deleteRecipe(recipe_id):
     mongo.db.recipes.delete_one({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted!")
     return redirect(url_for("myRecipes", username=session["user"]))
+
+
+# ---- Log Out Function ---- #
+
+@app.route("/logout")
+def logout():
+    # Remove user from session cookie.
+    flash("You have been logged out")
+    session.pop("user")
+    return redirect(url_for("login"))
+
+
+# ---- Errors ----- #
+@ app.errorhandler(404)
+def page_not_found(error):
+    return render_template('errors/404.html'), 404
+
+
+@ app.errorhandler(500)
+def internal_error(error):
+    return render_template('errors/500.html'), 500
 
 
 if __name__ == "__main__":
