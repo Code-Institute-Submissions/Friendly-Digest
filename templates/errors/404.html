@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% block search_bar %}{% endblock %}
+
+<!--Error 404 Heading-->
+<div class="container">
+    <div class="row">
+        <div class="col s12 center-align mt-3">
+            <h1>Oops! Looks like something has gone wrong!</h1>
+        </div>
+    </div>
+</div>
+
+<!--Error 404 Image-->
+<div class="container">
+    <div class="row">
+        <div class="col s12 center-align">
+            <img class="responsive-img mt-3"
+                src="https://res.cloudinary.com/web-slinger/image/upload/v1611855666/Milestone%203/error404.png"
+                alt="Error 404 Picture">
+        </div>
+    </div>
+</div>
+
+<!--Return Button-->
+<div class="container">
+    <div class="row">
+        <div class="col s12 center-align">
+            <h6 class="mt-3">Want to go back home?</h6>
+            <a href="{{ url_for('index') }}" class="btn card-btn"><i class="fas fa-home"></i></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
