@@ -313,6 +313,10 @@ textarea {
     line-height: 1rem;
 }
 
+.edit-btn {
+    width: 14rem;
+}
+
 /*----------------------------------------*/
 /*** CATEGORY & MYRECIPES PAGE STYLES ***/
 /*--------------------------------------*/
