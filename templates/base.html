@@ -55,21 +55,43 @@
 
                 <!--Desktop Nav Bar Links-->
                 <ul class="hide-on-med-and-down" id="nav-tabs">
-                    <li><a href="{{ url_for('index') }}" class="nav-text hvr-bounce-to-bottom">About</a></li>
-                    <li><a class="dropdown-button nav-text hvr-bounce-to-bottom" href="#!"
-                            data-activates="dropdown-desktop">Recipes<i
-                                class="material-icons right">arrow_drop_down</i></a>
-                    </li>
 
+                    <li><a href="{{ url_for('index') }}" class="nav-text hvr-bounce-to-bottom">About</a></li>
+
+                    <li><a class="dropdown-button nav-text hvr-bounce-to-bottom" href="#!"
+                            data-activates="dropdown-desktop">Recipes<i class="material-icons right">arrow_drop_down</i>
+                        </a></li>
+
+                    <!--Menu items displayed if user logged in-->
                     {% if session.user %}
-                    <li><a href="{{ url_for('myRecipes', username=session['user']) }}"
-                            class="nav-text hvr-bounce-to-bottom">My Recipes</a></li>
-                    <li><a href="{{ url_for('addRecipe') }}" class="nav-text hvr-bounce-to-bottom">Add Recipe</a></li>
-                    <li><a href="{{ url_for('logout') }}" class="nav-text hvr-bounce-to-bottom">Log Out</a></li>
+                        <li><a href="{{ url_for('myRecipes', username=session['user']) }}"
+                                class="nav-text hvr-bounce-to-bottom">My Recipes</a></li>
+
+                        <li><a href="{{ url_for('addRecipe') }}" class="nav-text hvr-bounce-to-bottom">AddRecipe</a></li>
+
+                        <li><a href="#modal-l" class="nav-text hvr-bounce-to-bottom modal-trigger">Log Out</a>
+
+                            <!--Log Out Modal Message-->
+                            <div id="modal-l" class="modal">
+
+                                <div class="modal-content lh-0">
+                                    <h4 class="center-align">Warning!</h4>
+                                    <p class="mt-3 center-align">Are you sure you want to log out?</p>
+                                </div>
+
+                                <!--Modal Buttons-->
+                                <div class="modal-footer lh-0">
+                                    <a href="#!" class="modal-action modal-close btn-flat mr-1">No</a>
+                                    <a href="{{ url_for('logout') }}"
+                                        class="modal-action modal-close btn-flat mr-1">Yes</a>
+                                </div>
+
+                            </div>
+                        </li>
 
                     {% else %}
-                    <li><a href="{{ url_for('login') }}" class="nav-text hvr-bounce-to-bottom">Login</a></li>
-                    <li><a href="{{ url_for('register') }}" class="nav-text hvr-bounce-to-bottom">Register</a></li>
+                        <li><a href="{{ url_for('login') }}" class="nav-text hvr-bounce-to-bottom">Log In</a></li>
+                        <li><a href="{{ url_for('register') }}" class="nav-text hvr-bounce-to-bottom">Register</a></li>
                     {% endif %}
                 </ul>
 
@@ -88,26 +110,30 @@
                 <ul class="side-nav" id="mobile-demo">
 
                     <!--Friendly Digest Hat Image-->
-                    <div class="hat-box center-align">
+                    <div class="center-align">
                         <img class="chef-hat"
                             src="https://res.cloudinary.com/web-slinger/image/upload/v1606251385/Milestone%203/chef-hat_qxyvpg.png"
-                            alt="hat" />
+                            alt="Friendly Digest Logo" />
                     </div>
 
                     <!--Mobile Nav Bar Links-->
-                    <li><a href="{{ url_for('index') }}" class="flow-text">About</a></li>
-                    <li><a class="dropdown-trigger flow-text" href="#!" data-activates="dropdown-mobile">Recipes<i
+                    <li><a href="{{ url_for('index') }}">About</a></li>
+
+                    <li><a class="dropdown-trigger" href="#!" data-activates="dropdown-mobile">Recipes<i
                                 class="material-icons right">arrow_drop_down</i></a></li>
 
+                    <!--Menu items displayed if user logged in-->
                     {% if session.user %}
-                    <li><a href="{{ url_for('myRecipes', username=session['user']) }}" class="flow-text">My Recipes</a>
-                    </li>
-                    <li><a href="{{ url_for('addRecipe') }}" class="flow-text">Add Recipe</a></li>
-                    <li><a href="{{ url_for('logout') }}" class="flow-text">Log Out</a></li>
+                        <li><a href="{{ url_for('myRecipes', username=session['user']) }}">My Recipes</a></li>
+
+                        <li><a href="{{ url_for('addRecipe') }}">Add Recipe</a></li>
+
+                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
 
                     {% else %}
-                    <li><a href="{{ url_for('login') }}" class="flow-text">Login</a></li>
-                    <li><a href="{{ url_for('register') }}" class="flow-text">Register</a></li>
+                        <li><a href="{{ url_for('login') }}">Login</a></li>
+                        
+                        <li><a href="{{ url_for('register') }}">Register</a></li>
                     {% endif %}
                 </ul>
 
@@ -128,17 +154,17 @@
         <section>
             <!--Flash Messages-->
             {% with messages = get_flashed_messages() %}
-            {% if messages %}
-            {% for message in messages %}
-            <div class="row mt-3">
-                <div class="col s12 m8 offset-m2">
-                    <div class="card-panel center-align flash-card z-depth-0">
-                        <span>{{ message }}</span>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-            {% endif %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="row mt-3">
+                            <div class="col s12 m8 offset-m2">
+                                <div class="card-panel center-align flash-card z-depth-0">
+                                    <span>{{ message }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
             {% endwith %}
         </section>
 
@@ -160,7 +186,7 @@
                                 <i class="fas fa-search"></i>
                             </button>
                             {% block undo_button %}
-                            <a href="#" onclick="history.go(-1)" class="btn card-btn"><i class="fas fa-undo"></i></a>
+                                <a href="#" onclick="history.go(-1)" class="btn card-btn"><i class="fas fa-undo"></i></a>
                             {% endblock %}
                         </div>
                     </div>
@@ -170,8 +196,8 @@
         {% endblock %}
 
         <!-- Main Content -->
-        {% block content %} {% endblock %}
-
+        {% block content %} 
+        {% endblock %}
 
     </main>
 
@@ -191,21 +217,19 @@
                 <!--Social Links Header-->
                 <div class="col l4 offset-l2 s12">
                     <h5 class="footer-text">Social Links</h5>
-                    <ul>
 
+                    <ul>
                         <!--Developer LinkedIn Button-->
                         <li><a href="https://www.linkedin.com/in/lewis-wheeler-aa91791a0/" target="_blank">
                                 <button type="button" class="btn link-btn">
                                     <i class="fab fa-linkedin"></i>
-                                </button>
-                            </a></li>
+                                </button></a></li>
 
                         <!--Developer Github Button-->
                         <li><a href="https://github.com/WebSlinger88" target="_blank">
                                 <button type="button" class="btn link-btn">
                                     <i class="fab fa-github"></i>
-                                </button>
-                            </a></li>
+                                </button></a></li>
                     </ul>
                 </div>
             </div>
@@ -215,6 +239,7 @@
         <div class="footer-copyright transparent">
             <div class="container">
                 <p class="footer-text">Copyright - All Rights Reserved - Lewis Wheeler - Full Stack Web Developer ©
+                    <!--javaScript date generated via id-->
                     <span id="copyright"></span></p>
             </div>
         </div>
