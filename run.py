@@ -212,6 +212,7 @@ def editRecipe(recipe_id):
         # Display flash message when recipe is added.
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
         flash("Recipe Successfully Updated!")
+        return redirect(url_for("myRecipes", username=session["user"]))
 
     # Get data from recipes, categories & difficulties collections on Mongo DB.
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
