@@ -259,8 +259,8 @@ nav ul a {
     margin: auto;
 }
 
-/* Tuna image size & positioning */
-.tuna {
+/* Tuna & Organic image size & positioning */
+.tuna, .organic {
     width: 70%;
     display: block;
     margin: auto;
