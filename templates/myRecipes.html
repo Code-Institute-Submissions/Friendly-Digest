@@ -70,7 +70,7 @@
                         <!-- Delete Recipe -->
                         <div class="col s12 m3 mb-0">
                             <button data-target="{{ recipe._id }}" type="button"
-                                class="btn card-btn btn-pos modal-trigger mr-1"><span>Delete</span></button>
+                                class="btn card-btn btn-pos modal-trigger mr-1pt5"><span>Delete</span></button>
 
                             <!-- Delete Recipe Modal -->
                             <div id="{{ recipe._id }}" class="modal">
@@ -89,7 +89,7 @@
                                         <span class="btn-text">No</span></a>
 
                                     <a href="{{ url_for('deleteRecipe', recipe_id=recipe._id) }}"
-                                        data-target="{{ recipe._id }}" class="modal-action modal-close btn-flat">
+                                        data-target="{{ recipe._id }}" class="modal-action modal-close btn-flat mr-1">
                                         <span class="btn-text">Yes</span></a>
                                 </div>
                             </div>

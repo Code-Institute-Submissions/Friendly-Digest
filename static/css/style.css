@@ -47,6 +47,10 @@ p {
 }
 
 .mr-1 {
+    margin-right: 1rem!important;
+}
+
+.mr-1pt5 {
     margin-right: 1.5rem!important;
 }
 
@@ -56,6 +60,10 @@ p {
 
 .lh-0 {
     line-height: 0;
+}
+
+.lh-1 {
+    line-height: 1.5rem;
 }
 
 /* Allows valign-wrapper to work with Materialize grid columns */

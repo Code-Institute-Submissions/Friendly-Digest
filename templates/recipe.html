@@ -92,7 +92,7 @@
         <div class="col s12 m6 l4 push-m4 push-l4">
             <ul>
                 {% for ingredient in recipe.recipe_ingredients.split(",") %}
-                    <li class="d-flex"><i class="fas fa-circle icon-color mr-1"></i>{{ ingredient }}</li><br>
+                    <li class="d-flex"><i class="fas fa-circle icon-color mr-1pt5"></i>{{ ingredient }}</li><br>
                 {% endfor %}
             </ul>
         </div>
@@ -115,7 +115,7 @@
             <ul>
                 {% for instruction in recipe.recipe_instructions.split(".") %}
                     {% if instruction %}
-                        <li class="d-flex"><i class="fas fa-circle icon-color mr-1"></i>{{ instruction }}</li><br>
+                        <li class="d-flex"><i class="fas fa-circle icon-color mr-1pt5"></i>{{ instruction }}</li><br>
                     {% endif %}
                 {% endfor %}
             </ul>
