@@ -60,9 +60,11 @@
 
                     <li><a href="{{ url_for('index') }}" class="nav-text hvr-hang">Home</a></li>
 
-                    <li><a class="dropdown-button nav-text" href="#!"
+                    <li>
+                        <a class="dropdown-button nav-text" href="#!"
                             data-activates="dropdown-desktop">Recipes<i class="material-icons right">arrow_drop_down</i>
-                        </a></li>
+                        </a>
+                    </li>
 
                     <!--Menu items displayed if user logged in-->
                     {% if session.user %}
@@ -121,8 +123,12 @@
                     <!--Mobile Nav Bar Links-->
                     <li><a href="{{ url_for('index') }}">Home</a></li>
 
-                    <li><a class="dropdown-trigger" href="#!" data-activates="dropdown-mobile">Recipes<i
-                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li>
+                        <a class="dropdown-trigger" href="#!" 
+                            data-activates="dropdown-mobile">Recipes
+                                <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
 
                     <!--Menu items displayed if user logged in-->
                     {% if session.user %}
@@ -131,7 +137,6 @@
                         <li><a href="{{ url_for('addRecipe') }}">Add Recipe</a></li>
 
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
-
                     {% else %}
                         <li><a href="{{ url_for('login') }}">Login</a></li>
                         
@@ -217,22 +222,32 @@
                 </div>
 
                 <!--Social Links Header-->
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="footer-text">Social Links</h5>
+                <div class="col l6 s12">
+                    <h5 class="footer-text center-align">Social Links</h5>
 
                     <ul>
-                        <!--Developer LinkedIn Button-->
-                        <li><a href="https://www.linkedin.com/in/lewis-wheeler-aa91791a0/" target="_blank">
-                                <button type="button" class="btn link-btn">
-                                    <i class="fab fa-linkedin"></i>
-                                </button></a></li>
+                        <div class="col s4 offset-s2">
+                            <!--Developer LinkedIn Button-->
+                            <li><a href="https://www.linkedin.com/in/lewis-wheeler-aa91791a0/" target="_blank">
+                                    <div class="social-btn center-align">
+                                        <i class="fab fa-linkedin hvr-grow"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
 
-                        <!--Developer Github Button-->
-                        <li><a href="https://github.com/WebSlinger88" target="_blank">
-                                <button type="button" class="btn link-btn">
-                                    <i class="fab fa-github"></i>
-                                </button></a></li>
+                        <div class="col s4">
+                            <!--Developer Github Button-->
+                            <li>
+                                <a href="https://github.com/WebSlinger88" target="_blank">
+                                    <div class="social-btn center-align">
+                                    <i class="fab fa-github hvr-grow"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
                     </ul>
+
                 </div>
             </div>
         </div>
@@ -240,7 +255,8 @@
         <!--Developer Copyright Information-->
         <div class="footer-copyright transparent">
             <div class="container">
-                <p class="footer-text">Copyright - All Rights Reserved - Lewis Wheeler - Full Stack Web Developer ©
+                <p class="footer-text center-align">
+                    Copyright - All Rights Reserved - Lewis Wheeler - Full Stack Web Developer ©
                     <!--javaScript date generated via id-->
                     <span id="copyright"></span></p>
             </div>
