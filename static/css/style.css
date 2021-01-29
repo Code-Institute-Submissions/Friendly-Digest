@@ -302,6 +302,7 @@ ul.dropdown-content.select-dropdown li span:hover {
 
 .input-field label {
     color: #0F0901;
+    font-size: 0.85rem!important;
 }
 
 textarea.materialize-textarea {
