@@ -364,6 +364,11 @@ textarea {
 /*** RECIPE PAGE STYLES ***/
 /*-------------------------*/
 
+.user-img {
+    border-radius: 0.5rem;
+    width: 50rem;
+}
+
 /* List item text positioning */
 .d-flex {
     display: flex;
