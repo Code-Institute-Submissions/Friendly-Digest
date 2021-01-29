@@ -56,20 +56,20 @@
                 <!--Desktop Nav Bar Links-->
                 <ul class="hide-on-med-and-down" id="nav-tabs">
 
-                    <li><a href="{{ url_for('index') }}" class="nav-text hvr-bounce-to-bottom">About</a></li>
+                    <li><a href="{{ url_for('index') }}" class="nav-text hvr-hang" id="tab-1">Home</a></li>
 
-                    <li><a class="dropdown-button nav-text hvr-bounce-to-bottom" href="#!"
+                    <li><a class="dropdown-button nav-text" href="#!"
                             data-activates="dropdown-desktop">Recipes<i class="material-icons right">arrow_drop_down</i>
                         </a></li>
 
                     <!--Menu items displayed if user logged in-->
                     {% if session.user %}
                         <li><a href="{{ url_for('myRecipes', username=session['user']) }}"
-                                class="nav-text hvr-bounce-to-bottom">My Recipes</a></li>
+                                class="nav-text hvr-hang">My Recipes</a></li>
 
-                        <li><a href="{{ url_for('addRecipe') }}" class="nav-text hvr-bounce-to-bottom">AddRecipe</a></li>
+                        <li><a href="{{ url_for('addRecipe') }}" class="nav-text hvr-hang">AddRecipe</a></li>
 
-                        <li><a href="#modal-l" class="nav-text hvr-bounce-to-bottom modal-trigger">Log Out</a>
+                        <li><a href="#modal-l" class="nav-text hvr-hang modal-trigger">Log Out</a>
 
                             <!--Log Out Modal Message-->
                             <div id="modal-l" class="modal">
@@ -90,8 +90,8 @@
                         </li>
 
                     {% else %}
-                        <li><a href="{{ url_for('login') }}" class="nav-text hvr-bounce-to-bottom">Log In</a></li>
-                        <li><a href="{{ url_for('register') }}" class="nav-text hvr-bounce-to-bottom">Register</a></li>
+                        <li><a href="{{ url_for('login') }}" class="nav-text hvr-hang">Log In</a></li>
+                        <li><a href="{{ url_for('register') }}" class="nav-text hvr-hang">Register</a></li>
                     {% endif %}
                 </ul>
 
@@ -117,7 +117,7 @@
                     </div>
 
                     <!--Mobile Nav Bar Links-->
-                    <li><a href="{{ url_for('index') }}">About</a></li>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
 
                     <li><a class="dropdown-trigger" href="#!" data-activates="dropdown-mobile">Recipes<i
                                 class="material-icons right">arrow_drop_down</i></a></li>

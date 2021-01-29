@@ -185,17 +185,10 @@ nav ul a {
     padding: 0 4rem;
 }
 
-/* Hover.css animation color change and transition speed change for nav tabs */
-.hvr-bounce-to-bottom:before {
-    background-image: linear-gradient(to top, rgba(250,250,242,1), rgba(160, 219, 155, 1), rgba(146, 214, 140, 1));
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-}
-
-/* Retains black text color when mouse is hovered over nav tabs */
-.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
-    color: #0F0901;
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
     text-shadow: 0.125rem 0.125rem 0.125rem rgba(15, 9, 1, 0.5);
+    background-color: rgba(0, 0, 0, 0.0);
+    color: #0F0901;
 }
 
 /* Removed white lines between list items for seamlessness */
