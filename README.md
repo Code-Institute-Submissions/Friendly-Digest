@@ -1,45 +1,207 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+<div align="center"> <img src="https://res.cloudinary.com/web-slinger/image/upload/v1608119278/Milestone%203/friendly-digest-favicon_n8ncda.png"> </div>
 
-Welcome Lewis Wheeler,
+# **Friendly Digest** <a name="top"></a>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+Friendly Digest is a website designed to provide food recipes, primarily for people with chronic inflammatory bowel diseases such as Crohn's Disease & Colitis.
+Users are able to follow the four basic CRUD functions, Create, Read, Update, and Delete. This means that you can register an account, create and upload your
+own recipes, view other user's recipes, edit your own recipes, and delete your own recipes.
 
-## Gitpod Reminders
+Friendly Digest is intended to provide great value to those who seek special diatary advice. Whether you suffer yourself, have a friend or family member who 
+suffers, or whether you want to clean up your own diet, we hope Friendly Digest can guide you to a cleaner, happier, pain-free lifestyle.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The idea for Friendly Digest originates very close to home. An extremely close family member unfortunately suffers from Crohn's disease, therefore we have spent
+many years struggling to find decent recipes which are suitable for those who have a variety of different requirements. Although it has been a long journey, we 
+are now able to live a healthier, somewhat pain-free lifestyle due to what we put in our bodies. We hope that we can share some of this knowledge with you.
 
-`python3 -m http.server`
+Feel free to browse through Friendly Digest's extensive library of recipes, we hope that you manage to find something yummy to satisfy your needs! Create an 
+account and upload your own yummy dishes to share with others, but remember, keep it clean!
 
-A blue button should appear to click: *Make Public*,
+---
 
-Another blue button should appear to click: *Open Browser*.
+## :books: **TABLE OF CONTENTS**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+1. [Live Demo](#live-demo)  
 
-A blue button should appear to click: *Make Public*,
+2. [UX](#ux)
+    * [User Stories](#stories)
+    * [Strategy](#strategy)
+    * [Scope](#scope)
+    * [Structure](#structure)
+    * [Skeleton](#skeleton)
+        * [Sketches](#sketches)
+        * [Wireframes](#wireframes)
+        * [Mockups](#mockups)
+    * [Surface](#surface)
 
-Another blue button should appear to click: *Open Browser*.
+3. [Information Architecture](#architecture)
+    * [Application Framework](#app-framework)
+    * [CSS Framework](#css-framework)
+    * [Database](#database)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+4. [Existing Features](#existing)
+    * [Navigation](#navigation)
+    * [Search Recipes](#search)
+    * [Home](#home)
+    * [Categories](#categories)
+        * [Meat](#meat)
+        * [Fish](#fish)
+        * [Veg](#veg)
+        * [Dessert](#dessert)
+    * [View Recipe](#recipe)
+    * [Log In](#log-in)
+    * [Register](#register)
+    * [My Recipes](#my-recipes)
+    * [Add Recipe](#add-recipe)
+    * [Edit Recipe](#edit-recipe)
+    * [Delete Recipe](#delete-recipe)
+    * [Log Out](#log-out)
 
-## Updates Since The Instructional Video
+5. [Features left to Implement](#features-left)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+6. [Technologies](#technologies)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+7. [Testing](#testing)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+8. [Deployment](#deployment)
+    * [Deployment to Heroku](#heroku)
+    * [Local Deployment](#local)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+9. [Credits](#credits)
+    * [Content](#content)
+    * [Media](#media)
+    * [Acknowledgements](#thanks)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+---
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## :computer: **LIVE DEMO** <a name="live-demo"></a>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Please feel free to delve into a demo of Friendly Digest's website.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+You can live demo Friendly Digest's website here: [Friendly Digest](https://friendly-digest.herokuapp.com/).
 
---------
+![Responsive showcase image of Friendly Digest website](https://res.cloudinary.com/web-slinger/image/upload/v1612106825/Milestone%203/showcase-img.png "Responsive showcase image of Friendly Digest website")
 
-Happy coding!
+---
+
+## :sparkles: **UX** <a name="ux"></a>
+
+---
+
+### **USER STORIES** <a name="stories"></a>
+
+---
+
+### **STRATEGY** <a name="strategy"></a>
+
+---
+
+### **SCOPE** <a name="scope"></a>
+
+---
+
+### **STRUCTURE** <a name="structure"></a>
+
+---
+
+### **SKELETON** <a name="skeleton"></a>
+
+#### *Sketches* <a name="sketches"></a>
+
+#### *Wireframes* <a name="wireframes"></a>
+
+#### *Mock Ups* <a name="mockups"></a>
+
+---
+
+### **SURFACE** <a name="surface"></a>
+
+---
+
+## :page_facing_up: **INFORMATION ARCHITECTURE** <a name="architecture"></a>
+
+### **APPLICATION FRAMEWORK** <a name="app-framework"></a>
+
+### **CSS FRAMEWORK** <a name="css-framework"></a>
+
+### **DATABASE** <a name="database"></a>
+
+---
+
+## :page_facing_up: **EXISTING FEATURES** <a name="existing"></a>
+
+### **NAVIGATION** <a name="navigation"></a>
+
+### **SEARCH RECIPES** <a name="search"></a>
+
+### **HOME PAGE** <a name="home"></a>
+
+### **CATEGORIES** <a name="categories"></a>
+
+
+#### *Meat* <a name="meat"></a>
+
+#### *Fish* <a name="fish"></a>
+
+#### *Veg* <a name="veg"></a>
+
+#### *Dessert* <a name="dessert"></a>
+
+
+### **VIEW RECIPES** <a name="recipe"></a>
+
+### **LOG IN** <a name="log-in"></a>
+
+### **REGISTER** <a name="register"></a>
+
+### **MY RECIPES** <a name="my-recipes"></a>
+
+### **ADD RECIPE** <a name="add-recipe"></a>
+
+### **EDIT RECIPE** <a name="edit-recipe"></a>
+
+### **DELETE RECIPE** <a name="delete-recipe"></a>
+
+### **LOG OUT** <a name="log-out"></a>
+
+### **OTHER FEATURES** <a name="other-feat"></a>
+
+---
+
+ ## :pencil2: **FEATURES LEFT TO IMPLEMENT** <a name="features-left"></a>
+
+ ---
+
+## :cd: **TECHNOLOGIES USED** <a name="technologies"></a>
+
+---
+
+## :test_tube: **TESTING** <a name="testing"></a>
+
+---
+
+## :airplane: **DEPLOYMENT** <a name="deployment"></a>
+
+### **DEPLOYMENT TO HEROKU** <a name="heroku"></a>
+
+### **LOCAL DEPLOYMENT** <a name="local"></a>
+
+---
+
+## :clapper: **CREDITS** <a name="credits"></a>
+
+### **CONTENT** <a name="content"></a>
+
+### **MEDIA** <a name="media"></a>
+
+### **ACKNOWLEDGEMENTS** <a name="thanks"></a>
+
+---
+:star: *A special thank you to [Maranatha Ilesanmi](https://github.com/mbilesanmi) Code Institute Mentor and [Paul F_alumni](https://github.com/Spagettileg) for aid, assistance, and much-needed guidance.* :star:
+---
+
+---
+
+***This document is for educational use.***
+
+---
+[:arrow_up: Return to top?](#top)
