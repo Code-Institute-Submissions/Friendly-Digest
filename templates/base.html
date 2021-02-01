@@ -71,7 +71,7 @@
                         <li><a href="{{ url_for('myRecipes', username=session['user']) }}"
                                 class="nav-text hvr-hang">My Recipes</a></li>
 
-                        <li><a href="{{ url_for('addRecipe') }}" class="nav-text hvr-hang">AddRecipe</a></li>
+                        <li><a href="{{ url_for('addRecipe') }}" class="nav-text hvr-hang">Add Recipe</a></li>
 
                         <li><a href="#modal-l" class="nav-text hvr-hang modal-trigger">Log Out</a>
 
@@ -138,7 +138,7 @@
 
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
-                        <li><a href="{{ url_for('login') }}">Login</a></li>
+                        <li><a href="{{ url_for('login') }}">Log In</a></li>
                         
                         <li><a href="{{ url_for('register') }}">Register</a></li>
                     {% endif %}
