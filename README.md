@@ -1,7 +1,7 @@
 <div align="center"> <img src="https://res.cloudinary.com/web-slinger/image/upload/v1608119278/Milestone%203/friendly-digest-favicon_n8ncda.png"> </div>
 
 # **FRIENDLY DIGEST** <a name="top"></a>
-<div style="text-align: justify">
+<div align="justify">
 Friendly Digest is a website designed to provide food recipes, primarily for people with chronic inflammatory bowel diseases such as Crohn's Disease & Colitis.
 Users are able to follow the four basic CRUD functions, Create, Read, Update, and Delete. This means that you can register an account, create and upload your
 own recipes, view other user's recipes, edit your own recipes, and delete your own recipes.
@@ -188,9 +188,29 @@ My Recipes page. It consists of a search bar, a main header, and a multitude of 
 
 #### *Sketches* <a name="sketches"></a>
 
+Friendly Digest's website started on a piece of paper. Sketches were drawn out and a decent design was soon ready to leap into the digital world.
+Below you shall find a link to a PDF document containing all of the original sketches used to help develop this project.
+Please note - you may want to download this file to view it as intended.
+
+* [Friendly Digest Sketches PDF](https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/sketches/ms3-sketches.pdf)
+
 #### *Wireframes* <a name="wireframes"></a>
 
+After drawing up the sketches it was time to get them onto the screen. To do this, a wireframe was created using Balsamiq Wireframes 4. 
+Wireframes are used to display what the creator ultimately envisions the website to look like, roughly! It acts as one of the first stepping stones of the journey. 
+Please find below a link to a PDF document containing all of the original Wireframes for Friendly Digest's project.
+Please note - you may want to download this file to view it as intended.
+
+* [Friendly Digest Wireframes PDF](https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/wireframes/ms3-wireframes.pdf)
+
 #### *Mock Ups* <a name="mockups"></a>
+
+Finally with the basics down on paper and screen, it was time to start shaping things up. After wireframes, it's time to take things a little more seriously. 
+Enter Adobe XD. Adobe XD is a powerful piece of software designed to assist artists worldwide. More detailed designs are now progressed, and sketches etc.. 
+are now a thing of the past! below, you will find a link to a PDF document containing Friendly Digest's Mock-Ups. You can clearly see how the project has evolved.
+Please note - you may want to download this file to view it as intended.
+
+* [Friendly Digest Mockups PDF](https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/mockups/ms3-mockups.pdf)
 
 ---
 
