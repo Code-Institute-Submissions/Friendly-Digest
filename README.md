@@ -4,7 +4,7 @@
 <div align="justify">
 Friendly Digest is a website designed to provide food recipes, primarily for people with chronic inflammatory bowel diseases such as Crohn's Disease & Colitis.
 Users are able to follow the four basic CRUD functions, Create, Read, Update, and Delete. This means that you can register an account, create and upload your
-own recipes, view other user's recipes, edit your own recipes, and delete your own recipes.
+own recipes, view other user's recipes, edit your own recipes, and delete your own recipes.  
 
 Friendly Digest is intended to provide great value to those who seek special diatary advice. Whether you suffer yourself, have a friend or family member who 
 suffers, or whether you want to clean up your own diet, we hope Friendly Digest can guide you to a cleaner, happier, pain-free lifestyle.
@@ -192,7 +192,7 @@ Friendly Digest's website started on a piece of paper. Sketches were drawn out a
 Below you shall find a link to a PDF document containing all of the original sketches used to help develop this project.
 Please note - you may want to download this file to view it as intended.
 
-* [Friendly Digest Sketches PDF](https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/sketches/ms3-sketches.pdf)
+* <a href="https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/sketches/ms3-sketches.pdf" target="_blank" rel="noopener">Friendly Digest Sketches PDF</a>
 
 #### *Wireframes* <a name="wireframes"></a>
 
@@ -201,7 +201,7 @@ Wireframes are used to display what the creator ultimately envisions the website
 Please find below a link to a PDF document containing all of the original Wireframes for Friendly Digest's project.
 Please note - you may want to download this file to view it as intended.
 
-* [Friendly Digest Wireframes PDF](https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/wireframes/ms3-wireframes.pdf)
+* <a href="https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/wireframes/ms3-wireframes.pdf" target="_blank" rel="noopener">Friendly Digest Wireframes PDF</a>
 
 #### *Mock Ups* <a name="mockups"></a>
 
@@ -210,7 +210,7 @@ Enter Adobe XD. Adobe XD is a powerful piece of software designed to assist arti
 are now a thing of the past! below, you will find a link to a PDF document containing Friendly Digest's Mock-Ups. You can clearly see how the project has evolved.
 Please note - you may want to download this file to view it as intended.
 
-* [Friendly Digest Mockups PDF](https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/mockups/ms3-mockups.pdf)
+* <a href="https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/mockups/ms3-mockups.pdf" target="_blank" rel="noopener">Friendly Digest Mockups PDF</a>
 
 ---
 
