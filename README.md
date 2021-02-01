@@ -216,6 +216,37 @@ Please note - you may want to download this file to view it as intended.
 
 ### **SURFACE** <a name="surface"></a>
 
+The colour scheme chosen for this website offers healthy, earthy, green colours, as well as the addition of Eggshell.
+There are five main colours for this website. Three different shades of green, Eggshell for backgrounds and black for fonts.
+This was chosen because of the colours' positive vibe and feel-good effect. Here are the chosen colours:
+
+![Website Colour Scheme](https://res.cloudinary.com/web-slinger/image/upload/v1612213815/Milestone%203/ms3-colors_b0lmh1.png "Website Colour Scheme")
+
+| **Colour Name**   | **Colour RGB Code**    
+| -------------     |:-------------:| 
+| Black             |#0F0901
+| Custom Green #1   |#92D68C
+| Custom Green #2   |#A0DB9B
+| Custom Green #2   |#AEE6A9
+| Eggshell          |#FAFAF2
+
+There are two more colours which are less frequent, they are the colours which appear when a user has entered data into a form field or has missed a field completely.
+When a user enters data into any field within the Friendly Digest website, the fields will be underlined green, else they'll be underlined red.
+This is true for the Log In, Register, Add, and Edit forms. Here are the chosen colours:
+
+![Website Colour Scheme](https://res.cloudinary.com/web-slinger/image/upload/v1612214511/Milestone%203/ms3-form-colors_rzixpw.png "Website Colour Scheme")
+
+| **Colour Name**   | **Colour RGB Code**    
+| -------------     |:-------------:| 
+| Green             |#4CAF50
+| Red               |#F44336
+
+The image used for Friendly Digest's logo was chosen because it relates to the theme of the website. By this, I refer to the chef hat image. 
+Images for Friendly Digest were sourced from [PxHere](https://pxhere.com/) and [Klipartz](https://www.klipartz.com/en).
+
+Two fonts are used throughout Friendly Digest's website: [Google Fonts' - Calligraffitti](https://fonts.google.com/specimen/Calligraffitti?query=Calligraffitti) and [Google Fonts' - Cinzel](https://fonts.google.com/specimen/Cinzel?query=Cinzel).
+If at any point a browser cannot support these fonts, the browser will fall back on Serif and Cursive.
+
 ---
 
 ## :page_facing_up: **INFORMATION ARCHITECTURE** <a name="architecture"></a>
