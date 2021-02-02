@@ -85,6 +85,7 @@ You can live demo Friendly Digest's website here: [Friendly Digest](https://frie
 
 ## :sparkles: **UX** <a name="ux"></a>
 
+<div align="justify">
 The user experience (UX) is what a user of a particular product experiences when using that product. A UX designer's job is thus to create a product that 
 provides the best possible user experience. We're going to provide some insight into the UX process here, focusing on the important Who, What and How?
 
@@ -93,6 +94,7 @@ but to teach and inspire, and to encourage people to share their own ideas. The 
 to the extent where they want to share their own. Do you have any tasty recipes that you would like to share? Click the link above, and register an account.
 
 Carry on below and read some of Friendly Digest's user stories, and get a feel for what people originally wanted out of Friendly Digest.
+</div>
 
 ---
 
@@ -120,26 +122,31 @@ Carry on below and read some of Friendly Digest's user stories, and get a feel f
 
 ### **STRATEGY** <a name="strategy"></a>
 
+<div align="justify">
 The strategy of the Friendly Digest website is to provide good quality recipes to those who struggle to eat the correct foods due to having an illness such as 
 an inflammatory bowel disease. It is hoped that people can learn from their experiences, and share what they have found. Our long term ambition is that Friendly
 Digest builds an extensive library of recipes far beyond the current scope. Extra categories will be added in the future, along with specific filters for known 
 allergens such as gluten and dairy. In the near future we will include a new section of the website dedicated to 'Favourite' recipes. A new function will be added
 giving the user the ability to share their favourite recipes via social media platforms such as Facebook, Instagram, and WhatsApp. What's most important is that
 people walk away with a feel-good vibe. A happy gut can lead to a happy mind. Our user's health and happiness is of the utmost importance.
+</div>
 
 ---
 
 ### **SCOPE** <a name="scope"></a>
 
+<div align="justify">
 The scope of Friendly Digest is to provide a flawless user experience straight from the get-go. We want users to be highly engrossed in what they encounter. We
 want users to be attracted to the layout, the colour scheme, the ease of navigation, and the simplicity of the registration / editing process. Ultimately we want
 users to return time and time again, not only to absorb information they may not have encountered before, but to share information that may be highly beneficial for 
 others.
+</div>
 
 ---
 
 ### **STRUCTURE** <a name="structure"></a>
 
+<div align="justify">
 The structure of Friendly Digest has been carefully thought-out to provide the best possible user experience. Everything from the layout to the navigation has been
 structured for a friendly, easy to use, attractive approach. Please read below for a description of each page's structure.
 
@@ -181,6 +188,7 @@ and a Return button.
 * The Search Recipes page is a page which is generated after entering text into the Search Bar. The Search Bar can be found at the top of multiple pages, below the navigation bar.
 The Search Bar is present in each of the category pages, the My Recipes page, and the Search Recipes page. The Search Recipes page is laid out similar to the category pages and the 
 My Recipes page. It consists of a search bar, a main header, and a multitude of recipe cards containing an image, a title, a description, and a button.
+</div>
 
 ---
 
@@ -188,27 +196,33 @@ My Recipes page. It consists of a search bar, a main header, and a multitude of 
 
 #### *Sketches* <a name="sketches"></a>
 
+<div align="justify">
 Friendly Digest's website started on a piece of paper. Sketches were drawn out and a decent design was soon ready to leap into the digital world.
 Below you shall find a link to a PDF document containing all of the original sketches used to help develop this project.
 Please note - you may want to download this file to view it as intended.
+</div>
 
 * <a href="https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/sketches/ms3-sketches.pdf" target="_blank" rel="noopener">Friendly Digest Sketches PDF</a>
 
 #### *Wireframes* <a name="wireframes"></a>
 
+<div align="justify">
 After drawing up the sketches it was time to get them onto the screen. To do this, a wireframe was created using Balsamiq Wireframes 4. 
 Wireframes are used to display what the creator ultimately envisions the website to look like, roughly! It acts as one of the first stepping stones of the journey. 
 Please find below a link to a PDF document containing all of the original Wireframes for Friendly Digest's project.
 Please note - you may want to download this file to view it as intended.
+</div>
 
 * <a href="https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/wireframes/ms3-wireframes.pdf" target="_blank" rel="noopener">Friendly Digest Wireframes PDF</a>
 
 #### *Mock Ups* <a name="mockups"></a>
 
+<div align="justify">
 Finally with the basics down on paper and screen, it was time to start shaping things up. After wireframes, it's time to take things a little more seriously. 
 Enter Adobe XD. Adobe XD is a powerful piece of software designed to assist artists worldwide. More detailed designs are now progressed, and sketches etc.. 
 are now a thing of the past! below, you will find a link to a PDF document containing Friendly Digest's Mock-Ups. You can clearly see how the project has evolved.
 Please note - you may want to download this file to view it as intended.
+</div>
 
 * <a href="https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/mockups/ms3-mockups.pdf" target="_blank" rel="noopener">Friendly Digest Mockups PDF</a>
 
@@ -216,9 +230,11 @@ Please note - you may want to download this file to view it as intended.
 
 ### **SURFACE** <a name="surface"></a>
 
+<div align="justify">
 The colour scheme chosen for this website offers healthy, earthy, green colours, as well as the addition of Eggshell.
-There are five main colours for this website. Three different shades of green, Eggshell for backgrounds and black for fonts.
+There are five main colours for this website. Three different shades of Green, Eggshell for backgrounds and Black for fonts.
 This was chosen because of the colours' positive vibe and feel-good effect. Here are the chosen colours:
+</div>
 
 ![Website Colour Scheme](https://res.cloudinary.com/web-slinger/image/upload/v1612213815/Milestone%203/ms3-colors_b0lmh1.png "Website Colour Scheme")
 
@@ -230,9 +246,11 @@ This was chosen because of the colours' positive vibe and feel-good effect. Here
 | Custom Green #2   |#AEE6A9
 | Eggshell          |#FAFAF2
 
+<div align="justify">
 There are two more colours which are less frequent, they are the colours which appear when a user has entered data into a form field or has missed a field completely.
 When a user enters data into any field within the Friendly Digest website, the fields will be underlined green, else they'll be underlined red.
 This is true for the Log In, Register, Add, and Edit forms. Here are the chosen colours:
+</div>
 
 ![Website Colour Scheme](https://res.cloudinary.com/web-slinger/image/upload/v1612214511/Milestone%203/ms3-form-colors_rzixpw.png "Website Colour Scheme")
 
@@ -241,11 +259,13 @@ This is true for the Log In, Register, Add, and Edit forms. Here are the chosen 
 | Green             |#4CAF50
 | Red               |#F44336
 
+<div align="justify">
 The image used for Friendly Digest's logo was chosen because it relates to the theme of the website. By this, I refer to the chef hat image. 
 Images for Friendly Digest were sourced from [PxHere](https://pxhere.com/) and [Klipartz](https://www.klipartz.com/en).
 
 Two fonts are used throughout Friendly Digest's website: [Google Fonts' - Calligraffitti](https://fonts.google.com/specimen/Calligraffitti?query=Calligraffitti) and [Google Fonts' - Cinzel](https://fonts.google.com/specimen/Cinzel?query=Cinzel).
 If at any point a browser cannot support these fonts, the browser will fall back on Serif and Cursive.
+</div>
 
 ---
 
@@ -253,9 +273,54 @@ If at any point a browser cannot support these fonts, the browser will fall back
 
 ### **APPLICATION FRAMEWORK** <a name="app-framework"></a>
 
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+
+Flask is a lightweight web application framework. It is designed to make getting started quick and easy, 
+with the ability to scale up to complex applications. It began as a simple wrapper around Werkzeug and Jinja 
+and has become one of the most popular Python web application frameworks. Flask provides you with tools, 
+libraries and technologies that allow you to build a web application. This web application can be some web pages, 
+a blog, a wiki or go as big as a web-based calendar application or a commercial website. Flask was chosen because
+of it's popularity, ease of use, and it was a prerequisite in the design of this project, according to the project brief.
+
 ### **CSS FRAMEWORK** <a name="css-framework"></a>
 
+* [Materialize](https://materializecss.com/)
+
+Created and designed by Google, Material Design is a framework that combines the classic principles of successful design 
+along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience 
+across all their products on any platform. Materialize was chosen because of it's attractive design capabilities, its 
+responsivness, and its ability to work with all modern browsers, including Internet Explorer 10+.
+
 ### **DATABASE** <a name="database"></a>
+
+* [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+
+MongoDB Atlas NoSQL database was used for this project. MongoDB is a document database with the scalability and flexibility 
+that you want with the querying and indexing that you need. It claims to be the most innovative cloud database service on the market, 
+with unmatched data distribution and mobility across AWS, Azure, and Google Cloud. MongoDB was chosen because MongoDB stores data in flexible, 
+JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time.
+
+The database consists of the following collections:
+
+* Categories
+* Difficulties
+* Recipes
+* Users
+
+The collections within the database consist of the following document inserts:
+
+* Category_name
+* Recipe_name
+* Recipe_description
+* Recipe_prep_mins
+* Recipe_cook_mins
+* Recipe_calories
+* Recipe_servings
+* Recipe_level
+* Recipe_ingredients
+* Recipe_instructions
+* Recipe_image
+* Author_name
 
 ---
 
