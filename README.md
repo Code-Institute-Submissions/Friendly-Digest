@@ -5,7 +5,7 @@
 Friendly Digest is a website designed to provide food recipes, primarily for people with chronic inflammatory bowel diseases such as Crohn's Disease & Colitis.
 Users are able to follow the four basic CRUD functions, Create, Read, Update, and Delete. This means that you can register an account, create and upload your
 own recipes, view other user's recipes, edit your own recipes, and delete your own recipes.  
-
+  
 Friendly Digest is intended to provide great value to those who seek special diatary advice. Whether you suffer yourself, have a friend or family member who 
 suffers, or whether you want to clean up your own diet, we hope Friendly Digest can guide you to a cleaner, happier, pain-free lifestyle.
 
@@ -328,23 +328,90 @@ The collections within the database consist of the following document inserts:
 
 ### **NAVIGATION** <a name="navigation"></a>
 
+* Each page features a top navigation bar which enables the user to navigate to most pages within the Friendly Digest website. 
+The top navigation bar has different options depending on whether the user is logged in or logged out. If a user is logged in, 
+the navigation links are as follows:
+
+![Logged In Nav Bar](https://res.cloudinary.com/web-slinger/image/upload/v1612265623/Milestone%203/nav-in_urjtj5.png)
+
+* If a user is logged out, the navigation links are as follows:
+
+![Logged Out Nav Bar](https://res.cloudinary.com/web-slinger/image/upload/v1612265623/Milestone%203/nav-out_a8chwk.png)
+
+* The Recipes tab features a dropdown menu which has additional options to choose from. These options are:
+
+![Dropdown Menu](https://res.cloudinary.com/web-slinger/image/upload/v1612265971/Milestone%203/nav-drop_cz5qny.png)
+
+* Friendly Digest has a highly responsive design meaning that the website displays perfectly on a mobile device.
+When under 992px the top navigation bar transforms into a side navigation bar which is displayed when the user clicks
+on the menu button. The menu button is displayed on the right hand side of the screen. It has a hamburger menu icon.
+Please see the side navigation bar below:
+
+![Side Nav Bar](https://res.cloudinary.com/web-slinger/image/upload/v1612266447/Milestone%203/side-nav_r6ecr4.png)
+
+* Located at the bottom right hand side of the screen there is a 'To Top Button' which when clicked, automatically
+takes the user back to the top of the screen. When at the top of the screen, this button disappears. It only
+reappears when the user scrolls down.
+
+* Throughout the website there are multiple buttons which divert the user to different pages. The Log In page has a Register
+button at the bottom of the page, and likewise, the Register page has a Log In button at the bottom of the page. the Recipe 
+page has a Go Back button and the My Recipes page has buttons which allow you to view recipes and even edit recipes. The 
+Edit Recipes page also features a Return button.
+
+* The search bar which is present in various pages features a search button which takes the user to a Search Recipes page. The
+Search Recipes page also features a Return button.
+
+* The footer has two links which take the user to two seperate external websites. These links are to the developers social profiles
+within GitHub and LinkedIn.
+
 ### **SEARCH RECIPES** <a name="search"></a>
+
+* The Search Recipes feature is a very handy tool which is sure to be of great benefit to users. A user can type anything they wish 
+into the search bar and the Search Recipes page will be generated. Depending on what the user types, depends on what is displayed on
+this page. If the searched words correlate with anything in a recipe, that recipe will be displayed. If there are no search results,
+a message will appear informing the user that the search was unsuccessful. The search bar is present within each of the category pages,
+as well as the My Recipes page.
 
 ### **HOME PAGE** <a name="home"></a>
 
+* The Home page is primarily used for the display of information to the user. The Home page gives explanation about Friendly Digest
+as well as diatary advice. It also includes some high-quality images and success stories from the general public.
+
 ### **CATEGORIES** <a name="categories"></a>
 
+There are four categories within the Friendly Digest website. Each offers recipes containing different products. A user can click the
+'Cook' button to view the recipe in its entirety. As mentioned above, a user can also search for specific recipes or ingredients using
+the search bar located at the top of the screen.
 
 #### *Meat* <a name="meat"></a>
 
+* The Meat category will display recipes that only contain meat.
+
 #### *Fish* <a name="fish"></a>
+
+* The Fish category will display recipes that only contain fish.
 
 #### *Veg* <a name="veg"></a>
 
+* The MVeg category will display recipes that only contain vegetables.
+
 #### *Dessert* <a name="dessert"></a>
 
+* The Dessert category will display recipes that only contain desserts.
 
 ### **VIEW RECIPES** <a name="recipe"></a>
+
+* The Recipes page is a page dedicated to a single specific recipe. This page will contain all of the information needed
+for a user to ultimately cook a dish. At the top of the page you'll find a recipe name, an image, and a description.
+Below that is a collapsible accordion element which was used to store information compactly. Each element acts as a 
+dropdown box. Author, Level, Prep, Cook, Servings, and Calories are found here. Please see below:
+
+![Collapsible Accordian](https://res.cloudinary.com/web-slinger/image/upload/v1612268924/Milestone%203/accordian_vvasyb.png)
+
+* Below the collapsible accordian a user will find the Recipe Ingredients and the Recipe Instructions. These ingredients and
+instructions are displayed in a list with bullet points. This was implemented to make the information clear and concise.
+
+* As mentioned in the navigation section, there is a 'Go Back' button located at the bottom of the page.
 
 ### **LOG IN** <a name="log-in"></a>
 
