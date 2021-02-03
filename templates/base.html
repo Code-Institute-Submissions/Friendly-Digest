@@ -11,7 +11,7 @@
         content="https://res.cloudinary.com/web-slinger/image/upload/v1608119278/Milestone%203/friendly-digest-favicon_n8ncda.png" />
     <meta property="og:description"
         content="Friendly Digest offers dietary advice and food recipes for those with dietary requirements." />
-    <meta property="og:url" href="https://friendly-digest.herokuapp.com/" />
+    <meta property="og:url" content="https://friendly-digest.herokuapp.com/" />
 
     <!--Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -114,11 +114,11 @@
                 <ul class="side-nav" id="mobile-demo">
 
                     <!--Friendly Digest Hat Image-->
-                    <div class="center-align">
+                    <li>
                         <img class="chef-hat"
-                            src="https://res.cloudinary.com/web-slinger/image/upload/v1606251385/Milestone%203/chef-hat_qxyvpg.png"
-                            alt="Friendly Digest Logo" />
-                    </div>
+                        src="https://res.cloudinary.com/web-slinger/image/upload/v1606251385/Milestone%203/chef-hat_qxyvpg.png"
+                        alt="Friendly Digest Logo" />
+                    </li>
 
                     <!--Mobile Nav Bar Links-->
                     <li><a href="{{ url_for('index') }}">Home</a></li>
@@ -226,26 +226,27 @@
                     <h5 class="footer-text center-align">Social Links</h5>
 
                     <ul>
-                        <div class="col s4 offset-s2">
-                            <!--Developer LinkedIn Button-->
-                            <li><a href="https://www.linkedin.com/in/lewis-wheeler-aa91791a0/" target="_blank">
-                                    <div class="social-btn center-align">
-                                        <i class="fab fa-linkedin hvr-grow"></i>
-                                    </div>
-                                </a>
-                            </li>
-                        </div>
-
-                        <div class="col s4">
-                            <!--Developer Github Button-->
-                            <li>
-                                <a href="https://github.com/WebSlinger88" target="_blank">
-                                    <div class="social-btn center-align">
-                                    <i class="fab fa-github hvr-grow"></i>
-                                    </div>
-                                </a>
-                            </li>
-                        </div>
+                        <li>
+                            <div class="col s4 offset-s2">
+                                <!--Developer LinkedIn Button-->
+                                <a href="https://www.linkedin.com/in/lewis-wheeler-aa91791a0/" target="_blank">
+                                        <div class="social-btn center-align">
+                                            <i class="fab fa-linkedin hvr-grow"></i>
+                                        </div>
+                                    </a>
+                            </div>
+                        </li>
+                            
+                        <li>
+                            <div class="col s4">
+                                <!--Developer Github Button-->
+                                    <a href="https://github.com/WebSlinger88" target="_blank">
+                                        <div class="social-btn center-align">
+                                        <i class="fab fa-github hvr-grow"></i>
+                                        </div>
+                                    </a>
+                            </div>
+                        </li>
                     </ul>
 
                 </div>
@@ -269,7 +270,7 @@
             class="fas fa-angle-double-up"></i></a>
 
     <!--Import jQuery & Materialize Javascript Libraries-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
