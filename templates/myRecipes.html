@@ -37,7 +37,7 @@
 
                 <!--Recipe Image-->
                 <div class="card-image">
-                    <img src="{{ recipe.recipe_image }}">
+                    <img src="{{ recipe.recipe_image }}" alt="Recipe image">
                 </div>
 
                 <!--Recipe Name & Description-->
@@ -53,18 +53,12 @@
                     <div class="row center-align d-flex-w">
 
                         <div class="col s12 m3">
-                            <a href="{{ url_for('recipe', recipe_id=recipe._id) }}">
-                                <button type="button" class="btn card-btn btn-pos">
-                                    <span>Cook</span>
-                                </button></a>
+                            <a href="{{ url_for('recipe', recipe_id=recipe._id) }}" class="btn card-btn btn-pos">Cook</a>
                         </div>
 
                         <!--Edit Recipe-->
                         <div class="col s12 m3">
-                            <a href="{{ url_for('editRecipe', recipe_id=recipe._id) }}">
-                                <button type="button" class="btn card-btn btn-pos">
-                                    <span>Edit</span>
-                                </button></a>
+                            <a href="{{ url_for('editRecipe', recipe_id=recipe._id) }}" class="btn card-btn btn-pos">Edit</a>
                         </div>
 
                         <!-- Delete Recipe -->
@@ -113,11 +107,7 @@
     <div class="row">
         <div class="col s12 center-align">
             <h6 class="mt-3">Add New Recipe?</h6>
-            <a href="{{ url_for('addRecipe') }}">
-                <button type="button" class="btn link-btn">
-                    <span>Add Recipe</span>
-                </button>
-            </a>
+            <a href="{{ url_for('addRecipe') }}" class="btn link-btn">Add Recipe</a>
         </div>
     </div>
 </div>

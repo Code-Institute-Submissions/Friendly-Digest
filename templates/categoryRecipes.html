@@ -75,10 +75,7 @@
 
                         <!--View Recipe Button-->
                         <div class="card-action">
-                            <a href="{{ url_for('recipe', recipe_id=recipe._id) }}">
-                                <button type="button" class="btn card-btn right">
-                                    <span>Cook</span>
-                                </button></a>
+                            <a href="{{ url_for('recipe', recipe_id=recipe._id) }}" class="btn card-btn right">Cook</a>
                         </div>
 
                     </div>

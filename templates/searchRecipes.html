@@ -20,7 +20,7 @@
 
                     <!--Recipe Image-->
                     <div class="card-image">
-                        <img src="{{ result.recipe_image }}">
+                        <img src="{{ result.recipe_image }}" alt="Recipe image">
                     </div>
 
                     <!--Recipe Name & Description-->
@@ -31,10 +31,7 @@
 
                     <!--View Recipe Button-->
                     <div class="card-action">
-                        <a href="{{ url_for('recipe', recipe_id=result._id) }}">
-                            <button type="button" class="btn card-btn right">
-                                <span>Cook</span>
-                            </button></a>
+                        <a href="{{ url_for('recipe', recipe_id=result._id) }}" class="btn card-btn right">Cook</a>
                     </div>
 
                 </div>
