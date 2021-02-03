@@ -16,7 +16,7 @@
 <div class="container">
     <div class="row">
         <div class="col s12 center-align">
-            <img class="responsive-img mt-3 z-depth-4 user-img" src="{{ recipe.recipe_image }}" alt="Recipe Picture">
+            <img class="responsive-img mt-3 z-depth-4 user-img" src="{{ recipe.recipe_image }}" alt="Recipe image">
             <p class="center-align mt-3">{{ recipe.recipe_description }}</p>
         </div>
     </div>
@@ -92,7 +92,7 @@
         <div class="col s12 m6 l4 push-m4 push-l4">
             <ul>
                 {% for ingredient in recipe.recipe_ingredients.split(",") %}
-                    <li class="d-flex"><i class="fas fa-circle icon-color mr-1pt5"></i>{{ ingredient }}</li><br>
+                    <li class="d-flex"><i class="fas fa-circle icon-color mr-1pt5"></i>{{ ingredient }}</li>
                 {% endfor %}
             </ul>
         </div>
@@ -115,7 +115,7 @@
             <ul>
                 {% for instruction in recipe.recipe_instructions.split(".") %}
                     {% if instruction %}
-                        <li class="d-flex"><i class="fas fa-circle icon-color mr-1pt5"></i>{{ instruction }}</li><br>
+                        <li class="d-flex"><i class="fas fa-circle icon-color mr-1pt5"></i>{{ instruction }}</li>
                     {% endif %}
                 {% endfor %}
             </ul>
