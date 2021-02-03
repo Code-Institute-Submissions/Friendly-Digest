@@ -791,6 +791,12 @@ implemented. In the near future we hope to implement the following:
 
 ## :test_tube: **TESTING** <a name="testing"></a>
 
+Due to the extensive nature of the testing process, test analysis and reporting can be found by clicking on the following links. 
+Here you shall find a separate markdown file as well as a more visual PDF file containing an Excel spreadsheet.
+
+* [TESTING.md]()
+* [Friendly Digest Testing PDF]()
+
 ---
 
 ## :airplane: **DEPLOYMENT** <a name="deployment"></a>
@@ -801,19 +807,74 @@ tools, workflows, and polyglot support — all designed to enhance developer pro
 
 ### **DEPLOYMENT TO HEROKU** <a name="heroku"></a>
 
+1. Create Heroku account.
+2. Create a new app within Heroku. Set region to Europe.
+3. Link new app to your Github repository via the 'Deploy' tab.
+4. In the settings tab, navigate to 'Config Vars' and add five fields.
+    * IP: 0.0.0.0
+    * PORT: 5000
+    * MONGO_DBNAME: FDDB 
+    * MONGO_URI: mongodb+srv://WebSlinger:************
+    * SECRET_KEY: ************
+5. Within Gitpod workspace terminal, create 'Procfile' by typing:
+    * $ echo web: python run.py > Procfile
+6. Push repository to Heroku by typing:
+    * $ git push heroku master
 
+After following these steps, Friendly Digest is now deployed to Heroku and can be seen [here.](https://friendly-digest.herokuapp.com/)
 
 ### **LOCAL DEPLOYMENT** <a name="local"></a>
+
+In order to duplicate the database in MongoDB, create a free account on MongoDB and reproduce the 4 collections as described 
+[here.](https://res.cloudinary.com/web-slinger/image/upload/v1612366559/Milestone%203/design/mongo-collections_z2ct58.png)
+
+1. Navigate to the Github remote repository: [WebSlinger88: Friendly Digest.](https://github.com/WebSlinger88/Friendly-Digest)
+2. Click button labelled "Code" with download icon visible (next to green Gitpod button).
+3. Copy the clone HTTPS or SSH by clicking on the copy button.
+4. Open your IDE, open a terminal window, and change to the directory where you want to clone this repository.
+5. Type: '$ git init'.
+6. Type: '$ git clone https://github.com/WebSlinger88/Friendly-Digest.git'.
+7. You may need to install or upgrade pip by typing: $ pip install -U pip.
+8. Install all of the projects requirements by typing: $ pip3 install -r requirements.txt.
+9. Create .env file within IDE directory.
+10. Add MongoDB Config Vars data to .env file.
+11. Add .env file to .gitignore file.
+12. In the last line of run.py file, change from debug=False to debug=True.
+13. You will then be able to run the app locally by typing python3 run.py.
 
 ---
 
 ## :clapper: **CREDITS** <a name="credits"></a>
 
+Various websites were used for Friendly Digest's website to become what it is today. All content displayed is part of the public domain.
+
 ### **CONTENT** <a name="content"></a>
+
+* Friendly Digest's logo was created and designed by [Lewis Wheeler](https://www.linkedin.com/in/lewis-wheeler-aa91791a0/) - Friendly Digest's Full Stack Web Developer, 
+using [Adobe XD](https://www.adobe.com/uk/products/xd.html). Image for this sourced from [Klipartz](https://www.klipartz.com/en).
+
+* All textual content on the Friendly Digest website was written by [Lewis Wheeler](https://www.linkedin.com/in/lewis-wheeler-aa91791a0/) - Friendly Digest's Full Stack Web Developer.
 
 ### **MEDIA** <a name="media"></a>
 
+* Imagery:
+    * [Klipartz](https://www.klipartz.com/en).
+    * [PxHere](https://pxhere.com/).
+
+* Text:
+    * [Google Fonts](https://fonts.google.com/).
+    * [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free).
+
 ### **ACKNOWLEDGEMENTS** <a name="thanks"></a>
+
+Inspiration was used in various locations across the world wide web. Please see below some of the key sources used to help develop Quizzical.
+
+* Code Instiute Video Tutorials.
+* [Materialize](https://materializecss.com/) Documentation.
+* [w3schools](https://www.w3schools.com/) Documentation.
+* [jQuery](https://jquery.com/) Documentation.
+* [MongoDB](https://docs.mongodb.com/) Documentation.
+* [Heroku](https://devcenter.heroku.com/categories/reference) Documentation.
 
 ---
 :star: *A special thank you to [Maranatha Ilesanmi](https://github.com/mbilesanmi) Code Institute Mentor and [Paul F_alumni](https://github.com/Spagettileg) for aid, assistance, and much-needed guidance.* :star:
