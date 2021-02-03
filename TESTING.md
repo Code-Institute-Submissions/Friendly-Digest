@@ -238,15 +238,52 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 * If typing a dumby URL into the URL field (http://friendly-digest.herokuapp.com/this/is/a/test), the 404.html page loads.
 
 * Any unexpected server error will force the 500.html page to load.
-
+* Changing the DB password within the .env file to something random will force the 500.html page to load.
 
 ---
 
 ## :tv: **DISPLAY TESTING** <a name="display-test"></a>
 
+The Friendly Digest website has been tested using an 18" Dell XPS laptop with Windows 10 + on an external 30" display as well as the following devices:
+
+| **Browser Platform**                       | **Version**    
+| -------------------------------------------|:---------------------------------------------:| 
+| Google Chrome (Official Build) (64-bit)    | 88.0.4324.146
+| Firefox (Windows 10)                       | 85.0
+| Opera (Windows 10)                         | 73.0.3856.344
+| Edge (Windows 10)                          | 88.0.705.56
+| Google Chrome Android (Samsung Galaxy S8+) | 88.0.4324.141
+| Google Chrome Android (OnePlus 7T Pro)     | 88.0.4324.141
+| Safari iOS (Apple iPhone 7 Plus)           | 14.0
+| Silk Android (Amazon Kindle Fire 5)        | 83.3.19.4103.106.30
+| Internet Explorer 10                       | [Cloud Browser](https://www.ieonchrome.com/)
+| Internet Explorer 11                       | [Cloud Browser](https://www.ieonchrome.com/)
+
+All tests were positive and no issues found apart from Internet Explorer 10 & 11. Both browsers had extreme lag and many things didn't work and/or were 
+displayed incorrectly. This is not a problem because Internet Explorer is now obsolete.
+
+It is worth mentioning that the Friendly Digest favicon image displays within the browser's tab for all HTML pages.
+
 ---
 
 ## :heavy_check_mark: **CODE VALIDATION** <a name="validation"></a>
+
+Friendly Digest's code has been tested via the [W3C Markup Validation Service](https://validator.w3.org/), [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), 
+[JS Hint](https://jshint.com/), and [PEP8 Online](http://pep8online.com/).
+
+A few warnings did flag up with the HTML validation service:
+
+* base.html - Line 161 - Section missing heading.
+* categoryRecipes.html - Line 90 - Empty heading.
+* myRecipes.html - Line 101 - Empty Heading.
+
+All of these warnings can be ignored because no heading is needed for section, and the two other headings are actually Font Awesome icons.
+
+***All other warnings were flagged because of Jinja templating code. These warnings are acceptable.***
+
+There were no other reported problems using the HTML CSS, JS, & Python validation services.
+
+Friendly Digest's CSS code has been tested for irrelevant code using the Chrome Developer Tool 'Coverage'. No irrelevant code currently exists within the style.css file.
 
 ---
 
@@ -254,9 +291,19 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 ### **IMAGE SIZE REDUCTION** <a name="size"></a>
 
+* Although all images are stored within [Cloudinary](https://cloudinary.com/) and not within the actual directory, much care was taken to reduce 
+the image size of all images used in the Friendly Digest website. All images were reduced in size using the [Tiny PNG](https://tinypng.com/) service.
+
 ### **SPELLING & GRAMMAR** <a name="spell"></a>
 
+All of Friendly Digest's textual content, including this Readme file, has been run through [Grammarly](https://www.grammarly.com) to check for any spelling and grammar mistakes.
+
 ### **BUGS** <a name="bugs"></a>
+
+* A bug has been found within the index.html file on line 204 (Tuna image). When screen resolution is in mobile/tablet view, the 'materialboxed' class doesn't work.
+It is strange because the 'materialboxed' class doesn't work for this image, but it does for the images on lines 82 & 119. I have done a Google search for this bug,
+and it is a known issue which I couldn't find a fix for. There appears to be no reason why two images work perfectly, but one does not. Please note that this image's
+'materialboxed' class does work in desktop view.
 
 ---
 
