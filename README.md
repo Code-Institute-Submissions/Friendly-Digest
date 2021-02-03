@@ -2,9 +2,9 @@
 
 <img src="https://res.cloudinary.com/web-slinger/image/upload/v1608119278/Milestone%203/friendly-digest-favicon_n8ncda.png">
 
-</div>
-
 # **FRIENDLY DIGEST** <a name="top"></a>
+
+</div>
 
 <div align="justify">
 
@@ -531,7 +531,7 @@ the search bar located at the top of the screen.
 
 #### *Veg* <a name="veg"></a>
 
-* The MVeg category will display recipes that only contain vegetables.
+* The Veg category will display recipes that only contain vegetables.
 
 #### *Dessert* <a name="dessert"></a>
 
@@ -773,11 +773,15 @@ implemented. In the near future we hope to implement the following:
 
     * A global cloud database service for modern applications providing availability, scalability, and compliance with the most demanding data security and privacy standards.
 
-5. [Balsamiq Wireframes 4](https://balsamiq.com/)
+5. [Cloudinary](https://cloudinary.com/)
+
+    * A cloud-based image and video management service. It enables users to upload, store, manage, manipulate, and deliver images and video for websites and apps.
+
+6. [Balsamiq Wireframes 4](https://balsamiq.com/)
 
     * Used to create Friendly Digest's Wireframes.
 
-6. [Adobe XD](https://www.adobe.com/uk/products/xd.html)
+7. [Adobe XD](https://www.adobe.com/uk/products/xd.html)
 
     * Used to create Friendly Digest's logos and Mock Ups.
 
@@ -851,7 +855,7 @@ Various websites were used for Friendly Digest's website to become what it is to
 ### **CONTENT** <a name="content"></a>
 
 * Friendly Digest's logo was created and designed by [Lewis Wheeler](https://www.linkedin.com/in/lewis-wheeler-aa91791a0/) - Friendly Digest's Full Stack Web Developer, 
-using [Adobe XD](https://www.adobe.com/uk/products/xd.html). Image for this sourced from [Klipartz](https://www.klipartz.com/en).
+using [Adobe XD](https://www.adobe.com/uk/products/xd.html). Image for the logo was sourced from [Klipartz](https://www.klipartz.com/en).
 
 * All textual content on the Friendly Digest website was written by [Lewis Wheeler](https://www.linkedin.com/in/lewis-wheeler-aa91791a0/) - Friendly Digest's Full Stack Web Developer.
 
