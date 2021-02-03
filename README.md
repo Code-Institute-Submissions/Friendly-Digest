@@ -219,25 +219,66 @@ My Recipes page. It consists of a search bar, a main header, and a multitude of 
 <div align="justify">
 
 Friendly Digest's website started on a piece of paper. Sketches were drawn out and a decent design was soon ready to leap into the digital world.
-Below you shall find a link to a PDF document containing all of the original sketches used to help develop this project.
-Please note - you may want to download this file to view it as intended.
+Here are links to images of the original sketches used to help develop this project:
 
-</div>
+* [Home Page](https://res.cloudinary.com/web-slinger/image/upload/v1612355747/Milestone%203/design/ms3-sketch-home_zzevjh.png)
+* [Category Page](https://res.cloudinary.com/web-slinger/image/upload/v1612355743/Milestone%203/design/ms3-sketch-category_v7hwsh.png)
+* [Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612355767/Milestone%203/design/ms3-sketch-recipe_mpyb5a.png)
+* [Search Page](https://res.cloudinary.com/web-slinger/image/upload/v1612355768/Milestone%203/design/ms3-sketch-search_nxxfkv.png)
+* [Register Page](https://res.cloudinary.com/web-slinger/image/upload/v1612355768/Milestone%203/design/ms3-sketch-register_epl0cl.png)
+* [Log In Page](https://res.cloudinary.com/web-slinger/image/upload/v1612355747/Milestone%203/design/ms3-sketch-login_d8ze4h.png)
+* [My Recipes Page](https://res.cloudinary.com/web-slinger/image/upload/v1612355767/Milestone%203/design/ms3-sketch-myRecipes_bsama0.png)
+* [Add Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612355743/Milestone%203/design/ms3-sketch-addRecipe_nlllh9.png)
+
+Here you shall find a link to a PDF document containing all of the original sketches used to help develop this project.
+Please note - you may want to download this file to view it as intended. Large file size.
 
 * <a href="https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/sketches/ms3-sketches.pdf" target="_blank" rel="noopener">Friendly Digest Sketches PDF</a>
+
+</div>
 
 #### *Wireframes* <a name="wireframes"></a>
 
 <div align="justify">
 
 After drawing up the sketches it was time to get them onto the screen. To do this, a wireframe was created using Balsamiq Wireframes 4. 
-Wireframes are used to display what the creator ultimately envisions the website to look like, roughly! It acts as one of the first stepping stones of the journey. 
-Please find below a link to a PDF document containing all of the original Wireframes for Friendly Digest's project.
-Please note - you may want to download this file to view it as intended.
+Wireframes are used to display what the creator ultimately envisions the website to look like, roughly! It acts as one of the first stepping stones of the journey.
+Here are links to images of the original sketches used to help develop this project:
 
-</div>
+* [Desktop Home Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358971/Milestone%203/design/ms3-wireframe-home_fbsvnz.png)
+    * [Mobile Home Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358972/Milestone%203/design/ms3-mobile-wireframe-home_n0tmar.png)
+    * [Mobile Side Nav](https://res.cloudinary.com/web-slinger/image/upload/v1612358970/Milestone%203/design/ms3-mobile-wireframe-side-nav_gqwuec.png)
+
+* [Desktop Category Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358971/Milestone%203/design/ms3-wireframe-category_tjerhq.png)
+    * [Mobile Category Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358971/Milestone%203/design/ms3-mobile-wireframe-category_utv5py.png)
+
+* [Desktop Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358971/Milestone%203/design/ms3-wireframe-recipe_aarpec.png)
+    * [Mobile Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358972/Milestone%203/design/ms3-mobile-wireframe-recipe_v3n7k7.png)
+
+* [Desktop Search Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358971/Milestone%203/design/ms3-wireframe-search_gxodi7.png)
+    * [Mobile Search Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358970/Milestone%203/design/ms3-mobile-wireframe-search_n3z0kx.png)
+
+* [Desktop Register Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358971/Milestone%203/design/ms3-wireframe-register_riozi6.png)
+    * [Mobile Register Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358970/Milestone%203/design/ms3-mobile-wireframe-register_b6o9vr.png)
+
+* [Desktop Log In Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358971/Milestone%203/design/ms3-wireframe-login_vpybrv.png)
+    * [Mobile Log In Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358972/Milestone%203/design/ms3-mobile-wireframe-login_bysztd.png)
+
+* [Desktop My Recipes Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358971/Milestone%203/design/ms3-wireframe-myRecipes_im4ix8.png)
+    * [Mobile My Recipes Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358972/Milestone%203/design/ms3-mobile-wireframe-myRecipes_zics4m.png)
+
+* [Desktop Add Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358970/Milestone%203/design/ms3-wireframe-addRecipe_el4fs3.png)
+    * [Mobile Add Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358971/Milestone%203/design/ms3-mobile-wireframe-addRecipe_xzot7l.png)
+
+* [Desktop Edit Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358970/Milestone%203/design/ms3-wireframe-editRecipe_zqfjxp.png)
+    * [Mobile Edit Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612358971/Milestone%203/design/ms3-mobile-wireframe-editRecipe_gd5gmn.png)
+
+Here you shall find a link to a PDF document containing all of the original wireframes used to help develop this project.
+Please note - you may want to download this file to view it as intended. Large file size.
 
 * <a href="https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/wireframes/ms3-wireframes.pdf" target="_blank" rel="noopener">Friendly Digest Wireframes PDF</a>
+
+</div>
 
 #### *Mock Ups* <a name="mockups"></a>
 
@@ -245,12 +286,42 @@ Please note - you may want to download this file to view it as intended.
 
 Finally with the basics down on paper and screen, it was time to start shaping things up. After wireframes, it's time to take things a little more seriously. 
 Enter Adobe XD. Adobe XD is a powerful piece of software designed to assist artists worldwide. More detailed designs are now progressed, and sketches etc.. 
-are now a thing of the past! below, you will find a link to a PDF document containing Friendly Digest's Mock-Ups. You can clearly see how the project has evolved.
-Please note - you may want to download this file to view it as intended.
+are now a thing of the past! below, you will find links to the original Friendly Digest Mock-Ups. You can clearly see how the project has evolved.
 
-</div>
+* [Desktop Home Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360400/Milestone%203/design/ms3-mockup-home_myybod.png)
+    * [Mobile Home Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360401/Milestone%203/design/ms3-mobile-mockup-home_nzjszl.png)
+    * [Mobile Side Nav](https://res.cloudinary.com/web-slinger/image/upload/v1612360402/Milestone%203/design/ms3-mobile-mockup-sidenav_ca5uhn.png)
+
+* [Desktop Category Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360400/Milestone%203/design/ms3-mockup-category_yree0t.png)
+    * [Mobile Category Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360401/Milestone%203/design/ms3-mobile-mockup-category_czqjm4.png)
+
+* [Desktop Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360401/Milestone%203/design/ms3-mockup-recipe_nzw4jn.png)
+    * [Mobile Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360402/Milestone%203/design/ms3-mobile-mockup-recipe_lwajfa.png)
+
+* [Desktop Search Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360401/Milestone%203/design/ms3-mockup-search_vfjx94.png)
+    * [Mobile Search Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360402/Milestone%203/design/ms3-mobile-mockup-search_ld6npa.png)
+
+* [Desktop Register Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360401/Milestone%203/design/ms3-mockup-register_wvead4.png)
+    * [Mobile Register Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360401/Milestone%203/design/ms3-mobile-mockup-register_sknveq.png)
+
+* [Desktop Log In Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360400/Milestone%203/design/ms3-mockup-login_ebyxir.png)
+    * [Mobile Log In Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360401/Milestone%203/design/ms3-mobile-mockup-login_ai05jc.png)
+
+* [Desktop My Recipes Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360401/Milestone%203/design/ms3-mockup-myRecipes_cck0vw.png)
+    * [Mobile My Recipes Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360401/Milestone%203/design/ms3-mobile-mockup-myRecipes_mdzafx.png)
+
+* [Desktop Add Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360400/Milestone%203/design/ms3-mockup-addRecipe_t1pcla.png)
+    * [Mobile Add Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360401/Milestone%203/design/ms3-mobile-mockup-addRecipe_oxnxwo.png)
+
+* [Desktop Edit Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360400/Milestone%203/design/ms3-mockup-editRecipe_outf9s.png)
+    * [Mobile Edit Recipe Page](https://res.cloudinary.com/web-slinger/image/upload/v1612360401/Milestone%203/design/ms3-mobile-mockup-editRecipe_qbxdsa.png)
+
+Here you shall find a link to a PDF document containing all of the original mockups used to help develop this project.
+Please note - you may want to download this file to view it as intended. Large file size.
 
 * <a href="https://github.com/WebSlinger88/Friendly-Digest/blob/master/design/mockups/ms3-mockups.pdf" target="_blank" rel="noopener">Friendly Digest Mockups PDF</a>
+
+</div>
 
 ---
 
@@ -724,7 +795,13 @@ implemented. In the near future we hope to implement the following:
 
 ## :airplane: **DEPLOYMENT** <a name="deployment"></a>
 
+[Heroku](https://www.heroku.com/) has been used to deploy the Friendly Digest website. Developers use Heroku to deploy, manage, and scale modern apps. 
+The platform is elegant, flexible, and easy to use, offering developers the simplest path to getting their apps to market. The Heroku experience provides services, 
+tools, workflows, and polyglot support — all designed to enhance developer productivity.
+
 ### **DEPLOYMENT TO HEROKU** <a name="heroku"></a>
+
+
 
 ### **LOCAL DEPLOYMENT** <a name="local"></a>
 
