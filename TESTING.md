@@ -274,6 +274,8 @@ displayed incorrectly. This is not a problem because Internet Explorer is now ob
 
 It is worth mentioning that the Friendly Digest favicon image displays within the browser's tab for all HTML pages.
 
+***Further insight into the display testing process is documented in an external file located [here.](https://github.com/WebSlinger88/Friendly-Digest/tree/master/testing)***
+
 </div>
 
 ---
@@ -298,6 +300,8 @@ All of these warnings can be ignored because no heading is needed for section, a
 There were no other reported problems using the HTML CSS, JS, & Python validation services.
 
 Friendly Digest's CSS code has been tested for irrelevant code using the Chrome Developer Tool 'Coverage'. No irrelevant code currently exists within the style.css file.
+
+***Further insight into the code validation process is documented in an external file located [here.](https://github.com/WebSlinger88/Friendly-Digest/tree/master/testing)***
 
 </div>
 
