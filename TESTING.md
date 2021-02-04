@@ -53,7 +53,9 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 ## :test_tube: **TESTING** <a name="testing"></a>
 
-### **Navigation** <a name="nav-test"></a>
+<div align="justify">
+
+### **NAVIGATION** <a name="nav-test"></a>
 
 * Navigation bar present within all web pages.
 * Navigation bar contains four tabs when not in session, five tabs when in session, across all web pages.
@@ -78,7 +80,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 ***No Issues were found whilst testing the Navigation functionality.***
 
-### **Search Recipes** <a name="search-test"></a>
+### **SEARCH RECIPES** <a name="search-test"></a>
 
 * Am able to type into search box.
 * Submit buttons works without issue.
@@ -91,7 +93,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 ***No Issues were found whilst testing the Search Recipes functionality.***
 
-### **Home** <a name="home-test"></a>
+### **HOME PAGE** <a name="home-test"></a>
 
 * All text and images are responsive.
 * Materialize grid works as expected.
@@ -104,7 +106,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 * Success Stories' Tooltips do not appear in mobile view. As expected.
 * Modal messages appear when Success Stories' images are clicked. Both desktop & mobile.
 
-### **Categories** <a name="categories-test"></a>
+### **CATEGORIES** <a name="categories-test"></a>
 
 * All categories are displayed on one HTML file.
 * Which category is displayed is determined by which tab is selected by the user.
@@ -135,7 +137,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 ***No Issues were found whilst testing the Categories functionalities.***
 
-### **View Recipe** <a name="recipe-test"></a>
+### **VIEW RECIPES** <a name="recipe-test"></a>
 
 * Correct recipe was loaded when 'Cook' button was clicked.
 * All text and images are responsive.
@@ -146,7 +148,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 ***No Issues were found whilst testing the Recipe functionality.***
 
-### **Log In** <a name="log-in-test"></a>
+### **LOG IN** <a name="log-in-test"></a>
 
 * Log In page is fully responsive.
 * Able to type in both username and password fields.
@@ -160,7 +162,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 ***No Issues were found whilst testing the Log In functionality.***
 
-### **Register** <a name="register-test"></a>
+### **REGISTER** <a name="register-test"></a>
 
 * Register page is fully responsive.
 * Able to type in both username and password fields.
@@ -172,7 +174,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 ***No Issues were found whilst testing the Register functionality.***
 
-### **My Recipes** <a name="my-recipes-test"></a>
+### **MY RECIPES** <a name="my-recipes-test"></a>
 
 * My Recipes page is fully responsive.
 * Page is only accessible when user session is active.
@@ -187,7 +189,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 ***No Issues were found whilst testing the My Recipes functionality.***
 
-### **Add Recipe** <a name="add-recipe-test"></a>
+### **ADD RECIPE** <a name="add-recipe-test"></a>
 
 * Add Recipe page is fully responsive.
 * Able to type in all text fields.
@@ -200,7 +202,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 * Add Recipe button loads correct page and uploads correct data to MongoDB.
 * Only issue to mention is Materialize textarea and input tags have different label animations. Unable to equalize.
 
-### **Edit Recipe** <a name="edit-recipe-test"></a>
+### **EDIT RECIPE** <a name="edit-recipe-test"></a>
 
 * Edit Recipe page is fully responsive.
 * All fields were automatically populated with correct recipes data.
@@ -214,7 +216,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 * Edit Recipe button loads correct page and uploads correct data to MongoDB. Also displays correct Flash message.
 * Only issue to mention is Materialize textarea and input tags have different label animations. Unable to equalize.
 
-### **Delete Recipe** <a name="delete-recipe-test"></a>
+### **DELETE RECIPE** <a name="delete-recipe-test"></a>
 
 * When Delete button is clicked, warning modal message appears.
 * Clicking 'No' will keep recipe.
@@ -224,7 +226,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 ***No Issues were found whilst testing the Delete functionality.***
 
-### **Log Out** <a name="log-out-test"></a>
+### **LOG OUT** <a name="log-out-test"></a>
 
 * When Log Out button is clicked, warning modal message appears for desktop view.
 * Modal does not appear for mobile view. This is expected because of issues with Material side nav.
@@ -232,7 +234,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 * Clicking 'Yes' will remove user from active session and load Log In page. Flash message appears as expected.
 * Modal message is fully responsive until it disappears under 992px.
 
-### **Error Page** <a name="error-test"></a>
+### **ERROR PAGE** <a name="error-test"></a>
 
 * Any user error will force the 404.html page to load.
 * If typing a dummy URL into the URL field (http://friendly-digest.herokuapp.com/this/is/a/test), the 404.html page loads.
@@ -240,11 +242,17 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 * Any unexpected server error will force the 500.html page to load.
 * Changing the DB password within the .env file to something random will force the 500.html page to load.
 
+</div>
+
 ---
 
 ## :tv: **DISPLAY TESTING** <a name="display-test"></a>
 
+<div align="justify">
+
 The Friendly Digest website has been tested using an 18" Dell XPS laptop with Windows 10 + on an external 30" display as well as the following devices:
+
+</div>
 
 | **Browser Platform**                       | **Version**    
 | -------------------------------------------|:---------------------------------------------:| 
@@ -259,14 +267,20 @@ The Friendly Digest website has been tested using an 18" Dell XPS laptop with Wi
 | Internet Explorer 10                       | [Cloud Browser](https://www.ieonchrome.com/)
 | Internet Explorer 11                       | [Cloud Browser](https://www.ieonchrome.com/)
 
+<div align="justify">
+
 All tests were positive and no issues found apart from Internet Explorer 10 & 11. Both browsers had extreme lag and many things didn't work and/or were 
 displayed incorrectly. This is not a problem because Internet Explorer is now obsolete.
 
 It is worth mentioning that the Friendly Digest favicon image displays within the browser's tab for all HTML pages.
 
+</div>
+
 ---
 
 ## :heavy_check_mark: **CODE VALIDATION** <a name="validation"></a>
+
+<div align="justify">
 
 Friendly Digest's code has been tested via the [W3C Markup Validation Service](https://validator.w3.org/), [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), 
 [JS Hint](https://jshint.com/), and [PEP8 Online](http://pep8online.com/).
@@ -285,9 +299,13 @@ There were no other reported problems using the HTML CSS, JS, & Python validatio
 
 Friendly Digest's CSS code has been tested for irrelevant code using the Chrome Developer Tool 'Coverage'. No irrelevant code currently exists within the style.css file.
 
+</div>
+
 ---
 
 ## :memo: **OTHER** <a name="other"></a>
+
+<div align="justify">
 
 ### **IMAGE SIZE REDUCTION** <a name="size"></a>
 
@@ -304,6 +322,8 @@ All of Friendly Digest's textual content, including this Readme file, has been r
 It is strange because the 'materialboxed' class doesn't work for this image, but it does for the images on lines 82 & 119. I have done a Google search for this bug,
 and it is a known issue which I couldn't find a fix for. There appears to be no reason why two images work perfectly, but one does not. Please note that this image's
 'materialboxed' class does work in desktop view.
+
+</div>
 
 ---
 
