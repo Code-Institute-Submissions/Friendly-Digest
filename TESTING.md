@@ -72,7 +72,7 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 * Log Out button loads correct page.
 * Delete button loads correct page.
 * Side Navigation icon appears when under 992px.
-* When clicked, side nav appears to right hand side of screen.
+* When clicked, side nav appears to right-hand side of screen.
 * All links within mobile side nav work as expected. Dropdown menu for Recipes also works perfectly.
 * All navigation bars and their content are responsive.
 
@@ -139,8 +139,8 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 * Correct recipe was loaded when 'Cook' button was clicked.
 * All text and images are responsive.
-* Collapsible accordian is responsive.
-* Collapsible accordian works as expected when clicked.
+* Collapsible accordion is responsive.
+* Collapsible accordion works as expected when clicked.
 * Ingredients and Instructions are split into lists. 
 * All data from MongoDB is displayed as expected.
 
@@ -174,9 +174,9 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 
 ### **My Recipes** <a name="my-recipes-test"></a>
 
-* My Recipes page is full responsive.
+* My Recipes page is fully responsive.
 * Page is only accessible when user session is active.
-* If user tries yto access another user's page, Log In page will be loaded with flash message.
+* If user tries to access another user's page, Log In page will be loaded with Flash message.
 * Only recipes uploaded by session user are displayed. As expected.
 * If no recipes are present, message is displayed stating there are no recipes to display.
 * Page header displays session user's username. As expected.
@@ -230,12 +230,12 @@ You can find a link to the Excel (PDF) report here: [Friendly Digest Testing PDF
 * Modal does not appear for mobile view. This is expected because of issues with Material side nav.
 * Clicking 'No' will keep the user in active session.
 * Clicking 'Yes' will remove user from active session and load Log In page. Flash message appears as expected.
-* Modal message is fully responsive until it diseapprs under 992px.
+* Modal message is fully responsive until it disappears under 992px.
 
 ### **Error Page** <a name="error-test"></a>
 
 * Any user error will force the 404.html page to load.
-* If typing a dumby URL into the URL field (http://friendly-digest.herokuapp.com/this/is/a/test), the 404.html page loads.
+* If typing a dummy URL into the URL field (http://friendly-digest.herokuapp.com/this/is/a/test), the 404.html page loads.
 
 * Any unexpected server error will force the 500.html page to load.
 * Changing the DB password within the .env file to something random will force the 500.html page to load.
