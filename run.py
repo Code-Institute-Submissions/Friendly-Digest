@@ -33,7 +33,7 @@ def login_required(f):
     return wrap
 
 
-# ---- About/Landing Page ---- #
+# ---- Home/Landing Page ---- #
 
 @app.route("/")
 def index():
@@ -181,7 +181,7 @@ def addRecipe():
         flash("Recipe Successfully Added!")
         return redirect(url_for("myRecipes", username=session["user"]))
 
-    # Get data from categories collection on Mongo DB.
+    # Get data from categories & difficulties collections on Mongo DB.
     categories = mongo.db.categories.find()
     difficulties = mongo.db.difficulties.find()
     return render_template(
@@ -244,6 +244,7 @@ def logout():
 
 
 # ---- Errors ----- #
+
 @ app.errorhandler(404)
 def page_not_found(error):
     return render_template('errors/404.html'), 404
