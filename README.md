@@ -796,10 +796,10 @@ implemented. In the near future we hope to implement the following:
 ## :test_tube: **TESTING** <a name="testing"></a>
 
 Due to the extensive nature of the testing process, test analysis and reporting can be found by clicking on the following links. 
-Here you shall find a separate markdown file as well as a more visual PDF file containing an Excel spreadsheet.
+Here you shall find a separate markdown file as well as two files, one Excel spreadsheet and a downloadable PDF of the same spreadsheet.
 
-* [TESTING.md]()
-* [Friendly Digest Testing PDF]()
+* [TESTING.md](https://github.com/WebSlinger88/Friendly-Digest/blob/master/TESTING.md)
+* [Friendly Digest Testing Docs](https://github.com/WebSlinger88/Friendly-Digest/tree/master/testing)
 
 ---
 
