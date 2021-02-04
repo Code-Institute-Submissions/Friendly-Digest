@@ -60,7 +60,7 @@ $(document).ready(function () {
         }
     });
 
-    // Changes and applies class styles depending on how user interacts with form fields: addRecipe & editRecipe.
+    // Changes and applies class styles depending on how user interacts with form fields.
     // Sets select element to be physically on DOM, and applies different classes when needed.
     validateMaterializeSelect();
     function validateMaterializeSelect() {
@@ -88,7 +88,7 @@ $(document).ready(function () {
                 $(this).parent(".select-wrapper").children("input").css(classValid);
             } else {
 
-                // Apply invalid red class if user comes out of selection, and bottom-border wassn't updated.
+                // Apply invalid red class if user comes out of selection, and bottom-border wasn't updated.
                 $(".select-wrapper input.select-dropdown").on("focusout", function () {
                     if ($(this).parent(".select-wrapper").children("select").prop("required")) {
                         if ($(this).css("border-bottom") != "1px solid rgb(76, 175, 80)") {
