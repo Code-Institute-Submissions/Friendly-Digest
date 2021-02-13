@@ -21,7 +21,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-# Redirects users that aren't logged in to login page.
+# -- Redirects users that aren't logged in to login page -- #
 def login_required(f):
     @wraps(f)
     def wrap(*args, **kwargs):
@@ -44,7 +44,6 @@ def index():
 
 @ app.route('/searchRecipes', methods=["GET", "POST"])
 def search():
-    mongo.db.recipes.create_index([('$**', 'text')])
     query = request.form.get("query")
     results = mongo.db.recipes.find({"$text": {"$search": query}}).limit(10)
     result_num = mongo.db.recipes.find({"$text": {"$search": query}}).count()
