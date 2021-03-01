@@ -127,6 +127,7 @@
     <div class="row">
         <div class="col s12 m6 l4 push-m4 push-l4">
             <ul>
+                <!--Split ingredients at comma to display in list-->
                 {% for ingredient in recipe.recipe_ingredients.split(",") %}
                     <li class="d-flex">
                         <i class="fas fa-circle icon-color mr-1pt5"></i>
@@ -152,6 +153,7 @@
     <div class="row">
         <div class="col s12 m6 l4 push-m4 push-l4">
             <ul>
+                <!--Split instructions at fullstop to display in list-->
                 {% for instruction in recipe.recipe_instructions.split(".") %}
                     {% if instruction %}
                         <li class="d-flex">
