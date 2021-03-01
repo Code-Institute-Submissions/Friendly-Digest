@@ -461,6 +461,8 @@ The collections within the database consist of the following document inserts:
 * Username
 * Password
 
+To view a tree of Friendly Digest's database collections, click [here.](https://res.cloudinary.com/web-slinger/image/upload/v1612366559/Milestone%203/design/mongo-collections_z2ct58.png)
+
 ---
 
 ## :page_facing_up: **EXISTING FEATURES** <a name="existing"></a>

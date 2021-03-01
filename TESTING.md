@@ -289,9 +289,11 @@ Friendly Digest's code has been tested via the [W3C Markup Validation Service](h
 
 A few warnings did flag up with the HTML validation service:
 
-* base.html - Line 161 - Section missing heading.
-* categoryRecipes.html - Line 90 - Empty heading.
-* myRecipes.html - Line 101 - Empty Heading.
+| **File**                    | **Line**   | **Warning**             |
+|:--------------------------- |:---------- |:------------------------|
+| base.html                   |161         |Section missing heading  |
+| categoryRecipes.html        |90          |Empty heading            |
+| myRecipes.html              |101         |Empty heading            |
 
 All of these warnings can be ignored because no heading is needed for section, and the two other headings are actually Font Awesome icons.
 
