@@ -112,6 +112,7 @@
                             <i class="fas fa-user-graduate prefix icon-color"></i>
                             <select id="recipe_level" name="recipe_level" class="validate" required>
                                 <option value="" disabled>Choose Difficulty</option>
+                                <!--Displays difficulty icon images-->
                                 {% for difficulty in difficulties %}
                                     {% if difficulty.recipe_level == recipe.recipe_level %}
                                         <option value="{{ difficulty.recipe_level }}" selected
@@ -165,24 +166,29 @@
                         <!--Edit Recipe Button-->
                         <div class="col s12 l6">
                             <button type="submit" class="btn-large btn-text mt-3 edit-btn">
-                                <span class="mr-1">Edit Recipe</span><i class="fas fa-edit"></i>
+                                <span class="mr-1">Edit Recipe</span>
+                                <i class="fas fa-edit"></i>
                             </button>
                         </div>
 
                         <!--Cancel Editing Button-->
                         <div class="col s12 l6">
 
-                            <a class="btn-large btn-text mt-3 edit-btn modal-trigger" href="#modal-c"><span
-                                    class="mr-1">Return</span><i class="fas fa-arrow-circle-left"></i></a>
+                            <a class="btn-large btn-text mt-3 edit-btn modal-trigger" href="#modal-c">
+                                <span class="mr-1">Return</span>
+                                <i class="fas fa-arrow-circle-left"></i>
+                            </a>
 
                             <!--Cancel Edit Modal-->
                             <div id="modal-c" class="modal">
                                 <div class="modal-content lh-1">
 
                                     <h4>Warning!</h4>
+                                    
                                     <p class="mt-3 center-align">
                                         Any unsaved changes made to your recipe will be lost.
-                                        Are you sure you want to return?</p>
+                                        Are you sure you want to return?
+                                    </p>
 
                                 </div>
 
@@ -190,7 +196,8 @@
                                 <div class="modal-footer">
                                     <a href="#!" class="modal-action modal-close btn-flat mr-1pt5">No</a>
                                     <a href="{{ url_for('myRecipes', username=session['user']) }}"
-                                        class="modal-action modal-close btn-flat mr-1">Yes</a>
+                                        class="modal-action modal-close btn-flat mr-1">Yes
+                                    </a>
                                 </div>
 
                             </div>
