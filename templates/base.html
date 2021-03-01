@@ -42,6 +42,7 @@
 <body>
 
     <header>
+        
         <!--Friendly Digest Logo-->
         <div class="container-fluid center-align title-bg">
             <a href="{{ url_for('index') }}">
@@ -58,7 +59,9 @@
                 <!--Desktop Nav Bar Links-->
                 <ul class="hide-on-med-and-down" id="nav-tabs">
 
-                    <li><a href="{{ url_for('index') }}" class="nav-text hvr-hang">Home</a></li>
+                    <li>
+                        <a href="{{ url_for('index') }}" class="nav-text hvr-hang">Home</a>
+                    </li>
 
                     <li>
                         <a class="dropdown-button nav-text" href="#!"
@@ -68,12 +71,18 @@
 
                     <!--Menu items displayed if user logged in-->
                     {% if session.user %}
-                        <li><a href="{{ url_for('myRecipes', username=session['user']) }}"
-                                class="nav-text hvr-hang">My Recipes</a></li>
 
-                        <li><a href="{{ url_for('addRecipe') }}" class="nav-text hvr-hang">Add Recipe</a></li>
+                        <li>
+                            <a href="{{ url_for('myRecipes', username=session['user']) }}"
+                                class="nav-text hvr-hang">My Recipes</a>
+                        </li>
 
-                        <li><a href="#modal-l" class="nav-text hvr-hang modal-trigger">Log Out</a>
+                        <li>
+                            <a href="{{ url_for('addRecipe') }}" class="nav-text hvr-hang">Add Recipe</a>
+                        </li>
+
+                        <li>
+                            <a href="#modal-l" class="nav-text hvr-hang modal-trigger">Log Out</a>
 
                             <!--Log Out Modal Message-->
                             <div id="modal-l" class="modal">
@@ -92,23 +101,46 @@
 
                             </div>
                         </li>
-
+                    
+                    <!--Menu items displayed if user logged out-->
                     {% else %}
-                        <li><a href="{{ url_for('login') }}" class="nav-text hvr-hang">Log In</a></li>
-                        <li><a href="{{ url_for('register') }}" class="nav-text hvr-hang">Register</a></li>
+
+                        <li>
+                            <a href="{{ url_for('login') }}" class="nav-text hvr-hang">Log In</a>
+                        </li>
+
+                        <li>
+                            <a href="{{ url_for('register') }}" class="nav-text hvr-hang">Register</a>
+                        </li>
+
                     {% endif %}
                 </ul>
 
                 <!--Dropdown Links for Desktop-->
                 <ul id="dropdown-desktop" class="dropdown-content">
-                    <li><a href="{{ url_for('categoryRecipes', category='meat') }}">Meat</a></li>
-                    <li><a href="{{ url_for('categoryRecipes', category='fish') }}">Fish</a></li>
-                    <li><a href="{{ url_for('categoryRecipes', category='veg') }}">Veg</a></li>
-                    <li><a href="{{ url_for('categoryRecipes', category='dessert') }}">Dessert</a></li>
+
+                    <li>
+                        <a href="{{ url_for('categoryRecipes', category='meat') }}">Meat</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('categoryRecipes', category='fish') }}">Fish</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('categoryRecipes', category='veg') }}">Veg</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('categoryRecipes', category='dessert') }}">Dessert</a>
+                    </li>
+
                 </ul>
 
                 <!--Hamburger Icon for Mobile Dropdown Menu-->
-                <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="fas fa-bars"></i></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse right">
+                    <i class="fas fa-bars"></i>
+                </a>
 
                 <!--Mobile Dropdown Menu (Side Navigation Bar)-->
                 <ul class="side-nav" id="mobile-demo">
@@ -121,7 +153,9 @@
                     </li>
 
                     <!--Mobile Nav Bar Links-->
-                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li>
+                        <a href="{{ url_for('index') }}">Home</a>
+                    </li>
 
                     <li>
                         <a class="dropdown-trigger" href="#!" 
@@ -132,24 +166,52 @@
 
                     <!--Menu items displayed if user logged in-->
                     {% if session.user %}
-                        <li><a href="{{ url_for('myRecipes', username=session['user']) }}">My Recipes</a></li>
 
-                        <li><a href="{{ url_for('addRecipe') }}">Add Recipe</a></li>
+                        <li>
+                            <a href="{{ url_for('myRecipes', username=session['user']) }}">My Recipes</a>
+                        </li>
 
-                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                        <li>
+                            <a href="{{ url_for('addRecipe') }}">Add Recipe</a>
+                        </li>
+
+                        <li>
+                            <a href="{{ url_for('logout') }}">Log Out</a>
+                        </li>
+                    
+                    <!--Menu items displayed if user logged out-->
                     {% else %}
-                        <li><a href="{{ url_for('login') }}">Log In</a></li>
+
+                        <li>
+                            <a href="{{ url_for('login') }}">Log In</a>
+                        </li>
                         
-                        <li><a href="{{ url_for('register') }}">Register</a></li>
+                        <li>
+                            <a href="{{ url_for('register') }}">Register</a>
+                        </li>
+
                     {% endif %}
                 </ul>
 
                 <!--Dropdown Links for Mobile-->
                 <ul id="dropdown-mobile" class="dropdown-content">
-                    <li><a href="{{ url_for('categoryRecipes', category='meat') }}">Meat</a></li>
-                    <li><a href="{{ url_for('categoryRecipes', category='fish') }}">Fish</a></li>
-                    <li><a href="{{ url_for('categoryRecipes', category='veg') }}">Veg</a></li>
-                    <li><a href="{{ url_for('categoryRecipes', category='dessert') }}">Dessert</a></li>
+
+                    <li>
+                        <a href="{{ url_for('categoryRecipes', category='meat') }}">Meat</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('categoryRecipes', category='fish') }}">Fish</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('categoryRecipes', category='veg') }}">Veg</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('categoryRecipes', category='dessert') }}">Dessert</a>
+                    </li>
+                    
                 </ul>
 
             </div>
@@ -175,9 +237,12 @@
             {% endwith %}
         </section>
 
+        <!--Search bar code to be displayed on certain pages-->
         {% block search_bar %}
+
         <div class="container">
             <div class="row">
+
                 <!--Recipe Search Bar-->
                 <form action="{{ url_for('search') }}" method="POST" class="col s12">
                     <div class="row card-panel transparent z-depth-0 valign-wrapper center-align">
@@ -192,6 +257,8 @@
                             <button type="submit" class="btn card-btn">
                                 <i class="fas fa-search"></i>
                             </button>
+
+                            <!--Block return button for certain pages-->
                             {% block undo_button %}
                                 <a href="#" onclick="history.go(-1)" class="btn card-btn"><i class="fas fa-undo"></i></a>
                             {% endblock %}
@@ -258,7 +325,7 @@
             <div class="container">
                 <p class="footer-text center-align">
                     Copyright - All Rights Reserved - Lewis Wheeler - Full Stack Web Developer ©
-                    <!--javaScript date generated via id-->
+                    <!--JavaScript date generated via id-->
                     <span id="copyright"></span></p>
             </div>
         </div>
@@ -273,6 +340,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
+    <!--Local JavaScript-->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
