@@ -114,27 +114,20 @@ Carry on below and read some of Friendly Digest's user stories, and get a feel f
 
 ### **USER STORIES** <a name="stories"></a>
 
->   Healthy foods tend to be green. Green would be a great colour for this website. - Lindsay W
-
->   Need an attractive logo which really captures the eye. One that has purpose. - Diane W
-
->   Need a good font, one that's not too hard to read. Must look good. - Bob R
-
->   Must be easy to navigate. I'm not good on computers so ease of navigation is key. - Hilary M
-
->   I have lots of recipes to share with people. I'd love to be able to upload my own recipes. - Jennifer C
-
->   Definitely need to be able to edit recipes. If I make a mistake I want to be able to fix it. - Charlie W
-
->   I would like to be able to delete my recipes. Sometimes it's just easier to start fresh! - Simon R
-
->   I hope people can't edit or delete my recipes. - Heather P
-
->   Can I create my own account and have a page dedicated to MY recipes? I think this would be a great feature. - Tom F
-
->   I'd like to be able to search all recipes that contain certain ingredients. I have allergies. - Becky D
-
->   I would like to be able to read clear, simple instructions on how to cook each dish. - Shawn S
+| **Name**          | **I want to...**                        | **So I can...**                                            |
+|:-----------------:|:---------------------------------------:|:----------------------------------------------------------:|
+| Lindsay W         | View a selection of recipes             | Select some to cook                                        |
+| Diane W           | View indivicual recipes                 | Identify cook times, ingredients, instructions, etc...     |
+| Elliot R          | Easily register an account              | Have a personal account to view and upload my own recipes  |
+| Abi C             | Easily login or logout                  | Access my personal account                                 |
+| Jennifer C        | Add recipes                             | Share my amazing recipes with the world                    |
+| Charlie W         | Edit recipes                            | Change my recipe if I've made a mistake or improved it     |
+| Simon R           | Delete recipes                          | Remove any unwanted recipes from the site                  |
+| Heather P         | Not have others edit/delete my recipes  | Keep my recipes personal and my own                        |
+| Tom F             | Have my own recipes page                | Have all my uploaded recipes in one place                  |
+| Becky D           | Search recipes                          | Find a specific recipe I'd like to cook                    |
+| Phil W            | Have clear instructions                 | Follow the recipe easily without any issues                |
+| Hilary M          | Navigate easily                         | Browse the website without any problems                    |
 
 ---
 
@@ -615,7 +608,7 @@ dropdown box. Author, Level, Prep, Cook, Servings, and Calories are found here.
 
 Image of Collapsible Accordion:
 
-![Collapsible Accordion](https://res.cloudinary.com/web-slinger/image/upload/v1612268924/Milestone%203/accordion_vvasyb.png)
+![Collapsible Accordion](https://res.cloudinary.com/web-slinger/image/upload/v1612268924/Milestone%203/accordian_vvasyb.png)
 
 </div>
 
@@ -961,15 +954,15 @@ tools, workflows, and polyglot support — all designed to enhance developer pro
 2. Create a new app within Heroku. Set region to Europe.
 3. Link new app to your Github repository via the 'Deploy' tab.
 4. In the settings tab, navigate to 'Config Vars' and add five fields.
-    * IP: 0.0.0.0
-    * PORT: 5000
-    * MONGO_DBNAME: FDDB 
-    * MONGO_URI: mongodb+srv://WebSlinger:************
-    * SECRET_KEY: ************
+    * `IP: 0.0.0.0`
+    * `PORT: 5000`
+    * `MONGO_DBNAME: FDDB`
+    * `MONGO_URI: mongodb+srv://WebSlinger:************`
+    * `SECRET_KEY: ************`
 5. Within Gitpod workspace terminal, create 'Procfile' by typing:
-    * $ echo web: python run.py > Procfile
+    * `$ echo web: python run.py > Procfile`
 6. Push repository to Heroku by typing:
-    * $ git push heroku master
+    * `$ git push heroku master`
 
 After following these steps, Friendly Digest is now deployed to Heroku and can be seen [here.](https://friendly-digest.herokuapp.com/)
 
@@ -982,15 +975,15 @@ In order to duplicate the database in MongoDB, create a free account on MongoDB 
 2. Click button labelled "Code" with download icon visible (next to green Gitpod button).
 3. Copy the clone HTTPS or SSH by clicking on the copy button.
 4. Open your IDE, open a terminal window, and change to the directory where you want to clone this repository.
-5. Type: '$ git init'.
-6. Type: '$ git clone https://github.com/WebSlinger88/Friendly-Digest.git'.
-7. You may need to install or upgrade pip by typing: $ pip install -U pip.
-8. Install all of the projects requirements by typing: $ pip3 install -r requirements.txt.
-9. Create .env file within IDE directory.
-10. Add MongoDB Config Vars data to .env file.
-11. Add .env file to .gitignore file.
-12. In the last line of run.py file, change from debug=False to debug=True.
-13. You will then be able to run the app locally by typing python3 run.py.
+5. Type: `$ git init` in your IDE's terminal.
+6. Type: `$ git clone https://github.com/WebSlinger88/Friendly-Digest.git` in your IDE's terminal.
+7. You may need to install or upgrade pip by typing: `$ pip install -U pip` in your IDE's terminal.
+8. Install all of the project's requirements by typing: `$ pip3 install -r requirements.txt` in your IDE's terminal.
+9. Create a .env file within your IDE directory.
+10. Add MongoDB Config Vars data to your .env file.
+11. Add your .env file to your .gitignore file. If you do not have a .gitignore file, create one within your IDE directory.
+12. In the last line of your run.py file, change from debug=False to debug=True.
+13. You will then be able to run the app locally by typing: `$ python3 run.py` in your IDE's terminal.
 
 </div>
 
