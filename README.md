@@ -1016,7 +1016,7 @@ using [Adobe XD](https://www.adobe.com/uk/products/xd.html). Image for the logo 
 
 ### **ACKNOWLEDGEMENTS** <a name="thanks"></a>
 
-Inspiration was used in various locations across the world wide web. Please see below some of the key sources used to help develop Quizzical.
+Inspiration was used in various locations across the world wide web. Please see below some of the key sources used to help develop Friendly Digest.
 
 * Code Instiute Video Tutorials.
 * [Materialize](https://materializecss.com/) Documentation.
