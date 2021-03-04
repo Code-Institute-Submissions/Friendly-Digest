@@ -215,7 +215,7 @@ nav ul a {
 /* Logo image sizing and positioning */
 .chef-hat {
     width: 6rem;
-    margin-top: 2rem;
+    margin-top: 2rem!important;
 }
 
 
