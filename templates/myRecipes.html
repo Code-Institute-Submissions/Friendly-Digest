@@ -54,18 +54,18 @@
                     <div class="row center-align d-flex-w">
 
                         <div class="col s12 m3">
-                            <a href="{{ url_for('recipe', recipe_id=recipe._id) }}" class="btn card-btn btn-pos">Cook</a>
+                            <a href="{{ url_for('recipe', recipe_id=recipe._id) }}" class="btn card-btn btn-pos mr-1pt5">Cook</a>
                         </div>
 
                         <!--Edit Recipe-->
                         <div class="col s12 m3">
-                            <a href="{{ url_for('editRecipe', recipe_id=recipe._id) }}" class="btn card-btn btn-pos">Edit</a>
+                            <a href="{{ url_for('editRecipe', recipe_id=recipe._id) }}" class="btn card-btn btn-pos mr-1pt5">Edit</a>
                         </div>
 
                         <!-- Delete Recipe -->
                         <div class="col s12 m3 mb-0">
                             <button data-target="{{ recipe._id }}" type="button"
-                                class="btn card-btn btn-pos modal-trigger mr-1pt5"><span>Delete</span></button>
+                                class="btn card-btn btn-pos modal-trigger mr-1pt5">Delete</button>
 
                             <!-- Delete Recipe Modal -->
                             <div id="{{ recipe._id }}" class="modal">
