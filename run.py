@@ -25,10 +25,10 @@ mongo = PyMongo(app)
 def login_required(f):
     @wraps(f)
     def wrap(*args, **kwargs):
-        if 'user' in session:
+        if "user" in session:
             return f(*args, **kwargs)
         else:
-            flash('You need to login to see this page.')
+            flash("You need to login to see this page.")
             return redirect(url_for("login"))
     return wrap
 
@@ -227,6 +227,7 @@ def editRecipe(recipe_id):
 
 @app.route("/deleteRecipe/<recipe_id>")
 def deleteRecipe(recipe_id):
+    # Premanently deletes recipe from database
     mongo.db.recipes.delete_one({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted!")
     return redirect(url_for("myRecipes", username=session["user"]))
@@ -246,11 +247,13 @@ def logout():
 
 @ app.errorhandler(404)
 def page_not_found(error):
+    # Renders error page when error 404 occurs
     return render_template('errors/404.html'), 404
 
 
 @ app.errorhandler(500)
 def internal_error(error):
+    # Renders error page when error 500 occurs
     return render_template('errors/500.html'), 500
 
 
