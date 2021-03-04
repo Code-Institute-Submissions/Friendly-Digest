@@ -291,9 +291,9 @@ A few warnings did flag up with the HTML validation service:
 
 | **File**                    | **Line**   | **Warning**             |
 |:--------------------------- |:---------- |:------------------------|
-| base.html                   |161         |Section missing heading  |
-| categoryRecipes.html        |90          |Empty heading            |
-| myRecipes.html              |101         |Empty heading            |
+| base.html                   |223         |Section missing heading  |
+| categoryRecipes.html        |92          |Empty heading            |
+| myRecipes.html              |106         |Empty heading            |
 
 All of these warnings can be ignored because no heading is needed for section, and the two other headings are actually Font Awesome icons.
 
