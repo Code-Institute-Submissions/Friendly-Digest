@@ -829,6 +829,7 @@ implemented. In the near future we hope to implement the following:
 * Favourite Recipes - Users can flag their favourite recipes.
 * Social Sharing - Users can share their favourite recipes via Facebook, Instagram, and WhatsApp.
 * Reversing Deletion - Deleted recipes to be recovered in the event of human error.
+* Image file uploads instead of URL uploads.
 
 </div>
 
