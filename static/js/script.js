@@ -8,7 +8,7 @@
 
 $(document).ready(function () {
 
-    //Button collapse for mobile navigation menu.
+    // Button collapse for mobile navigation menu.
     $(".button-collapse").sideNav({
         menuWidth: 200,
         edge: 'right'
@@ -33,7 +33,7 @@ $(document).ready(function () {
     // Material box centers the image and enlarges it by clicking.
     $('.materialboxed').materialbox();
 
-    //Tooltip will appear when user hovers mouse over certain elements.
+    // Tooltip will appear when user hovers mouse over certain elements.
     $('.tooltipped').tooltip({ delay: 50 });
 
     // Modal message appears when user clicks certain buttons. Eg, Delete Recipe button.
