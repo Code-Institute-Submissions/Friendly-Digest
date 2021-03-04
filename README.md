@@ -117,7 +117,7 @@ Carry on below and read some of Friendly Digest's user stories, and get a feel f
 | **Name**          | **I want to...**                        | **So I can...**                                            |
 |:------------------|:----------------------------------------|:-----------------------------------------------------------|
 | Lindsay W         | View a selection of recipes             | Select some to cook                                        |
-| Diane W           | View indivicual recipes                 | Identify cook times, ingredients, instructions, etc...     |
+| Diane W           | View individual recipes                 | Identify cook times, ingredients, instructions, etc...     |
 | Elliot R          | Easily register an account              | Have a personal account to view and upload my own recipes  |
 | Abi C             | Easily login or logout                  | Access my personal account                                 |
 | Jennifer C        | Add recipes                             | Share my amazing recipes with the world                    |
