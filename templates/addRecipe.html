@@ -16,7 +16,8 @@
 <div class="container">
     <div class="row">
         <div class="col s12 flow-text">
-            <p>Please fill out this form to the best of your ability so that you can share your
+            <p>
+                Please fill out this form to the best of your ability so that you can share your
                 tasty recipe with the world. We can't wait to try it!
             </p>
         </div>
@@ -36,9 +37,9 @@
                         <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled selected>Choose Category</option>
                             {% for category in categories %}
-                            <option value="{{ category.category_name }}"
-                                data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609772608/Milestone%203/{{ category.category_name }}.jpg"
-                                class="left circle">{{ category.category_name }}</option>
+                                <option value="{{ category.category_name }}"
+                                    data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609772608/Milestone%203/{{ category.category_name }}.jpg"
+                                    class="left circle">{{ category.category_name }}</option>
                             {% endfor %}
                         </select>
                     </div>
@@ -106,9 +107,9 @@
                             <select id="recipe_level" name="recipe_level" class="validate" required>
                                 <option value="" disabled selected>Choose Difficulty</option>
                                 {% for difficulty in difficulties %}
-                                <option value="{{ difficulty.recipe_level }}"
-                                    data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/{{ difficulty.recipe_level }}.png"
-                                    class="left circle">{{ difficulty.recipe_level }}</option>
+                                    <option value="{{ difficulty.recipe_level }}"
+                                        data-icon="https://res.cloudinary.com/web-slinger/image/upload/v1609773885/Milestone%203/{{ difficulty.recipe_level }}.png"
+                                        class="left circle">{{ difficulty.recipe_level }}</option>
                                 {% endfor %}
                             </select>
                         </div>

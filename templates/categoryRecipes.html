@@ -17,16 +17,19 @@
 <div class="container">
     <div class="row flow-text">
         <div class="col s12">
+
             <!--Meat Page-->
             {% if page_title == 'meat' %}
-                <p>Welcome to a page chock-full of delicious recipes containing meat, which are sure to tickle your taste
+                <p>
+                    Welcome to a page chock-full of delicious recipes containing meat, which are sure to tickle your taste
                     buds! Meat is a great source of protein and can provide us with many vital vitamins. Dive in and remember 
                     that you can add your own delicious recipes to this list by creating an account and following our simple 
                     Add Recipe process. Enjoy!
                 </p>
             <!--Fish Page-->
             {% elif page_title == 'fish' %}
-                <p>Welcome to a page chock-full of delicious recipes containing Fish, which are sure to impress all of the family! 
+                <p>
+                    Welcome to a page chock-full of delicious recipes containing Fish, which are sure to impress all of the family! 
                     Fish is among the healthiest foods on the planet. It's loaded with important nutrients, such
                     as protein and vitamin D. Fish is also a great source of omega-3 fatty acids, which are
                     incredibly important for your body and brain. Dive in and remember that you can add your own delicious
@@ -34,7 +37,8 @@
                 </p>
             <!--Veg Page-->
             {% elif page_title == 'veg' %}
-                <p>Eating vegetables every day is important for your health. They provide essential vitamins,
+                <p>
+                    Eating vegetables every day is important for your health. They provide essential vitamins,
                     minerals, and other nutrients, such as antioxidants and fibre. They're an excellent source of dietary
                     fibre, which can help to maintain a healthy gut and prevent constipation and other digestion problems.
                     Dive in to these delicious recipes and remember that you can add your own delicious recipes to this list
@@ -42,7 +46,8 @@
                 </p>
             <!--Dessert Page-->
             {% elif page_title == 'dessert' %}
-                <p>Welcome to a page chock-full of delicious recipes for desserts! Eating desserts whilst battling a
+                <p>
+                    Welcome to a page chock-full of delicious recipes for desserts! Eating desserts whilst battling a
                     digestive disorder isn't an easy task, but it's not impossible! We have an extensive array of yummy puds
                     for you to sink your teeth into which are free from all the nasties! Dive in and remember that you can
                     add your own delicious recipes to this list by creating an account and following our simple Add Recipe
@@ -64,7 +69,7 @@
 
                         <!--Recipe Image-->
                         <div class="card-image">
-                            <img src="{{ recipe.recipe_image }}">
+                            <img src="{{ recipe.recipe_image }}" />
                         </div>
 
                         <!--Recipe Name & Description-->
