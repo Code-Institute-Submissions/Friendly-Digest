@@ -324,10 +324,10 @@ All of Friendly Digest's textual content, including this Readme file, has been r
 
 ### **BUGS** <a name="bugs"></a>
 
-* A bug has been found within the index.html file on line 204 (Tuna image). When screen resolution is in mobile/tablet view, the 'materialboxed' class doesn't work.
-It is strange because the 'materialboxed' class doesn't work for this image, but it does for the images on lines 82 & 119. I have done a Google search for this bug,
-and it is a known issue which I couldn't find a fix for. There appears to be no reason why two images work perfectly, but one does not. Please note that this image's
-'materialboxed' class does work in desktop view.
+* A bug has been found within the index.html file on line 263 (Tuna image). When screen resolution is in mobile/tablet view, the 'materialboxed' class doesn't work.
+It is strange because the 'materialboxed' class doesn't work for this image, but it does for the images on lines 107 & 146, although 146 is tempermental. I have done 
+a Google search for this bug, and it is a known issue which I couldn't find a fix for. There appears to be no reason why two images work perfectly, but one does not. 
+Please note that this image's 'materialboxed' class does work in desktop view.
 
 </div>
 
